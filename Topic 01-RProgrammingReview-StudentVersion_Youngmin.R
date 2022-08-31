@@ -42,6 +42,7 @@ my_age
 class(my_age)
 
 #Comparison Operators
+# concatennation
 daily_tips_for_the_week <- c(10, 5, 0, 6, 7, 13, 12)
 daily_tips_for_the_week <= 8
 
@@ -56,50 +57,59 @@ c(FALSE, FALSE, TRUE, TRUE) || c(FALSE, TRUE, FALSE, TRUE)
 
 # Functions
 cube_it <- function(arg_1){
-  arg_1 ^ 2
+  return(arg_1 ^ 3)
 }
 
 # Call the function
 cube_it(5)
 
 # More Data Types
-state_listing = c()
-print() 
-hot_states <-   # A vector with two objects, OK & TX
+data("gwstates")
+state_listing = c("Oklahoma", "Texas", "New York")
+print(state_listing) 
+hot_states <- state_listing[1:2]  # A vector with two objects, OK & TX
 hot_states
-road_trip <-  # A vector with two objects, OK & NY
+road_trip <- state_listing[-2]  # A vector with two objects, OK & NY
 road_trip
-lower_tax <-  # A vector with two objects, OK & NY
+lower_tax <- state_listing[c(1,3)]# A vector with two objects, OK & NY
 lower_tax
 class(lower_tax)
 
-num_seq <- 
+num_seq <- seq(3, 19, 4)
 num_seq
 class(num_seq)
 
-my_numbers <- c()
+# altered
+num_seq2 <- seq(3, 19, 3.5)
+num_seq2
+class(num_seq2)
+
+
+
+my_numbers <- c(seq(77, 44, -2))
+my_numbers
 class(my_numbers)
 
-my_numbers <- 
+my_numbers <- c(4, 'five', -1.5, 77)
 my_numbers
 
 class(my_numbers)
-my_numbers <- 
+my_numbers <- as.numeric(my_numbers)
 my_numbers
 
 class(my_numbers)
 
 # Naming Vectors
-unemployment_rates = c()
-state_listing = c()
-names(unemployment_rates) <- 
+unemployment_rates = c(2.0, 4.5, 5.5)
+state_listing = c('Oklahoma', 'Texas', 'New York')
+names(unemployment_rates) <- state_listing
 unemployment_rates
-unemployment_rates[]
+unemployment_rates["Oklahoma"]
 
 # Comparisons with Vectors
-low_unemployment <- 
+low_unemployment <- unemployment_rates <= 4.0
 low_unemployment
-low_unemployment_states <- 
+low_unemployment_states <- unemployment_rates[low_unemployment]
 low_unemployment_states
 
 #Computation on Vectors
@@ -120,13 +130,13 @@ the_list
 the_list[2]
 the_list$ints
 
-record <- list(name = "",
-               student_id = ,
-               grades = c(),
-               final_grade = "")
+record <- list(name = "Youngmin Lee",
+               student_id = 7777,
+               grades = c(runif(5, 90, 100)),
+               final_grade = "A")
 record$name
 record[2]
-
+record
 # Factors as a Data Type
 survey_vector <- c()
 factor_survey_vector <- factor(survey_vector)
