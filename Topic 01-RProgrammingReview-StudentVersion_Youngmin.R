@@ -194,8 +194,8 @@ planets_df
 # Loading libraries
 library("datasets")
 library(help = "datasets")
-install.packages("dslab")
-library()
+install.packages("dslabs")
+library("dslabs")
 
 # Loading dataset from library
 data(murders)
