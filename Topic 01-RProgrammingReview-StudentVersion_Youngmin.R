@@ -138,14 +138,14 @@ record$name
 record[2]
 record
 # Factors as a Data Type
-survey_vector <- c()
+survey_vector <- c("M", "F", "M", "F", "M")
 factor_survey_vector <- factor(survey_vector)
 factor_survey_vector
 
-levels(factor_survey_vector) <- c()
+levels(factor_survey_vector) <- c("Female", "Male")
 factor_survey_vector
 
-levels(factor_survey_vector) <- c()
+levels(factor_survey_vector) <- c("woman", "Man" )
 factor_survey_vector
 summary(factor_survey_vector)
 str(factor_survey_vector)
@@ -178,11 +178,23 @@ mean(my_matrix)
 sd(my_matrix)
 
 # Data Frames
+name <- c("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus",
+          "Neptune")
+type <- c("Terrestrial planet", "Terrestrial planet", "Terrestrial planet",
+          "Terrestrial planet", "Gas giant", "Gas giant", "Gas giant", "Gas giant")
+diameter <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883)
+rotation <- c(58.64, -243.02, 1, 1.03, 0.41, 0.43, -0.72, 0.67)
+rings <- c(FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE)
+
+planets_df <-data.frame(name,type,diameter,rotation,rings)
+
+
+planets_df
 
 # Loading libraries
-library()
-library(help = "")
-install.packages()
+library("datasets")
+library(help = "datasets")
+install.packages("dslab")
 library()
 
 # Loading dataset from library
@@ -208,6 +220,11 @@ murders[ ,2]
 murders[2]
 murders["abb"]
 
+murdersSouth <- murders[murders$region == 'South']
+class(murdersSouth)
+mean(murdersSouth$total)
+# abs() is absolute value
+
 sum(murders$total)
 murders[37, "total"]/sum(murders$total)*100
 mean(murders$total)
@@ -226,10 +243,10 @@ rank(x)
 # The _apply family!
 data1 <- c(1, 2, 3)
 data1
-data2 <- lapply(data1, cube_it)
+data2 <- lapply(data1, cube_it) # loop apply
 data2
 
-data3 <- sapply(data1, cube_it)
+data3 <- sapply(data1, cube_it) # 
 data3
 
 data4 <- vapply(data1, cube_it, numeric(1))
