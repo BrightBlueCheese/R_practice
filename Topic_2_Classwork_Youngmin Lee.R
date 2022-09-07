@@ -2,14 +2,14 @@
 # Title: Building the Gapminder Data File
 # for Visualization Practice
 # Script Name:
-# Name: <your input>
-# Date: <your input>
+# Name: Youngmin Lee
+# Date: Sep 07 2022
 # Script purpose:
 #
 ###########################################
 
 ### Install required packages if not installed
-install.packages("tidyverse")
+# install.packages("tidyverse")
 
 ### Load the packages
 library(tidyr)      # For tidy tools
@@ -19,24 +19,56 @@ library(stringr)    # For the string manipulation
 library(magrittr)   # For the pipe symbol
 library(ggplot2)    # For the plotting functions
 
+###########################################################
+library(dslabs)
+data(murders)
+tb_murder <- as_tibble(murders)
+
+glimpse(tb_murder)
+str(tb_murder)
+tb_murder <- tb_murder %>% mutate(rate=total/population*100000)
+tb_murder
+## the above and the below are the same
+tb_murder <- tb_murder %>% mutate(tb_murder, rate=total/population*100000)
+tb_murder
+
+tb_murder <- as_tibble(murders)
+tb_murder <- tb_murder %>% transmute(state, abb, rate=total/population*100000)
+tb_murder
+ 
+tb_murder <- as_tibble(murders)
+tb_murder <- tb_murder %>% 
+  mutate(tb_murder, rate=total/population*100000) %>% filter(rate <= 0.6)
+tb_murder
+
+tb_murder <- as_tibble(murders)
+tb_murder <- tb_murder %>% 
+  mutate(tb_murder, rate=total/population*100000)
+filter(tb_murder, rate <= 0.6)
+
+filter(tb_murder, rate <= 0.6) %>% select(1:2, rate) %>% arrange(rate, abb) %>% 
+  top_n(5, rate)
+select(tb_murder, -region, -population, -total)
+#
+
 ##############################################################3
 # Define all the needed files
 # Define the full path and file name for the geographic data
 # For Windows
 #geo_file <- "C://Users//[your user name]//CSC461//gapminder//ddf--entities--geo--country.csv"
 # For Mac
-geo_file <- ".../Geo_Country_Data.csv"
+geo_file <- ".../dataset/Geo_Country_Data.csv"
 # Add life expectancy
-life_exp_file <- ".../Life_Expectancy_by_Country_By_Year_Data.csv"
+life_exp_file <- "...dataset//Life_Expectancy_by_Country_By_Year_Data.csv"
 # Add income per person
-income_file <- ".../Income_Per_Person_Per_Year_By_Country.csv"
+income_file <- ".../dataset/Income_Per_Person_Per_Year_By_Country.csv"
 
 # Open and read the file into a tibble
-tb_geo =
+tb_geo = as_tibble(geo_file)
 
 # Initial Data Analysis (IDA) for geo data
-glimpse()
-summary()
+glimpse(tb_geo)
+summary(tb_geo)
 
 #Look for missing values
 NAs_found = FALSE
