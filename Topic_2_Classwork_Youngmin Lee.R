@@ -1,0 +1,167 @@
+###########################################
+# Title: Building the Gapminder Data File
+# for Visualization Practice
+# Script Name:
+# Name: <your input>
+# Date: <your input>
+# Script purpose:
+#
+###########################################
+
+### Install required packages if not installed
+install.packages("tidyverse")
+
+### Load the packages
+library(tidyr)      # For tidy tools
+library(dplyr)      # For the dplyr functions
+library(readr)      # For the data importing functions
+library(stringr)    # For the string manipulation
+library(magrittr)   # For the pipe symbol
+library(ggplot2)    # For the plotting functions
+
+##############################################################3
+# Define all the needed files
+# Define the full path and file name for the geographic data
+# For Windows
+#geo_file <- "C://Users//[your user name]//CSC461//gapminder//ddf--entities--geo--country.csv"
+# For Mac
+geo_file <- ".../Geo_Country_Data.csv"
+# Add life expectancy
+life_exp_file <- ".../Life_Expectancy_by_Country_By_Year_Data.csv"
+# Add income per person
+income_file <- ".../Income_Per_Person_Per_Year_By_Country.csv"
+
+# Open and read the file into a tibble
+tb_geo =
+
+# Initial Data Analysis (IDA) for geo data
+glimpse()
+summary()
+
+#Look for missing values
+NAs_found = FALSE
+for (i in names(tb_geo)){
+  if(sum(is.na(tb_geo[i]))) {
+    print(paste(i," has NA's"))
+    NAs_found = TRUE
+  }
+}
+if(!NAs_found) {
+  print("No NAs found")
+}
+
+sapply(tb_geo, )
+
+# Extract country "name" and "world_4region"
+tb_gapminder <- tb_geo
+
+
+# Open and read the life expectancy file
+tb_life_exp =
+
+# IDA for life_exp
+glimpse()
+
+#Look for missing values
+NAs_found = FALSE
+for (i in names(tb_life_exp)){
+  if(sum(is.na(tb_life_exp[i]))) {
+    print(paste(i," has NA's"))
+    NAs_found = TRUE
+  }
+}
+if(!NAs_found) {
+  print("No NAs found")
+}
+
+#View(tb_life_exp)
+
+# trim down life_exp columns and observations
+tb_life_exp <- tb_life_exp
+
+# How to join them?
+glimpse()
+glimpse()
+
+# Join tb_life_exp:Life.expectancy to tb_gapminder by country name
+tb_gapminder <- tb_gapminder
+
+
+# What was lost?
+tb_life_exp
+
+
+# Add income per person data
+# Open and read the file
+tb_income = read_csv(income_file)
+
+# IDA for geo - is it tidy data?
+glimpse(tb_income)
+#View(tb_income)
+
+#Look for missing values
+NAs_found = FALSE
+for (i in names(tb_income)){
+  if(sum(is.na(tb_income[i]))) {
+    print(paste(i," has NA's"))
+    NAs_found = TRUE
+  }
+}
+if(!NAs_found) {
+  print("No NAs found")
+}
+
+#Gather the columns into rows
+tb_income <- tb_income
+
+#Filter down to just data for 2020
+tb_income <- tb_income
+
+
+#Examine the resulting dataset
+glimpse(tb_income)
+head(tb_income)
+tail(tb_income)
+
+#Fix the income values!
+index_vector <- grep("k", tb_income$income)
+for (i in index_vector) {
+  tb_income$income[i] <- str_remove(tb_income$income[i], "k")
+  if (str_detect(tb_income$income[i],"\\.")) {
+    tb_income$income[i] <- paste(tb_income$income[i], "00", sep = "")
+    tb_income$income[i] <- str_remove(tb_income$income[i], "\\.")
+  } else {
+    tb_income$income[i] <- paste(tb_income$income[i], "000", sep = "")
+  }
+}
+
+tb_income$income <- as.numeric(tb_income$income)
+
+#Examine the resulting dataset
+glimpse(tb_income)
+head(tb_income)
+tail(tb_income)
+
+#join income data to tb_gapminder
+tb_gapminder <- tb_gapminder
+
+
+#what got lost again?
+tb_gapminder %>%
+  anti_join(tb_income, by = c("name" = "country"))
+tb_income %>%
+  anti_join(tb_gapminder, by = c("country" = "name"))
+
+# rename region and life_exp
+tb_gapminder <- tb_gapminder %>%
+  rename(region = world_4region) %>%
+  rename(life_exp = "Life expectancy") %>%
+  rename(year = "time")
+
+# A final look at the data
+glimpse(tb_gapminder)
+
+# Save the data to disk for later use
+write_csv(tb_gapminder, "/Users/josborne/ORU/CSC461 Data Mining and Machine Learning/DataSets/GapMinder/CSC461GapMinder.csv")
+
+##############################################
