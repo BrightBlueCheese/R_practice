@@ -64,7 +64,7 @@ cube_it <- function(arg_1){
 cube_it(5)
 
 # More Data Types
-data("gwstates")
+# data("gestates")
 state_listing = c("Oklahoma", "Texas", "New York")
 print(state_listing) 
 hot_states <- state_listing[1:2]  # A vector with two objects, OK & TX
@@ -113,7 +113,7 @@ low_unemployment_states <- unemployment_rates[low_unemployment]
 low_unemployment_states
 
 #Computation on Vectors
-unemployment_rates <- 
+unemployment_rates <- c(4.5, 3.4, 3.1)
 unemployment_rates
 
 sum(unemployment_rates)
@@ -220,9 +220,12 @@ murders[ ,2]
 murders[2]
 murders["abb"]
 
-murdersSouth <- murders[murders$region == 'South']
+murders$region
+
+murdersSouth <- murders[murders$region == 'South',]
 class(murdersSouth)
 mean(murdersSouth$total)
+murdersSouth
 # abs() is absolute value
 
 sum(murders$total)
