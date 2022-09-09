@@ -95,7 +95,7 @@ for (i in names(tb_geo)){
   # sum_NA <- 0
   if(sum(is.na(tb_geo[i]))) {
     # sum_NA <- sum_NA + 1
-    print(paste(i," has %d NA's"))
+    sprint(print(paste(i," has %d NA's")))
     # sprintf("%s has %d NA's", i, sum_NA)
     NAs_found = TRUE
   }
@@ -103,6 +103,19 @@ for (i in names(tb_geo)){
 if(!NAs_found) {
   print("No NAs found")
 }
+
+# Custom Function
+NAs_found2 = FALSE
+for (i in names(tb_geo)){
+  # print(i)
+  if (sum(is.na(tb_geo[i]))) {
+    print(sprintf("%s has %d NA's", i, sum(is.na(tb_geo[i]))))
+    NAs_found2 = TRUE
+  } else if (!NAs_found) {
+    print(sprintf("No NAs found with column name %s", i))
+  }
+}
+
 
 sapply(tb_geo, function(x) sum(is.na(x)))
 
