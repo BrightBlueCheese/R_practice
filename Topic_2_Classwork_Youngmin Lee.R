@@ -4,7 +4,7 @@
 # Script Name:
 # Name: Youngmin Lee
 # Date: Sep 07 2022
-# Script purpose:
+# Script purpose: Assignment for chapter 02
 #
 ###########################################
 
@@ -47,8 +47,15 @@ tb_murder <- tb_murder %>%
 filter(tb_murder, rate <= 0.6)
 
 filter(tb_murder, rate <= 0.6) %>% select(1:2, rate) %>% arrange(rate, abb) %>% 
-  top_n(5, rate)
+  top_n(-5, rate)
 select(tb_murder, -region, -population, -total)
+
+tb_murder <- as_tibble(murders)
+tb_murder <- tb_murder %>% 
+  mutate(tb_murder, rate=total/population*100000)
+tb_murder
+tb_murder %>% arrange(rate, abb) %>% top_n(1, rate)
+View(tb_murder)
 #
 
 ##############################################################3
@@ -57,24 +64,39 @@ select(tb_murder, -region, -population, -total)
 # For Windows
 #geo_file <- "C://Users//[your user name]//CSC461//gapminder//ddf--entities--geo--country.csv"
 # For Mac
-geo_file <- ".../dataset/Geo_Country_Data.csv"
+geo_file <- "./R_practice/dataset/Geo_Country_Data.csv"
+geo_file_abs <- 'C:/Users/ymlee/OneDrive2/OneDrive/R_studio/R_practice/dataset/Geo_Country_Data.csv'
+
+
 # Add life expectancy
-life_exp_file <- "...dataset//Life_Expectancy_by_Country_By_Year_Data.csv"
+life_exp_file <- "./dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
 # Add income per person
-income_file <- ".../dataset/Income_Per_Person_Per_Year_By_Country.csv"
+income_file <- "./dataset/Income_Per_Person_Per_Year_By_Country.csv"
 
 # Open and read the file into a tibble
 tb_geo = as_tibble(geo_file)
+tb_geo = read_csv(geo_file)
+tb_geo = read_csv(geo_file_abs) # the same
 
 # Initial Data Analysis (IDA) for geo data
 glimpse(tb_geo)
 summary(tb_geo)
 
+tb_geo
+
+names(tb_geo)
+
+sum(is.na(tb_geo[2]))
+
+
 #Look for missing values
 NAs_found = FALSE
 for (i in names(tb_geo)){
+  # sum_NA <- 0
   if(sum(is.na(tb_geo[i]))) {
-    print(paste(i," has NA's"))
+    # sum_NA <- sum_NA + 1
+    print(paste(i," has %d NA's"))
+    # sprintf("%s has %d NA's", i, sum_NA)
     NAs_found = TRUE
   }
 }
@@ -82,7 +104,7 @@ if(!NAs_found) {
   print("No NAs found")
 }
 
-sapply(tb_geo, )
+sapply(tb_geo, function(x) sum(is.na(x)))
 
 # Extract country "name" and "world_4region"
 tb_gapminder <- tb_geo
