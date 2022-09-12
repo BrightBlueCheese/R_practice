@@ -69,9 +69,11 @@ geo_file_abs <- 'C:/Users/ymlee/OneDrive2/OneDrive/R_studio/R_practice/dataset/G
 
 
 # Add life expectancy
-life_exp_file <- "./dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
+life_exp_file <- "./R_practice/dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
+life_exp_file_abs <- "C:/Users/ymlee/OneDrive2/OneDrive/R_studio/R_practice/dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
+
 # Add income per person
-income_file <- "./dataset/Income_Per_Person_Per_Year_By_Country.csv"
+income_file <- "./R_practice/dataset/Income_Per_Person_Per_Year_By_Country.csv"
 
 # Open and read the file into a tibble
 tb_geo = as_tibble(geo_file)
@@ -120,14 +122,16 @@ for (i in names(tb_geo)){
 sapply(tb_geo, function(x) sum(is.na(x)))
 
 # Extract country "name" and "world_4region"
-tb_gapminder <- tb_geo
-
+tb_gapminder <- tb_geo %>% select(name, world_4region)
+length(tb_geo)
+tb_gapminder
 
 # Open and read the life expectancy file
-tb_life_exp =
+tb_life_exp = read_csv(life_exp_file)
 
 # IDA for life_exp
-glimpse()
+glimpse(tb_life_exp)
+View(tb_life_exp)
 
 #Look for missing values
 NAs_found = FALSE
@@ -144,19 +148,27 @@ if(!NAs_found) {
 #View(tb_life_exp)
 
 # trim down life_exp columns and observations
-tb_life_exp <- tb_life_exp
+tb_life_exp <- tb_life_exp %>% select(name, time, 'Life expectancy') %>% 
+  filter(time == 2020)
 
 # How to join them?
-glimpse()
-glimpse()
+glimpse(tb_life_exp)
+glimpse(tb_gapminder)
 
 # Join tb_life_exp:Life.expectancy to tb_gapminder by country name
-tb_gapminder <- tb_gapminder
+tb_gapminder_joined <- tb_gapminder %>% inner_join(tb_life_exp, tb_gapminder, by='name')
+tb_gapminder_joined2 <- tb_life_exp %>% inner_join(tb_gapminder, tb_life_exp, by='name')
+
+tb_gapminder_joined
+tb_gapminder_joined2
+
 
 
 # What was lost?
+tb_life_exp %>% anti_join(tb_geo, by='name')
 tb_life_exp
-
+tb_geo %>% anti_join(life_exp_file, by='name')
+tb_geo
 
 # Add income per person data
 # Open and read the file
@@ -165,6 +177,10 @@ tb_income = read_csv(income_file)
 # IDA for geo - is it tidy data?
 glimpse(tb_income)
 #View(tb_income)
+
+names(tb_income)
+
+tb_income_original <- mutate(tb_income)
 
 #Look for missing values
 NAs_found = FALSE
@@ -179,11 +195,12 @@ if(!NAs_found) {
 }
 
 #Gather the columns into rows
-tb_income <- tb_income
+tb_income <- tb_income_original %>% gather(key=year, value=income, -country)
+tb_income
 
 #Filter down to just data for 2020
-tb_income <- tb_income
-
+tb_income_2020 <- tb_income %>% filter(year==2020)
+tb_income_2020
 
 #Examine the resulting dataset
 glimpse(tb_income)
