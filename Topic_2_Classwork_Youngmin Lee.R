@@ -65,22 +65,23 @@ View(tb_murder)
 #geo_file <- "C://Users//[your user name]//CSC461//gapminder//ddf--entities--geo--country.csv"
 # For Mac
 geo_file <- "./R_practice/dataset/Geo_Country_Data.csv"
-geo_file_abs <- 'C:/Users/ymlee/OneDrive2/OneDrive/R_studio/R_practice/dataset/Geo_Country_Data.csv'
+geo_file_home <- './dataset/Geo_Country_Data.csv'
 
 
 # Add life expectancy
 life_exp_file <- "./R_practice/dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
-life_exp_file_abs <- "C:/Users/ymlee/OneDrive2/OneDrive/R_studio/R_practice/dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
+life_exp_file_home <- "./dataset/Life_Expectancy_by_Country_By_Year_Data.csv"
 
 # Add income per person
 income_file <- "./R_practice/dataset/Income_Per_Person_Per_Year_By_Country.csv"
+income_file_home <- "./dataset/Income_Per_Person_Per_Year_By_Country.csv"
 
 # Open and read the file into a tibble
 tb_geo = as_tibble(geo_file)
-tb_geo = read_csv(geo_file)
-tb_geo = read_csv(geo_file_abs) # the same
+# tb_geo = read_csv(geo_file)
+tb_geo = read_csv(geo_file_home) # home
 
-# Initial Data Analysis (IDA) for geo data
+Initial Data Analysis (IDA) for geo data
 glimpse(tb_geo)
 summary(tb_geo)
 
@@ -121,13 +122,15 @@ for (i in names(tb_geo)){
 
 sapply(tb_geo, function(x) sum(is.na(x)))
 
+tb_geo
 # Extract country "name" and "world_4region"
 tb_gapminder <- tb_geo %>% select(name, world_4region)
 length(tb_geo)
 tb_gapminder
 
 # Open and read the life expectancy file
-tb_life_exp = read_csv(life_exp_file)
+# tb_life_exp = read_csv(life_exp_file)
+tb_life_exp = read_csv(life_exp_file_home) # home
 
 # IDA for life_exp
 glimpse(tb_life_exp)
@@ -172,7 +175,8 @@ tb_geo
 
 # Add income per person data
 # Open and read the file
-tb_income = read_csv(income_file)
+# tb_income = read_csv(income_file)
+tb_income = read_csv(income_file_home) # home
 
 # IDA for geo - is it tidy data?
 glimpse(tb_income)
@@ -227,7 +231,7 @@ head(tb_income)
 tail(tb_income)
 
 #join income data to tb_gapminder
-tb_gapminder <- tb_gapminder
+tb_gapminder <- tb_gapminder %>% inner_join(tb_income %>% select(-year), by = c("name"="country"))
 
 
 #what got lost again?
@@ -246,6 +250,6 @@ tb_gapminder <- tb_gapminder %>%
 glimpse(tb_gapminder)
 
 # Save the data to disk for later use
-write_csv(tb_gapminder, "/Users/josborne/ORU/CSC461 Data Mining and Machine Learning/DataSets/GapMinder/CSC461GapMinder.csv")
+write_csv(tb_gapminder, "./dataset/CSC461GapMinder.csv")
 
 ##############################################
