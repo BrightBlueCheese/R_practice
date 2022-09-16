@@ -81,7 +81,7 @@ tb_geo = as_tibble(geo_file)
 # tb_geo = read_csv(geo_file)
 tb_geo = read_csv(geo_file_home) # home
 
-Initial Data Analysis (IDA) for geo data
+# Initial Data Analysis (IDA) for geo data
 glimpse(tb_geo)
 summary(tb_geo)
 
@@ -98,7 +98,7 @@ for (i in names(tb_geo)){
   # sum_NA <- 0
   if(sum(is.na(tb_geo[i]))) {
     # sum_NA <- sum_NA + 1
-    sprint(print(paste(i," has %d NA's")))
+    print(print(paste(i," has %d NA's")))
     # sprintf("%s has %d NA's", i, sum_NA)
     NAs_found = TRUE
   }
@@ -203,8 +203,8 @@ tb_income <- tb_income_original %>% gather(key=year, value=income, -country)
 tb_income
 
 #Filter down to just data for 2020
-tb_income_2020 <- tb_income %>% filter(year==2020)
-tb_income_2020
+tb_income<- tb_income %>% filter(year==2020)
+tb_income
 
 #Examine the resulting dataset
 glimpse(tb_income)
@@ -232,7 +232,7 @@ tail(tb_income)
 
 #join income data to tb_gapminder
 tb_gapminder <- tb_gapminder %>% inner_join(tb_income %>% select(-year), by = c("name"="country"))
-
+tb_gapminder
 
 #what got lost again?
 tb_gapminder %>%
