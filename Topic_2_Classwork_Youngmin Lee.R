@@ -134,7 +134,7 @@ tb_life_exp = read_csv(life_exp_file_home) # home
 
 # IDA for life_exp
 glimpse(tb_life_exp)
-View(tb_life_exp)
+# View(tb_life_exp)
 
 #Look for missing values
 NAs_found = FALSE
@@ -159,12 +159,10 @@ glimpse(tb_life_exp)
 glimpse(tb_gapminder)
 
 # Join tb_life_exp:Life.expectancy to tb_gapminder by country name
-tb_gapminder_joined <- tb_gapminder %>% inner_join(tb_life_exp, tb_gapminder, by='name')
-tb_gapminder_joined2 <- tb_life_exp %>% inner_join(tb_gapminder, tb_life_exp, by='name')
+tb_gapminder <- tb_gapminder %>% inner_join(tb_life_exp, tb_gapminder, by='name')
+# tb_gapminder <- tb_life_exp %>% inner_join(tb_gapminder, tb_life_exp, by='name')
 
-tb_gapminder_joined
-tb_gapminder_joined2
-
+tb_gapminder
 
 
 # What was lost?
