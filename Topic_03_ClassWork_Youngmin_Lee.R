@@ -21,7 +21,9 @@ library(ggplot2)    # For the plotting functions
 ##############################################################3
 # Define all the needed files 
 # Define the full path and file name for the geographic data
-gapminder_file <- "./dataset/CSC461GapMinder.csv"
+# gapminder_file <- "./dataset/CSC461GapMinder.csv" #home
+gapminder_file <- "./R_practice/dataset/CSC461GapMinder.csv" #home
+
 
 # Open and read the file into a tibble
 tb_gapminder = read_csv(gapminder_file)
@@ -60,8 +62,8 @@ tb_gapminder %>%
             qnt_life_exp_75 = quantile(life_exp, probs = .75))
 
 # Factors and categorical data
-summary()
-table(tb_gapminder$)
+summary(tb_gapminder)
+table(tb_gapminder)
 
 # make region a nominal(categorical) factor
 tb_gapminder$region <- 
@@ -69,20 +71,24 @@ tb_gapminder$region <-
 
 # make region an nominal factor (explicit levels)
 tb_gapminder$region <- 
-  factor(tb_gapminder$region, ordered = FALSE, levels = c("africa", "americas", "asia", "europe")) 
+  factor(tb_gapminder$region, ordered = FALSE, levels = c("africa", "americas", "asia", "europe"))
 
 # make region an ordinal factor
-#tb_gapminder$region <- 
-# factor(tb_gapminder$region, ordered = TRUE, levels = c("europe", "africa", "americas", "asia")) 
+# tb_gapminder$region <-
+# factor(tb_gapminder$region, ordered = TRUE, levels = c("europe", "africa", "americas", "asia"))
 
 #Now more data shows up with summary
-summary()
+summary(tb_gapminder)
 levels(tb_gapminder$region)
 tb_gapminder$region[1] > tb_gapminder$region[2]
 
 #Plotting a histogram of life expectancy data
-ggplot(, aes(x = )) + 
+ggplot(tb_gapminder, aes(x = life_exp)) + 
   geom_histogram(binwidth = 5)
+
+# or bins
+ggplot(tb_gapminder, aes(x = life_exp)) + 
+  geom_histogram(bins = 12)
 
 #Plot a density histogram of life expectancy data with curve
 ggplot(tb_gapminder, aes(x = life_exp)) + 
@@ -90,17 +96,20 @@ ggplot(tb_gapminder, aes(x = life_exp)) +
   geom_density(col = "red")
 
 ## Generate a histogram for income!
-ggplot(...)
+p <- ggplot(data=tb_gapminder, aes(x=income))
+p + geom_histogram(aes(y=..density..), bins = 20) + geom_density(col="red")
+
 
 #Generate density plot
-ggplot(, aes(x = )) + 
+  # vline = vertical line
+ggplot(tb_gapminder, aes(x = life_exp)) + 
   geom_density(fill = 'lightblue') +
-  geom_vline(aes(xintercept=mean()),
+  geom_vline(aes(xintercept=mean(life_exp)),
      color="blue", linetype="dashed", size=1)
 
 #Generate density plot by region
-ggplot(, aes()) + 
-  geom_density(alpha = .5) 
+ggplot(tb_gapminder, aes(x = life_exp, fill = region)) + 
+  geom_density(alpha = 0.5) #alpha = transparency
 
 #Generate density plot by region (bonus)
 # Create group means
@@ -114,14 +123,23 @@ ggplot(tb_gapminder, aes(x = life_exp, fill = region)) +
               linetype="dashed", size = 1)
 
 # Generate boxplots
+ggplot(tb_gapminder, aes(x='Age', y=life_exp)) + geom_boxplot(outlier.color = "Red")
+boxplot.stats(tb_gapminder$life_exp)$out
 
+
+head(tb_gapminder)
 #calculate quantile again
-quantile(...)
+quantile(tb_gapminder$life_exp)
 
+tb_gapminder <- tb_gapminder %>% filter(name=="South Korea")
+
+
+head(tb_gapminder)
 # Generate a boxplot
 ggplot(tb_gapminder, aes(x = "Age", y = life_exp)) +
   geom_boxplot(outlier.color = "red") +
   geom_point(alpha = .25)
+
 
 #Finding Outliers
 iqr <- quantile(tb_gapminder$life_exp, 0.75) - quantile(tb_gapminder$life_exp, 0.25)
