@@ -22,7 +22,7 @@ library(ggplot2)    # For the plotting functions
 # Define all the needed files 
 # Define the full path and file name for the geographic data
 # gapminder_file <- "./dataset/CSC461GapMinder.csv" #home
-gapminder_file <- "./R_practice/dataset/CSC461GapMinder.csv" #home
+gapminder_file <- "./dataset/CSC461GapMinder.csv" #home
 
 
 # Open and read the file into a tibble
@@ -131,7 +131,7 @@ head(tb_gapminder)
 #calculate quantile again
 quantile(tb_gapminder$life_exp)
 
-tb_gapminder <- tb_gapminder %>% filter(name=="South Korea")
+tb_gapminder_SKorea <- tb_gapminder %>% filter(name=="South Korea")
 
 
 head(tb_gapminder)
@@ -159,6 +159,13 @@ tb_gapminder %>%
   ggplot(aes(x = region)) +
   geom_bar()
 
+names(tb_gapminder)
+
+# n() gives the current group size.
+tb_gapminder %>%
+  group_by(region) %>%
+  summarize(obscount = n()) 
+
 tb_gapminder %>%
   group_by(region) %>%
   summarize(obscount = n()) %>%
@@ -172,30 +179,38 @@ tb_gapminder %>%
 ggplot(tb_gapminder, aes(x = income, y=life_exp)) + 
   geom_point() 
 
+tb_gapminder %>% filter(income == max(tb_gapminder$income))
+
 ### Scatter plot life exp vs. income, color by region
-ggplot()) + 
+ggplot(tb_gapminder, aes(x = income, y=life_exp, color = region)) + 
   geom_point() 
   
 ### Scatter plot life exp vs. income, color by region
-ggplot(tb_gapminder, aes()) + 
+ggplot(tb_gapminder, aes(x = income, y=life_exp, color = region)) + 
   geom_point() +
-  facet_grid()
+  facet_grid(~region)
 
 #histograms to see change in spread
 ggplot(tb_gapminder, aes(x = income)) + 
   geom_histogram(bins = 12)
 
-ggplot(tb_gapminder, aes(x = log(income))) + 
+ggplot(tb_gapminder, aes(x = log10(income))) + 
   geom_histogram(bins = 12)
 
 ### Generate a scatter plot
-ggplot(, aes(x = log(), y=)) + 
+ggplot(tb_gapminder, aes(x = log10(income), y=life_exp)) + 
   geom_point() +
   scale_x_log10() +
-  geom_smooth(se = FALSE) 
+  geom_smooth(se = FALSE)
+
+ggplot(tb_gapminder, aes(x = log10(income), y=life_exp)) + 
+  geom_point() +
+  geom_smooth(se = FALSE)
 
 # Create a log-transformed income variable
 tb_gapminder = tb_gapminder %>% mutate(income_log = log(income))
+
+names(tb_gapminder)
 
 ### Generate a scatter plot
 ggplot(tb_gapminder, aes(x = income_log, y=life_exp)) + 
@@ -204,7 +219,13 @@ ggplot(tb_gapminder, aes(x = income_log, y=life_exp)) +
   geom_smooth(method = "lm", se = FALSE) 
 
 ### Scatter plot life exp vs. income, color by region
+ggplot(tb_gapminder, aes(x = income_log, y=life_exp, color=region)) + 
+  geom_point() +
+  scale_x_log10() +
+  geom_smooth(method = "lm", se = FALSE) 
 
+# Find the correlation - higher correlation is better
+cor(tb_gapminder$income, tb_gapminder$life_exp)
+cor(tb_gapminder$income_log, tb_gapminder$life_exp)
 
-# Find the correlation
 cor(tb_gapminder$income_log, tb_gapminder$income)
