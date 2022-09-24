@@ -18,6 +18,7 @@ library(dslabs)
 library(data.table) # For finding intersect between tables
 # install.packages('reshape')
 library(reshape)    # For melting tibble to be able to draw multiple columns density plot
+library(ggpubr)     # For placing multiple plots in one figure
 
   # @@Loads the CSC461GapMinderPlus.csv data
 file_path = './dataset/CSC461GapMinderPlus.csv'
@@ -109,6 +110,7 @@ density_plotter <- function(list_index){
 
 names(tb_gapMinderPlus)
 
+  ## density plots
   # @life_exp
 density_plotter(4)
 
@@ -170,7 +172,7 @@ density_plotter_region <- function(list_index){
 
 # debug(density_plotter_region)
 
-
+  ## density plots by region
   # @life_exp_region
 density_plotter_region(4)
 
@@ -196,10 +198,140 @@ box_plotter <- function(list_index){
   # but due to the consistency..
   selected_region <- tb_gapMinderPlus %>% pull(region)
   
-  p + geom_boxplot(aes(x = selected_region, y = !!sym(selected_col), fill = selected_region),
+  my_plot <- p + geom_boxplot(aes(x = selected_region, y = !!sym(selected_col), fill = selected_region),
                    outlier.color = "red") +
     scale_fill_brewer(palette = "Spectral")
+  
+  my_plot
 }
 
-# 
+  ## box plots by region
+# @life_exp_region
 box_plotter(4)
+
+# @income_region
+box_plotter(5)
+
+# @child_mort_region
+box_plotter(6)
+
+# @fertility_region
+box_plotter(7)
+
+# @population_region
+box_plotter(8)
+
+
+  # @@Generate scatterplots of the chosen vector vs. income 
+  # @@and then vs. life expectancy. Include smoothing curve.
+names(tb_gapMinderPlus)
+scatter_plotter <- function(list_index_1, list_index_2){
+  # variable for x
+  selected_col_1 <- names(tb_gapMinderPlus)[list_index_1]
+  # variable for y
+  selected_col_2 <- names(tb_gapMinderPlus)[list_index_2]
+  
+  my_plot_1 <- p + geom_point(aes(x = !!sym(selected_col_1), y = !!sym(selected_col_2))) +
+    geom_smooth(aes(x = !!sym(selected_col_1), y = !!sym(selected_col_2)), se = FALSE)
+  
+  my_plot_2 <- p + geom_point(aes(x = log10(!!sym(selected_col_1)), y = log10(!!sym(selected_col_2)))) +
+    geom_smooth(aes(x = log10(!!sym(selected_col_1)), y = log10(!!sym(selected_col_2))), 
+                se = FALSE, method = "lm") +
+    scale_x_log10()
+  
+  ggarrange(my_plot_1, my_plot_2, labels = c("original", "log10"), ncol = 2, nrow = 1)
+}
+
+  ## scatter plots x vs. income
+# @life_exp vs. income
+scatter_plotter(4,5)
+# @child_mort vs. income
+scatter_plotter(6,5)
+# @fertility vs. income
+scatter_plotter(7,5)
+# @population vs. income
+scatter_plotter(8,5)
+
+  ## scatter plots x vs. life expectancy
+
+# @income vs. life_exp
+scatter_plotter(5,4)
+# @child_mort vs. life_exp
+scatter_plotter(6,4)
+# @fertility vs. life_exp
+scatter_plotter(7,4)
+# @population vs. life_exp
+scatter_plotter(8,4)
+
+
+  # @@Place a comment in your code with your reflections on what you find
+
+# life exp vs. income is proportional relationship
+# child mortality and fertility vs. income have negative proportional relationship
+# population vs. income has no relationship - very low correlation
+
+# income vs. life exp has a proportional relationship 
+# child mortality and fertility vs. life exp have negatively proportional relationship
+# population vs. income has no relationship - very low correlation as well
+
+
+
+  # @@Generate scatterplots of the chosen vector vs. income 
+  # @@and then vs. life expectancy, but this time by region (use color). 
+  # @@Include smoothing curves.
+scatter_plotter_region <- function(list_index_1, list_index_2){
+  # variable for x
+  selected_col_1 <- names(tb_gapMinderPlus)[list_index_1]
+  # variable for y
+  selected_col_2 <- names(tb_gapMinderPlus)[list_index_2]
+  # variable to put into colour - group : character ; it does not have to start with selected_
+  # but due to the consistency..
+  selected_region <- tb_gapMinderPlus %>% pull(region)
+  
+  my_plot_1 <- p + geom_point(aes(x = !!sym(selected_col_1), y = !!sym(selected_col_2),
+                                  color = selected_region)) +
+    geom_smooth(aes(x = !!sym(selected_col_1), y = !!sym(selected_col_2), color = selected_region), se = FALSE)
+  
+  my_plot_2 <- p + geom_point(aes(x = log10(!!sym(selected_col_1)), 
+                                  y = log10(!!sym(selected_col_2)), color = selected_region)) +
+    geom_smooth(aes(x = log10(!!sym(selected_col_1)), y = log10(!!sym(selected_col_2)), color = selected_region), 
+                se = FALSE, method = "lm")
+  
+  ggarrange(my_plot_1, my_plot_2, labels = c("original", "log10"), ncol = 2, nrow = 1)
+}
+
+
+## scatter plots by region x vs. income
+# @life_exp vs. income
+scatter_plotter_region(4,5)
+# @child_mort vs. income
+scatter_plotter_region(6,5)
+# @fertility vs. income
+scatter_plotter_region(7,5)
+# @population vs. income
+scatter_plotter_region(8,5)
+
+## scatter plots x vs. life expectancy
+
+# @income vs. life_exp
+scatter_plotter_region(5,4)
+# @child_mort vs. life_exp
+scatter_plotter_region(6,4)
+# @fertility vs. life_exp
+scatter_plotter_region(7,4)
+# @population vs. life_exp
+scatter_plotter_region(8,4)
+
+
+  # @@Place a comment in your code with your reflections on what you find.
+
+# In general, scatter plots those grouped by region are also shown the similar proportional relationship
+# But fertility vs. income relationship of Europe has a positive proportional relationship
+# while the other regions have negative relationships.
+# Also, fertility vs. life expectancy of Europe has a very weak relationship
+# While the other regions have comparably strong negative coefficients.
+
+# Population vs. income of Africa has a strong coefficient compare to the other regions.
+# Population vs. life expectancy by regions have relatively strong coefficient
+# if compare to Pop vs. life_exp without grouping
+
