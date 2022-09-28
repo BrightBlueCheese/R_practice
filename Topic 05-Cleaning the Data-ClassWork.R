@@ -50,14 +50,16 @@ rawData <- rawData %>% distinct()
 table(rawData$institutionCode)
 
 # Check for NA's
-sum(is.na(...))
+sum(is.na(rawData$institutionCode))
 
 #Convert to a factor
 rawData$institutionCode <- 
-  as.factor(...)
+  as.factor(rawData$institutionCode)
 
-# Getting a peek at NA's in the dataset with mice
-md.pattern(...,rotate.names = TRUE)
+class(rawData$institutionCode)
+
+# Getting a peek at NA's in the dataset with mice - md from the library 'mice'
+md.pattern(rawData,rotate.names = TRUE)
 
 ############################ collectionCode ###################################
 # Check the existing values
@@ -65,22 +67,24 @@ table(rawData$collectionCode)
 
 # See the two rows
 rawData %>%
-  filter(...)
+  filter(collectionCode == 'host (of parasite) specimens')
 
 # Look at the two rows in context of other rows
 rawData %>%
-  filter(scientificName == "microtus californicus" | ...) %>%
-  arrange(..., ...)
+  filter(scientificName == "microtus californicus" | scientificName == 'thomomys talpoides') %>%
+  arrange(eventDate, scientificName)
+
+# view(rawData)
 
 # Drop the two "host..." rows as they are superfluous to rodent data
 rawData <- rawData %>%
-  filter(collectionCode != ...)
+  filter(collectionCode != 'host (of parasite) specimens')
 
 # Check the drop
 table(rawData$collectionCode)
 
 # Just a different coding, so set all values to the same value
-rawData$collectionCode <- "..."
+rawData$collectionCode <- "mammal specimens"
 
 ############################ catalogNumber ###################################
 # Check the existing values
@@ -88,32 +92,35 @@ summary(rawData$catalogNumber)
 
 # Check for uniqueness
 rawData %>% 
-  group_by(...) %>%
-  select(...) %>%
+  group_by(catalogNumber) %>%
+  select(catalogNumber) %>%
   summarize(count = n()) %>%
   filter(count > 1)
 
 # Examine rows with same number
 rawData %>%
-  filter(... %in% c(50050, 50781, 50782, 50783, 50784)) %>%
-  arrange(...)
+  filter(catalogNumber %in% c(50050, 50781, 50782, 50783, 50784)) %>%
+  arrange(catalogNumber)
+# since those vectors are not duplicated except the catalogNumber, no ways to deal with them..
+# just leave them alone
+# and not use the catalogNumber as a unique valued column
 
 ############################ countryCode ###################################
 # countryCode
 table(rawData$countryCode)
 
 # Convert states to factor
-rawData$countryCode <- ...(rawData$countryCode)
+rawData$countryCode <- as.factor(rawData$countryCode)
 
 ############################ stateProvince ###################################
 # Check the existing values
 table(rawData$stateProvince)
-
 # Correct spelling issues (this should be more rigorous, don't change if no match)
 rawData <- rawData %>%
   mutate(stateProvince = 
     tolower(state.name[amatch(stateProvince,state.name,method='osa',maxDist=4)]), 
       .after = stateProvince)
+
 
 # Convert states to factor
 rawData$stateProvince <- ...(rawData$stateProvince)
