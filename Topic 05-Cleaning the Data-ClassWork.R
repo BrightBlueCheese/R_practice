@@ -120,31 +120,38 @@ rawData <- rawData %>%
   mutate(stateProvince = 
     tolower(state.name[amatch(stateProvince,state.name,method='osa',maxDist=4)]), 
       .after = stateProvince)
-
+# maxDist = level of letter difference b/w two strings
 
 # Convert states to factor
-rawData$stateProvince <- ...(rawData$stateProvince)
+rawData$stateProvince <- as.factor(rawData$stateProvince)
 
 # Check the fixed values of stateProvince
 table(rawData$stateProvince)
-levels(...)
+levels(rawData$stateProvince)
 ############################ county ###################################
 # Check the existing values
 table(rawData$county)
 
+# view(rawData)
+
+# class(rawData$lonDMS)
+
 # Remove "county" from all records and trim whitespace
 rawData <- rawData %>%
-  mutate(county = str_remove(..., "...")) %>%
-  mutate(county = str_trim(..., side = c("..."))) 
+  mutate(county = str_remove(county, "county")) %>%
+  mutate(county = str_trim(county, side = c("both"))) 
+table(rawData$county)
+
+# view(rawData)
 
 # Convert county to factor
-... <- ...(...)
+rawData$county <- as.factor(rawData$county)
 ############################################################# 
 ##  function:  dms2decDeg
 #############################################################
 dms2decDeg <- function(dmsString) { 
   # Define a regular expression and use it to extract pieces from a DMS string
-  dmsExtract <- "\\s*(-*[:digit:]+)Â°\\s*([:digit:]+)\\'\\s*([:digit:]+\\.*[:digit:]*)"
+  dmsExtract <- "\\s*(-*[:digit:]+)°\\s*([:digit:]+)\\'\\s*([:digit:]+\\.*[:digit:]*)"
   # Extract the substrings from the dataset
   dmsSubstring <- str_match(dmsString, dmsExtract)
   # Convert each substring to numeric
@@ -163,20 +170,23 @@ dms2decDeg <- function(dmsString) {
 # add new cols with dms converted to deg for lat/lon
 rawData <- rawData %>%
   mutate(latDeg = dms2decDeg(latDMS), .after = latDMS) %>%
-  mutate(... = dms2decDeg(...), .after = ...)
+  mutate(lonDeg = dms2decDeg(lonDMS), .after = lonDMS)
 
-glimpse(rawData)
+# debug(dms2decDeg)
+
+# glimpse(rawData)
+# view(rawData)
 
 # drop dms cols
 rawData <- rawData %>%
-  ...(..., ...)
+  select(-latDMS, -lonDMS)
 
 # Check descriptive stats
 summary(rawData)
 
 #Find the questionable value
 rawData %>%
-  filter(...)
+  filter(lonDeg > 0)
 
 # Look just at San Miguel values
 san_miguel <- rawData %>%
@@ -185,7 +195,7 @@ san_miguel <- rawData %>%
   arrange(latDeg, lonDeg)
 
 # Replace the questionable value
-rawData$lonDeg <- replace(rawData$lonDeg, rawData$lonDeg > 0, ...)
+rawData$lonDeg <- replace(rawData$lonDeg, rawData$lonDeg > 0, -106.34050)
 
 # Make a quick plot cuz its fun
 leaflet(select(rawData, latDeg, lonDeg)) %>%
@@ -195,7 +205,7 @@ leaflet(select(rawData, latDeg, lonDeg)) %>%
                   
 ############################ recordedBy ###################################
 # Check the existing values
-rawData$recordedBy
+head(rawData$recordedBy)
 
 # Define regular expressions for extracting text from recordedBy column
 collectorExtract <- "collector\\(s\\):\\s(.*;|.*$)"
