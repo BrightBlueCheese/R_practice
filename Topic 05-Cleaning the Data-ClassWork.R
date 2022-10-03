@@ -207,17 +207,22 @@ leaflet(select(rawData, latDeg, lonDeg)) %>%
 # Check the existing values
 head(rawData$recordedBy)
 
+names(rawData)
+# view(rawData)
+
 # Define regular expressions for extracting text from recordedBy column
 collectorExtract <- "collector\\(s\\):\\s(.*;|.*$)"
 preparatorExtract <- "preparator\\(s\\):\\s(.*;|.*$)"
 
 # Extract the strings into list( ,2)
-collector_string <- str_match(..., ...)
-preparator_string <- str_match(..., ...)
+collector_string <- str_match(rawData$recordedBy, collectorExtract)
+preparator_string <- str_match(rawData$recordedBy, preparatorExtract)
 
 # Peel off just the names and put in a new vector in dataset
 rawData$collectors <- collector_string[,2]
 rawData$preparators <- preparator_string[,2]
+
+class(collector_string)
 
 # If "collector" tag wasn't present, just copy what was there
 rawData <- rawData %>% 
@@ -239,7 +244,7 @@ table(rawData$genus)
 
 #Convert to a factor
 rawData$genus <- 
-  ...(...)
+  as.factor(rawData$genus)
 
 # See what rodents are where!
 table(rawData$stateProvince, rawData$genus)
@@ -249,21 +254,23 @@ table(rawData$stateProvince, rawData$genus)
 table(rawData$specificEpithet)
 
 # check how many NAs
-sum(...(...))
+sum(is.na(rawData$specificEpithet))
 
 # Convert to categorical
 rawData$specificEpithet <- 
-  ...(...)
+  as.factor(rawData$specificEpithet)
 
 # Check the levels created
-...(...)
+levels(rawData$specificEpithet)
 
 # Create a new "other" level and put NAs in it
 rawData <- rawData %>%
   mutate(specificEpithet = fct_explicit_na(specificEpithet, na_level = "other"))
 
 # Check after effects
-...(...)
+levels(rawData$specificEpithet)
+sum(is.na(rawData$specificEpithet))
+summary(rawData$specificEpithet)
 
 ######################### Scientific Name ###########################
 # Check the existing values
@@ -284,34 +291,37 @@ rawData %>%
 ######################### Species Name ##############################
 # Since Scientific Name is a mess, create a species name as categorical
 # Create a new vectors that is a combo of genus and specific epithet
+# str_c : string concatenation
 rawData <- rawData %>% 
   mutate(species = str_c(rawData$genus, sep=" ", rawData$specificEpithet), .after = specificEpithet)
+
+
 
 # Clean up "other" as it is not an epithet
 rawData$species <- str_remove(rawData$species, " other")
 
 # Convert to categorical
-... <- ...(...)
+rawData$species <- as.factor(rawData$species)
 
 # Check after effects
-...(...)
+summary(rawData$species)
 
 # check how many NAs
-...(...(...))
+sum(is.na(rawData$species))
 
 ############################ sex ###################################
 # Check the existing values
 table(rawData$sex)
 
 # check how many NAs
-...(...(...))
+sum(is.na(rawData$sex))
 
 # Enter "Unknown" if no sex is listed.
 rawData$sex <- ifelse(is.na(rawData$sex), "Unknown", rawData$sex)
 
 # Convert to categorical
-... <- 
-  ...(...)
+rawData$sex <- 
+  as.factor(rawData$sex)
 
 table(rawData$sex)
 ############################ length and weight #####################
@@ -338,5 +348,5 @@ tryCatch({rawData %>%
 
 ############### save the cleaned data to a file #######
 #export the full rodent data dataset
-write_csv(rawData, ".../rodentData_clean.csv")
+write_csv(rawData, "./dataset/rodentData_clean.csv")
 
