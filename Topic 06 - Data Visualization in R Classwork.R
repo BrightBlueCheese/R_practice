@@ -102,7 +102,7 @@ ggplot(cleanData, aes(x = length, fill = sex)) +
   geom_density(alpha = .25)
 
 ####################### Box Plots ##############################
-ggplot(cleanData, aes(x = genus, y = length, fill = ...)) +
+ggplot(cleanData, aes(x = genus, y = length, fill = genus)) +
   geom_boxplot(outlier.color = "red") +
   geom_point(position = position_jitter(width = 0.1), alpha = .025)
 

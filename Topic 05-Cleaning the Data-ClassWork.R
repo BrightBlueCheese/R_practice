@@ -346,6 +346,10 @@ tryCatch({rawData %>%
 }
 )
 
+# HW5
+# Copy and modify the assert/insist to find the errors in the weight data
+
+
 ############### save the cleaned data to a file #######
 #export the full rodent data dataset
 write_csv(rawData, "./dataset/rodentData_clean.csv")
