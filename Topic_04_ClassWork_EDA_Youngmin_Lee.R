@@ -8,7 +8,7 @@
 ###########################################
 
 ### Install required packages if not installed
-install.packages("tidyverse")
+# install.packages("tidyverse")
 
 ### Load the packages
 library(tidyr)      # For tidy tools
@@ -92,3 +92,11 @@ time3 <- ymd_h("2022:11:07 12", tz = "America/Chicago")
 
 difftime(time2, time1, units='secs')
 difftime(time3, time2, units="secs")
+
+
+terval <- interval(time1, time2)
+int_start(terval)
+int_end(terval)
+int_length(terval) # in seconds
+as.period(terval)
+as.duration(terval)

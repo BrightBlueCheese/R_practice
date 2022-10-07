@@ -101,6 +101,9 @@ rawData %>%
 rawData %>%
   filter(catalogNumber %in% c(50050, 50781, 50782, 50783, 50784)) %>%
   arrange(catalogNumber)
+rawData
+
+names(rawData)
 # since those vectors are not duplicated except the catalogNumber, no ways to deal with them..
 # just leave them alone
 # and not use the catalogNumber as a unique valued column
@@ -137,6 +140,7 @@ table(rawData$county)
 # class(rawData$lonDMS)
 
 # Remove "county" from all records and trim whitespace
+  # str_trim : remove spaces
 rawData <- rawData %>%
   mutate(county = str_remove(county, "county")) %>%
   mutate(county = str_trim(county, side = c("both"))) 
@@ -151,7 +155,7 @@ rawData$county <- as.factor(rawData$county)
 #############################################################
 dms2decDeg <- function(dmsString) { 
   # Define a regular expression and use it to extract pieces from a DMS string
-  dmsExtract <- "\\s*(-*[:digit:]+)°\\s*([:digit:]+)\\'\\s*([:digit:]+\\.*[:digit:]*)"
+  dmsExtract <- "\\s*(-*[:digit:]+)?\\s*([:digit:]+)\\'\\s*([:digit:]+\\.*[:digit:]*)"
   # Extract the substrings from the dataset
   dmsSubstring <- str_match(dmsString, dmsExtract)
   # Convert each substring to numeric
