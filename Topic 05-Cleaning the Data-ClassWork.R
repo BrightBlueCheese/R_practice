@@ -153,6 +153,7 @@ rawData$county <- as.factor(rawData$county)
 ############################################################# 
 ##  function:  dms2decDeg
 #############################################################
+
 dms2decDeg <- function(dmsString) { 
   # Define a regular expression and use it to extract pieces from a DMS string
   dmsExtract <- "\\s*(-*[:digit:]+)?\\s*([:digit:]+)\\'\\s*([:digit:]+\\.*[:digit:]*)"

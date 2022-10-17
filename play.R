@@ -110,3 +110,6 @@ library(magrittr)
 
 mtcars %>%
   assert(within_bounds(4,8), cyl)
+
+amatch("leia",c("uhura","leela"),maxDist=5)
+amatch("leia",c("uhura","leela"),maxDist=1)

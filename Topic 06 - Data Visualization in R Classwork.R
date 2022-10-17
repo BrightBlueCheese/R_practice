@@ -60,7 +60,7 @@ ggplot(cleanData, aes(x = genus)) +
 
 #introduce a new factor in stacked bar chart
 ggplot(cleanData, aes(x = genus, fill = sex)) +       
-  geom_bar()
+  geom_bar() # position : fill, dodge
 
 #Fill changes it to a proportion and is a filled bar chart
 ggplot(cleanData, aes(x = genus, fill = sex)) +       
@@ -88,11 +88,11 @@ ggplot(cleanData, aes(x = length)) +
 
 #So we see histogram is the above
 ggplot(cleanData, aes(x = length)) +       
-  geom_histogram()
+  geom_histogram(bins=15)
 
 #Stacked Histogram with fill
 ggplot(cleanData, aes(x = length, fill = sex)) +       
-  geom_histogram()
+  geom_histogram(binwidth=20)
 
 ###################### Density Plot ##########################
 ggplot(cleanData, aes(x = length)) +       
@@ -107,10 +107,11 @@ ggplot(cleanData, aes(x = genus, y = length, fill = genus)) +
   geom_point(position = position_jitter(width = 0.1), alpha = .025)
 
 ######################## Scatterplots ###########################
+# See ppt p.28
 #Data with a curve
 cleanData %>%
   filter(genus == "thomomys") %>%
-  ggplot(aes(x = ..., y = ...)) +
+  ggplot(aes(x = weight, y = length)) +
   geom_point() +
   geom_smooth(se = FALSE)
 
@@ -119,10 +120,29 @@ cleanData %>%
   filter(genus == "thomomys") %>%
   ggplot(aes(x = weight, y = length)) +
   geom_point() +
+  scale_x_continuous() +
+  geom_smooth(se = FALSE) +
+  geom_smooth(method = "lm", se = FALSE, color = "red")
+
+cleanData %>%
+  filter(genus == "thomomys") %>%
+  ggplot(aes(x = weight, y = length)) +
+  geom_point() +
   scale_x_continuous(trans = "log10") +
   geom_smooth(se = FALSE) +
-  geom_smooth(method = "...", se = FALSE, color = "...")
+  geom_smooth(method = "lm", se = FALSE, color = "red")
 
+
+
+cleanData %>%
+  filter(genus == "thomomys") %>%
+  ggplot(aes(x = weight, y = length)) +
+  geom_point() +
+  geom_smooth(se = FALSE) + #smoothing1
+  scale_x_continuous() + #smoothing2
+  scale_y_continuous() #smoothing3
+
+###### Check chapter 6 ppt p.32 for xlim vs limits
 
 ###################### Coordinate Layer  ########################
 #The previous bar chart used cartesian coord
@@ -136,7 +156,7 @@ ggplot(cleanData, aes(x = "", fill = genus)) +
 #A change in the coord system and we have a pie
 ggplot(cleanData, aes(x = "", fill = genus)) + 
   geom_bar() +
-  coord_polar(... = "y")
+  coord_polar(theta = "y")
 
 #More often than not, data is prepped/modified for plot creation
 #To create a pie, usually percentages are used
@@ -149,7 +169,7 @@ cleanData %>%
   group_by(genus) %>%
   summarise(Percent = n()/nrow(.) * 100) %>%
   ggplot(aes(x = 2, y = Percent, fill = genus)) +
-  geom_bar(stat = "...")
+  geom_bar(stat = "identity")
 
 #With a quick change of coordinates, a pie chart!
 cleanData %>%
@@ -157,14 +177,14 @@ cleanData %>%
   summarise(Percent = n()/nrow(.) * 100) %>%
   ggplot(aes(x = 2, y = Percent, fill = genus)) +
   geom_bar(stat = "identity") +
-  coord_polar(... = "y", start = 0) 
+  coord_polar(theta = "y", start = 0) 
 
 #Or a donut if you prefer
 cleanData %>%
   group_by(genus) %>%
   summarise(Percent = n()/nrow(.) * 100) %>%
-  ggplot(aes(x = 2, y = Percent, fill = ...)) +
-  geom_bar(stat = "...") +
+  ggplot(aes(x = 2, y = Percent, fill = genus)) +
+  geom_bar(stat = "identity") +
   coord_polar(theta = "y", start = 0) +
   xlim(c(0.5, 2.5)) 
 
@@ -174,9 +194,9 @@ cleanData %>%
   summarise(Percent = n()/nrow(.) * 100) %>%
   mutate(genus = fct_reorder(genus, Percent, .fun='identity')) %>%
   ggplot(aes(x = 2, y = Percent, fill = genus)) +
-  geom_bar(stat = "...") +
-  geom_col(col="...") +
-  geom_text(aes(label = as.integer(...)),
+  geom_bar(stat = "identity") +
+  geom_col(col="black") +
+  geom_text(aes(label = as.integer(Percent)),
             position = position_stack(vjust = 0.5)) +
   coord_polar(theta = "y", start = 0) +
   theme_void() +
@@ -187,7 +207,7 @@ cleanData %>%
 #Original data, unmodified
 cleanData %>%
   filter(genus == "thomomys") %>%
-  ggplot(aes(x = weight, y = ...)) +
+  ggplot(aes(x = weight, y = length)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   geom_smooth(color = "yellow", se = FALSE) 
@@ -197,15 +217,18 @@ cleanData %>%
   filter(genus == "thomomys") %>%
   ggplot(aes(x = log10(weight), y = length)) +
   geom_point() +
-  geom_smooth(method = "...", se = FALSE) +
+  geom_smooth(method = "lm", se = FALSE) +
   geom_smooth(color = "yellow", se = FALSE) 
+  # X axis is not logarithmic scale, but a regular continuous scale
+  # x for x = log10(x_origin)
+
 
 #Transform the scale to a log10 
 cleanData %>%
   filter(genus == "thomomys") %>%
   ggplot(aes(x = weight, y = length)) +
   geom_point() +
-  ...() +
+  scale_x_log10() + # x axis scaled into log thing
   geom_smooth(method = "lm", se = FALSE) +
   geom_smooth(color = "yellow", se = FALSE)
 
@@ -214,7 +237,7 @@ cleanData %>%
   filter(genus == "thomomys") %>%
   ggplot(aes(x = weight, y = length)) +
   geom_point() +
-  coord_trans(x = "...") +
+  coord_trans(x = "log10") +
   geom_smooth(method = "lm", se = FALSE) +
   geom_smooth(color = "yellow", se = FALSE)
 
@@ -241,7 +264,7 @@ ggplot(aes(x = length)) +
   geom_density(col = "red")
 
 # Create summary of just length vector
-summary(cleanData$...)
+summary(cleanData$length)
 
 # Box plot
 # Generate a boxplot
