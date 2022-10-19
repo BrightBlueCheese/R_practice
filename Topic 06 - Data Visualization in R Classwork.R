@@ -275,12 +275,12 @@ ggplot(aes(x = "All", y = ...)) +
 
 # density by genus
 cleanData %>%
-  ggplot(aes(x = length, fill = ..., alpha = .5)) +
+  ggplot(aes(x = length, fill = genus, alpha = .5)) +
   geom_density()
 
 # boxplot by genus
 cleanData %>%
-  ggplot(aes(x = genus, y = length, fill = ...)) +
+  ggplot(aes(x = genus, y = length, fill = genus)) +
   geom_boxplot(outlier.color = "red") +
   geom_jitter(position = 
     position_jitter(width = 0.1, height = 0), alpha = .075)
