@@ -396,10 +396,13 @@ cleanData %>%
   geom_smooth(color = "blue", se = FALSE) +
   geom_smooth(method = "lm", color = "red", se = FALSE)
 
+
 ######################### save the cleaned data to a file #######
 #export the full rodent data dataset
 cleanData %>%
   filter(!isInvalid) %>%
   write_csv("./dataset/rodentData_consistent.csv")
+
+
 
 
