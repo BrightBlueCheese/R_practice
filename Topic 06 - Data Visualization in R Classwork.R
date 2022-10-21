@@ -292,25 +292,25 @@ cleanData %>%
 
 # boxplot by species
 cleanData %>%
-  ggplot(aes(x = species, y = length, fill = ...)) +
+  ggplot(aes(x = species, y = length, fill = genus)) +
   geom_boxplot(outlier.color = "red") +
   geom_jitter(position = position_jitter(width = 0.1, height = 0), alpha = .25)
 
 # scatterplot
 cleanData %>% 
-  ggplot(aes(x = ..., y = length)) +
+  ggplot(aes(x = weight, y = length)) +
   geom_point()
 
 # scatterplot by genus
 cleanData %>% 
-  ggplot(aes(x = weight, y = length, color = ...)) +
+  ggplot(aes(x = weight, y = length, color = genus)) +
   geom_point()
 
 # scatterplot - faceted by genus with smoothing curves
 cleanData %>%
   ggplot(aes(x = weight, y = length, color = genus)) +
   geom_point() +
-  facet_grid(~...) +
+  facet_grid(~genus) +
   geom_smooth(color = "blue", se = FALSE) +
   geom_smooth(method = "lm", color = "red", se = FALSE)
 
@@ -321,9 +321,9 @@ cleanData %>%
 
 # Mark data with equal weight/length's or zero values as invalid
 cleanData <- cleanData %>%
-  mutate(isInvalid = (length == ... | weight == ... | length == ...))
+  mutate(isInvalid = (length == weight | weight == 0 | length == 0))
 
-summary(cleanData$...)
+summary(cleanData$isInvalid)
 
 # Use zero-free/non-equal data for IQR and quantile calculations
 cleanDataN0 <- cleanData %>% filter(!isInvalid)
@@ -331,12 +331,15 @@ cleanDataN0 <- cleanData %>% filter(!isInvalid)
 ##########################  IQR for length ###################################
 # Create a dataframe to hold the lower/upper values for outlier identification
 genusLimit = data.frame(genus = unique(cleanDataN0$genus))
-
+genusLimit
 # Calculate the lower/upper values for length
 genusLimit$lower = sapply(genusLimit$genus, 
-    function(x) quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25) - 1.5 * (quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) - quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25)) )
+    function(x) quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25) 
+    - 1.5 * (quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) - quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25)) )
 genusLimit$upper = sapply(genusLimit$genus, 
-    function(x) quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) + 1.5 * (quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) - quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25)) )
+    function(x) quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) 
+    + 1.5 * (quantile(cleanDataN0$length[cleanDataN0$genus==x],0.75) - quantile(cleanDataN0$length[cleanDataN0$genus==x],0.25)) )
+genusLimit
 
 # join lower/upper values  for length to cleanData
 cleanData <- cleanData %>% left_join(genusLimit, by="genus")
@@ -372,14 +375,14 @@ cleanData %>%
 
 cleanData %>%
   filter(!isInvalid) %>%
-  ggplot(aes(x = ..., fill = genus, alpha = .5)) +
+  ggplot(aes(x = length, fill = genus, alpha = .5)) +
   xlim(0, 400) +
   geom_density()
 
 # boxplot by genus
 cleanData %>%
   filter(!isInvalid) %>%
-  ggplot(aes(x = genus, y = length, fill = ...)) +
+  ggplot(aes(x = genus, y = length, fill = genus)) +
   geom_boxplot(outlier.color = "red") +
   ylim(0,400)+
   geom_jitter(position = position_jitter(width = 0.1, height = 0), alpha = .025)
@@ -387,9 +390,9 @@ cleanData %>%
 # scatterplot - faceted by genus with smoothing curves
 cleanData %>%
   filter(!isInvalid) %>%
-  ggplot(aes(x = weight, y = length, color = ...)) +
+  ggplot(aes(x = weight, y = length, color = genus)) +
   geom_point() +
-  facet_grid(~...) +
+  facet_grid(~genus) +
   geom_smooth(color = "blue", se = FALSE) +
   geom_smooth(method = "lm", color = "red", se = FALSE)
 
@@ -397,6 +400,6 @@ cleanData %>%
 #export the full rodent data dataset
 cleanData %>%
   filter(!isInvalid) %>%
-  write_csv(".../rodentData_consistent.csv")
+  write_csv("./dataset/rodentData_consistent.csv")
 
 
