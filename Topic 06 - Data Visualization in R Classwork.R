@@ -403,6 +403,12 @@ cleanData %>%
   filter(!isInvalid) %>%
   write_csv("./dataset/rodentData_consistent.csv")
 
+# HW
+# length has been done, but not weight. fix it
+# plot for before and after
 
+
+
+# check the additional work for graduate students
 
 
