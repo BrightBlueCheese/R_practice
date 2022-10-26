@@ -10,10 +10,11 @@
 ### Install required packages if not installed
 #install.packages("tidyverse")
 #install.packages("patchwork")
-
+# install.packages('GGally')
 ### Load the packages
 library(tidyverse)      # For tidy tools
 library(patchwork) 
+library(GGally) # for ggpairs
 
 ######################  Learning about linear regression ######################
 # Load file for analysis
@@ -35,55 +36,83 @@ if(!NAs_found) {
   print("No NAs found")
 }
 
+sapply(tb_lung, function(x) sum(is.na(x)))
+
 # Initial Data Analysis (IDA) for geo data
-glimpse(...)
+glimpse(tb_lung)
 
 # Look at summary statistics
-summary(...)  
+summary(tb_lung)  
+
+
+table(tb_lung$Smoke)
+table(tb_lung$Gender)
+table(tb_lung$Caesarean)
+
+tb_lung$Smoke <- as_factor(tb_lung$Smoke)
+tb_lung$Gender <- as_factor(tb_lung$Gender)
+tb_lung$Caesarean <- as_factor(tb_lung$Caesarean)
+
+summary(tb_lung)  
+
+
+# check any relationships
+tb_lung %>% select_if(is.numeric) %>% pairs() # base R
+
 
 # Quick plot to see what relationships may be there
-plot(...)
-cor(tb_lung$..., tb_lung$...)
+plot(tb_lung$LungCap, tb_lung$Height)
+cor(tb_lung$LungCap, tb_lung$Height)
+
+tb_lung %>% select_if(is.numeric) %>% ggpairs() # GGally
+
 
 ##################### Graphical Analysis #########################
 ## Generate a histogram for Height
-ggplot(tb_lung, aes(x = ...)) + 
+ggplot(tb_lung, aes(x = Height)) + 
   geom_histogram(bins= 12) +
   ggtitle("Distribution of Height Observations") 
 
-## Generate a histogram for Height
-ggplot(tb_lung, aes(x = ...)) + 
+## Generate a histogram for LungCap
+ggplot(tb_lung, aes(x = LungCap)) + 
   geom_histogram(bins= 14) +
   ggtitle("Distribution of Lung Capacity Observations") 
 
 ###################### Density Plot ##########################
 p1 <- ggplot(tb_lung, aes(x = Height)) +       
   geom_density(color = "black", fill = "blue", alpha = 0.25) +
-  geom_vline(tb_lung, mapping = aes(xintercept = mean(...))) +
+  geom_vline(tb_lung, mapping = aes(xintercept = mean(Height))) +
   ggtitle("Distribution of Height Observations") 
 
+
+p1
 p2 <- ggplot(tb_lung, aes(x = LungCap)) +       
   geom_density(color = "black", fill = "red", alpha = 0.25) +
-  geom_vline(tb_lung, mapping = aes(xintercept = mean(...))) +
+  geom_vline(tb_lung, mapping = aes(xintercept = mean(LungCap))) +
   ggtitle("Distribution of Lung Capacity Observations") 
 
+p2
 # Using patchwork library
 p1 / p2
 
+
+p1 * p2
+
 ####################### Box Plots ##############################
-p1 <- ggplot(tb_lung, aes(x = "Height", y = ...)) +
+p1 <- ggplot(tb_lung, aes(x = "Height", y = Height)) +
   geom_boxplot(outlier.color = "red", fill = "blue") +
   geom_point(position = position_jitter(width = 0.1), alpha = .1)
 
-p2 <- ggplot(tb_lung, aes(x = "LungCap", y = ...)) +
+p2 <- ggplot(tb_lung, aes(x = "LungCap", y = LungCap)) +
   geom_boxplot(outlier.color = "red", fill = "red") +
   geom_point(position = position_jitter(width = 0.1), alpha = .1)
 
 # Using patchwork library
 p1 + p2
 
+
 ### Generate a scatter plot
-ggplot(tb_lung, aes(x = ..., y = ...)) + 
+ggplot(tb_lung, aes(x = Height, y = LungCap)) + 
   geom_point() +
   geom_smooth(se = FALSE) +
   geom_smooth(method =  "lm", color = "red", se = FALSE) +
@@ -91,14 +120,14 @@ ggplot(tb_lung, aes(x = ..., y = ...)) +
     subtitle = "(With loess curve an standard error)")  +
   ylab("Lung Capacity")
 
-cor(log10(tb_lung$...), log10(tb_lung$...))
+cor(log10(tb_lung$Height), log10(tb_lung$LungCap))
 #####################  Apply Linear Model to Data ############################
 # Fit the model
-lm_lung <- lm(formula = ... ~ ..., data = tb_lung)
+lm_lung <- lm(formula = LungCap ~ Height, data = tb_lung)
 
 ##################### Determining Model Fit ##############################3#
 #Retrieve model statistics
-summary(...)
+summary(lm_lung)
 
 # Using glance from broom to see all variables
 library(broom)
@@ -121,7 +150,7 @@ glance(lm_lung) %>%
   pull(sigma)
 
 # Plot residuals
-#install.packages("ggfortify")
+# install.packages("ggfortify")
 library(ggfortify)
 autoplot(lm_lung, which = 1:2, nrow = 2, ncol = 1)
 autoplot(lm_lung)
