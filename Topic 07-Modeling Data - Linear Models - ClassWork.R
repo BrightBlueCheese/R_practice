@@ -15,6 +15,8 @@
 library(tidyverse)      # For tidy tools
 library(patchwork) 
 library(GGally) # for ggpairs
+library(ggplot2)
+library(dplyr)
 
 ######################  Learning about linear regression ######################
 # Load file for analysis
@@ -144,7 +146,7 @@ glance(lm_lung) %>%
   pull(p.value)
 
 #Residual standard error
-# The "typical" diff between predicted and observed values
+#  The "typical" diff between predicted and observed values
 # In this case, in the units of lung capacity 
 glance(lm_lung) %>%
   pull(sigma)
@@ -158,12 +160,12 @@ autoplot(lm_lung)
 #####################  Checking for Extreme Values  #########################
 # Leverage 
 
-hatvalues(...)
+hatvalues(lm_lung)
 
-augment(...) %>%
+augment(lm_lung) %>%
   arrange(desc(.hat))
 # put augment data in a data frame
-lm_aug <- augment(...)
+lm_aug <- augment(lm_lung)
 # rule of thumb that points with leverage of 3*mean(leverage)
 lm_aug %>%
   filter(.hat > 3 * mean(lm_aug$.hat)) %>%
@@ -185,6 +187,11 @@ lm_aug %>%
 cooksD <- cooks.distance(lm_lung)
 influential_obs <- as.numeric(names(cooksD)[(cooksD > (4/nrow(tb_lung)))])
 tb_lung_noOuts <- tb_lung[-influential_obs, ]
+
+
+# check the code by myself
+names(cooksD)
+names(cooksD)[(cooksD > (4/nrow(tb_lung)))]
 
 
 p1 <- ggplot(tb_lung, aes(x = Height, y = LungCap)) + 
