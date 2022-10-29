@@ -5,7 +5,7 @@ library(ggpubr)     # For placing multiple plots in one figure
 
 
 # load data
-df <- read_csv('./dataset/rodentData_consistent.csv')
+df <- read_csv('./dataset/rodentData_for_assignment.csv')
 df_origin <- read_csv('./dataset/rodentData_clean.csv')
 df
 glimpse(df)
@@ -80,6 +80,7 @@ genusLimit$upper = sapply(genusLimit$genus,
                                    - quantile(df$weight[df$genus==x],0.25)) )
 genusLimit
 
+
 # join lower/upper values  for weight to cleanData
 df <- df %>% left_join(genusLimit, by='genus')
 
@@ -88,7 +89,7 @@ df$isInvalid <-
   ifelse(df$weight < df$lower | df$weight > df$upper,
          TRUE, df$isInvalid)
 
-# remove lower/upper values for length
+# remove lower/upper values for weight
 df <- df %>% select(-lower, -upper)
 
 # check on how many rows were marked invalid
@@ -183,6 +184,27 @@ ggarrange(p1_scatter + theme(axis.text.x = element_text(angle = 90, vjust = 0.5,
 ## of the losses line (blue).
 ## 
 
+## save file
+df %>%
+  filter(!isInvalid) %>%
+  write_csv("./dataset/rodentData_consistent.csv")
+
 
 ## check the additional work for graduate students
+  # Answer in short: Because the density plot for df(after) calculated 
+  # Q1, Q3, and IQR to find the outliers with the data which already has been
+  # cleaned (the outliers)
+  # We actually extracted the outliers TWICE!! <<<< Super short version @@@@@@@
+
+  # Example with thomomys' quantile - density plot of df has been created 
+  # based on this already cleared data
+thomomys <- df %>% filter(!isInvalid) %>% filter(genus == 'thomomys')
+quantile(thomomys$weight)
+    # quantile(thomomys$weight)
+    # 0%   25%   50%   75%  100% 
+    # 34.0  77.0  93.0 110.0 166.3 
+  # However, the actually extracted the outliers before with
+  # Q1 = 24.125, and Q3 = 166.325 
+
+
 

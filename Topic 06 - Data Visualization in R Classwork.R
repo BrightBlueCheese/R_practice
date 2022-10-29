@@ -269,7 +269,7 @@ summary(cleanData$length)
 # Box plot
 # Generate a boxplot
 cleanData %>%
-ggplot(aes(x = "All", y = ...)) +
+ggplot(aes(x = "All", y = length)) +
   geom_boxplot(outlier.color = "red") +
   geom_point(alpha = .25)
 
@@ -287,7 +287,7 @@ cleanData %>%
 
 # density by species
 cleanData %>%
-  ggplot(aes(x = length, fill = ..., alpha = .5)) +
+  ggplot(aes(x = length, fill = genus, alpha = .5)) +
   geom_density()
 
 # boxplot by species
@@ -401,11 +401,12 @@ cleanData %>%
 #export the full rodent data dataset
 cleanData %>%
   filter(!isInvalid) %>%
-  write_csv("./dataset/rodentData_consistent.csv")
+  write_csv("./dataset/rodentData_for_assignment.csv")
 
 # HW
 # length has been done, but not weight. fix it
-# plot for before and after
+# plot for before and after.
+
 
 
 
