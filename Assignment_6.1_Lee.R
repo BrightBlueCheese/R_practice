@@ -1,3 +1,13 @@
+#Topic 06 - Data Visualization
+###########################################
+# Title: For the Assignment 6.1
+# Script Name: Assignment 6.1
+# Name: Youngmin Lee
+# Date: Oct 30 2022
+# Script purpose: Assignment 6.1
+# 
+###########################################
+
 # libraries
 library(dplyr)
 library(tidyverse)
