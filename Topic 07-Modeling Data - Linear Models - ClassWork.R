@@ -223,13 +223,14 @@ testHeightValues <- tibble(Height = 35:90)
 
 # Create a new dataset of predicted values
 tb_lung_height_pred <- testHeightValues %>%
-  mutate(lung_cap = predict(..., ...))
+  mutate(lung_cap = predict(lm_lung, testHeightValues))
+
 
 # Plot observations, lm plot, and predicted values
 ggplot(tb_lung, aes(x = Height, y = LungCap)) + 
   geom_point() +
   geom_smooth(method =  "lm", color = "red") +
-  geom_point(data = ..., 
+  geom_point(data = tb_lung_height_pred, 
              aes(x = Height, y = lung_cap), 
              shape = 17, color = "red", size = 3) +
   ggtitle("Lung Capacity vs. Height")  +
@@ -237,10 +238,10 @@ ggplot(tb_lung, aes(x = Height, y = LungCap)) +
 
 ################## Regression with Transforms ############################
 # Open the gapminder data
-df_gapminder = read_csv(".../CSC461GapMinderPlus.csv")
+df_gapminder = read_csv("./dataset/CSC461GapMinderPlus.csv")
 
 ### Scatter plot life exp vs. income, color by region
-ggplot(df_gapminder, aes(x = ..., y=...)) + 
+ggplot(df_gapminder, aes(x = income, y=life_exp)) + 
   geom_point() +
   geom_smooth(method = "lm") +
   labs(title = "World Life Expectancy vs. Income for 2020",
@@ -249,11 +250,11 @@ ggplot(df_gapminder, aes(x = ..., y=...)) +
 
 cor(df_gapminder$income, df_gapminder$life_exp)
 
-install.packages("ggpubr")
+# install.packages("ggpubr")
 library(ggpubr)
 
 ### Scatter plot life exp vs. income, color by region
-ggplot(df_gapminder, aes(x = log10(...), y=...)) + 
+ggplot(df_gapminder, aes(x = log10(income), y=life_exp)) + 
   geom_point() +
   geom_smooth(method = "lm") +
   stat_regline_equation(label.x.npc = 0.1, label.y.npc = .9) +
@@ -261,23 +262,24 @@ ggplot(df_gapminder, aes(x = log10(...), y=...)) +
        x = "Income",
        y = "Life Expectancy")
 
-cor(log10(df_gapminder$...), df_gapminder$...)
+cor(log10(df_gapminder$income), df_gapminder$life_exp)
 
 ########################  Create the linear regression model  ###############3
-lm_gapminder <- lm(... ~ log10(...), data = df_gapminder)
+lm_gapminder <- lm(life_exp ~ log10(income), data = df_gapminder)
 summary(lm_gapminder)
 glance(lm_gapminder)
 
 #####################  Using the linear model to predict  ####################
 # Create a data frame (tibble) with input values 
-testIncomeValues <- tibble(income = seq(1000, 100000, by = 1000))
+# testIncomeValues <- tibble(income = seq(1000, 100000, by = 1000))
+testIncomeValues <- tibble(income = 10^seq(3, 5, by = 1000))
 
 # Create a new dataset of predicted values
 tb_income_life_pred <- testIncomeValues %>%
-  mutate(life_exp = predict(..., ...))
+  mutate(life_exp = predict(lm_gapminder, testIncomeValues))
 
 # Plot observations, lm plot, and predicted values
-ggplot(df_gapminder, aes(x = log10(...), y = ...)) + 
+ggplot(df_gapminder, aes(x = log10(income), y = life_exp)) + 
   geom_point() +
   geom_smooth(method =  "lm", color = "red") +
   geom_point(data = tb_income_life_pred, 
@@ -292,7 +294,7 @@ ggplot(df_gapminder, aes(x = log10(...), y = ...)) +
 ggplot(df_gapminder, aes(x = income, y=life_exp)) + 
   geom_point() +
   coord_trans(x = "log10") +
-  geom_line(aes(y = predict(...)), size = 2, color = "red") +
+  geom_line(aes(y = predict(lm_gapminder)), size = 2, color = "red") +
   labs(title = "World Life Expectancy vs. Income for 2020",
        x = "Income",
        y = "Life Expectancy")
@@ -302,7 +304,7 @@ ggplot(df_gapminder, aes(x = income, y=life_exp)) +
 glimpse(tb_lung)
 
 # Quick plot to see what relationships may be there
-plot(...)
+plot(tb_lung)
 cor(tb_lung$LungCap, tb_lung$Smoke)
 
 # Look at summary statistics
@@ -310,7 +312,7 @@ summary(tb_lung)
 
 # Consider lung capacity by gender
 tb_lung %>%
-  group_by(...) %>%
+  group_by(Gender) %>%
   summarize(mean_LungCap = mean(LungCap),
             sd_LungCap = sd(LungCap),
             count_LungCap = n(),
@@ -318,17 +320,19 @@ tb_lung %>%
 
 #####################  Apply Linear Model to Data ############################
 # Fit the model
-lm(formula = ... ~ ..., data = tb_lung)
+lm(formula = LungCap ~ Gender, data = tb_lung) # mean_LungCap male=8.31, female=7.41
+# Gernderfemale for above indicates 7.31 - 8.31 = -0.9036 
+# add + 0 for categorical variables
 lm(formula = LungCap ~ Gender + 0, data = tb_lung)
 
 lm_lungGen <- lm(formula = LungCap ~ Gender + 0, data = tb_lung)
 
 #Retrieve model statistics
-summary(...)
+summary(lm_lungGen)
 
 ##################### Graphical Analysis #########################
 ## Generate a bar graph by Gender
-ggplot(tb_lung, aes(x = ...)) + 
+ggplot(tb_lung, aes(x = Gender)) + 
   geom_bar(fill = c("blue","red")) +
   ggtitle("Observation Count by Gender") 
 
@@ -340,7 +344,7 @@ ggplot(tb_lung, aes(x = LungCap)) +
   ggtitle("Distribution of Lung Capacity Observations by Gender") 
 
 ####################### Box Plots ##############################
-ggplot(tb_lung, aes(x = ..., y = ...)) +
+ggplot(tb_lung, aes(x = Gender, y = LungCap)) +
   geom_boxplot(outlier.color = "red", fill = c("blue","red")) +
   geom_point(position = position_jitter(width = 0.1), alpha = .1) +
   stat_summary(fun.y = mean, shape = 15, size = 1)
