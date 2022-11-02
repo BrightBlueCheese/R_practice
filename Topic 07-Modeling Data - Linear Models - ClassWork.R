@@ -372,8 +372,8 @@ tb_lung_f <- tb_lung %>%
   filter(Gender == "female")
 
 # Fit the models
-lm_lung_m <- lm(formula = LungCap ~ Height, data = ...)
-lm_lung_f <- lm(formula = LungCap ~ Height, data = ...)
+lm_lung_m <- lm(formula = LungCap ~ Height, data = tb_lung_m)
+lm_lung_f <- lm(formula = LungCap ~ Height, data = tb_lung_f)
 
 summary(lm_lung_m)
 summary(lm_lung_f)
@@ -393,9 +393,9 @@ df_lung_pred <- expand_grid(
 df_lung_pred <- df_lung_pred %>%
   mutate(
     LungCap = case_when(
-      Gender == "male" ~ coefficients(...)[1] +
+      Gender == "male" ~ coefficients(lm_lung_m)[1] + # y = b + xa
         coefficients(lm_lung_m)[2] * Height,
-      Gender == "female" ~ coefficients(...)[1] + 
+      Gender == "female" ~ coefficients(lm_lung_f)[1] + 
         coefficients(lm_lung_f)[2] * Height))
 
 plot1 +
@@ -406,9 +406,9 @@ plot1 +
 ###################### Logistic Regression #############################
 # Load file for analysis
 # Data file 
-titanic <- ".../TitanicPassengerData.csv"
+titanic <- "./dataset/TitanicPassengerData.csv"
 # Open and read the file into a tibble
-tb_titanic = read_csv(...)
+tb_titanic = read_csv(titanic)
 
 #Look for missing values
 NAs_found = FALSE
@@ -429,8 +429,8 @@ glimpse(tb_titanic)
 summary(tb_titanic)  
 
 # Fit a binomial logistic regression model
-glm_titanic <- glm(formula = ... ~ ..., 
-                  family = ..., 
+glm_titanic <- glm(formula = Survived ~ Fare, 
+                  family = binomial, 
                   data = tb_titanic)
 
 summary(glm_titanic)
@@ -439,7 +439,7 @@ summary(glm_titanic)
 plt_titanic_Fare <- ggplot(tb_titanic, aes(Fare, Survived)) +
   geom_point() +
   geom_smooth(method = "glm", se = FALSE, 
-              method.args = list(family = ...)) +
+              method.args = list(family = binomial)) +
   xlim(0,600)
 
 plt_titanic_Fare
@@ -452,7 +452,7 @@ titanic_input_data <- tibble(
 # gather predictor values for test values above
 titanic_prediction_data <- titanic_input_data %>%
   mutate(
-    Survived = predict(..., ..., type = "response"))
+    Survived = predict(glm_titanic, titanic_input_data, type = "response"))
 
 # plot (add) the values on the graph
 plt_titanic_Fare +
@@ -464,7 +464,7 @@ plt_titanic_Fare +
 # Add most likely outcome, i.e., probability > .50
 titanic_prediction_data <- titanic_prediction_data %>%
   mutate(
-    survival_prediction = round(...)
+    survival_prediction = round(Survived)
   )
 # Add the points to the plot
 plt_titanic_Fare +
@@ -477,7 +477,7 @@ plt_titanic_Fare +
 # calculate the odds ratio and log odds ratio on Survival
 titanic_prediction_data <- titanic_prediction_data %>%
   mutate(
-    odds_ratio = ... / (1 - ...),
+    odds_ratio = Survived / (1 - Survived),
     log_odds_ratio = log(odds_ratio),
     log_odds_ratio2 = predict(glm_titanic, titanic_input_data)
   )
@@ -494,8 +494,8 @@ ggplot(
 ###########  Quantifying Fit #############
 # get the actual and predicted outcomes
 # and put in a table
-actual <- tb_titanic$...
-predicted <- round(fitted(...))
+actual <- tb_titanic$Survived
+predicted <- round(fitted(glm_titanic))
 outcomes <- table(predicted, actual)
 outcomes
 
@@ -509,7 +509,13 @@ autoplot(confusion_matrix, color = "actual")
 summary(confusion_matrix)
 summary(confusion_matrix, event_level = "second")
 
+                    # Actual False (0) | Actual True (1)
+# Predicted False (0) | True Negative  | False Negative
+# Predicted True  (1) | False Positive | True Positive
+
+
 ############# Notes ############# 
 # Accuracy is the proportion of correct predictions.
 # Sensitivity is the proportion of true positives
 # Specicity is the proportion of true negatives
+# Precision = TP / (TP+FP)
