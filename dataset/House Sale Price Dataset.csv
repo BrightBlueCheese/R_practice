@@ -1,0 +1,1300 @@
+HOUSE_ID,HousePrice,StoreArea,BasementArea,LawnArea,StreetHouseFront,Location,ConnectivityType,BuildingType,ConstructionYear,EstateType,SellingYear,Rating,SaleType
+1,163000,433,662,9120,76,RK Puram,Byway,IndividualHouse,1958,Other,2008,6,NewHouse
+2,102000,396,836,8877,67,Jama Masjid,Byway,IndividualHouse,1951,Other,2006,4,NewHouse
+3,265979,864,0,11700,65,Burari,Byway,IndividualHouse,1880,Other,2009,7,NewHouse
+4,181900,572,594,14585,NA,RK Puram,Byway,IndividualHouse,1960,Other,2007,6,NewHouse
+5,252000,1043,0,10574,85,Bawana,Byway,IndividualHouse,2005,Other,2009,8,NewHouse
+6,180000,440,570,10335,78,Timarpur,Byway,IndividualHouse,1968,SemiPrivate,2006,5,NewHouse
+7,115000,336,0,21750,100,Vasant Vihar,Byway,IndividualHouse,1960,PrivateBuilder,2009,5,NewHouse
+8,176000,486,552,9900,NA,Tilak Nagar,Frontage road,IndividualHouse,1968,PrivateBuilder,2008,7,NewHouse
+9,192000,430,24,3182,43,Adarsh Nagar,Byway,RowHousesE,2004,Other,2010,8,NewHouse
+10,132500,264,588,7758,NA,Timarpur,Byway,IndividualHouse,1962,Other,2007,5,NewHouse
+11,137500,525,111,14375,NA,Pitampura,Byway,IndividualHouse,1958,Other,2009,6,SecondResale
+12,125500,288,599,6173,NA,Timarpur,Byway,IndividualHouse,1967,SemiPrivate,2007,5,NewHouse
+13,184000,240,329,9120,60,Chhatarpur,Byway,IndividualHouse,1925,PrivateBuilder,2008,7,NewHouse
+14,174000,343,0,8125,65,Karol Bagh,Byway,IndividualHouse,1994,Other,2009,6,NewHouse
+15,119000,384,241,8405,50,Jama Masjid,Byway,IndividualHouse,1900,SemiPrivate,2008,5,NewHouse
+16,155000,576,350,7200,60,Rohini,Frontage road,IndividualHouse,1936,SemiPrivate,2009,7,NewHouse
+17,255500,908,0,11146,87,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2009,8,NewHouse
+18,138800,299,75,15870,NA,RK Puram,Byway,IndividualHouse,1969,Other,2006,5,SecondResale
+19,137000,528,672,8740,74,Timarpur,Byway,IndividualHouse,1982,Other,2009,5,NewHouse
+20,137000,400,220,11345,95,RK Puram,Frontage road,MultiStoreyBuilding,1948,Other,2007,5,NewHouse
+21,147400,480,0,2544,24,Bawana,Byway,RowHouses,2005,Other,2006,7,NewHouse
+22,109008,352,288,8593,77,RK Puram,Byway,IndividualHouse,1957,Other,2008,4,NewHouse
+23,155000,440,504,8816,80,Dhaula Kuan,Byway,IndividualHouse,1971,SemiPrivate,2010,6,NewHouse
+24,162000,576,72,9830,NA,RK Puram,Byway,IndividualHouse,1959,Other,2010,5,NewHouse
+25,228500,647,0,9375,NA,India Gate,Byway,IndividualHouse,2002,Other,2007,8,NewHouse
+26,200624,484,1219,32668,NA,Ina Colony,Byway,IndividualHouse,1957,Other,2007,6,FourthResale
+27,152000,462,493,10793,80,Tilak Nagar,Dual carriageway,IndividualHouse,1969,GovernmentBuild,2007,5,NewHouse
+28,137500,480,763,8800,80,RK Puram,Frontage road,IndividualHouse,1963,SemiPrivate,2010,6,SecondResale
+29,160000,462,510,2160,24,Bawana,Byway,RowHouses,1999,Other,2008,7,NewHouse
+30,226000,487,445,14200,88,RK Puram,Byway,IndividualHouse,1966,PrivateBuilder,2006,7,NewHouse
+31,275000,564,1148,6563,NA,Mundka,Byway,IndividualHouse,1985,Other,2006,8,NewHouse
+32,219500,240,410,13125,75,Ina Colony,Byway,IndividualHouse,1940,Other,2007,7,NewHouse
+33,200000,544,340,9135,70,India Gate,Byway,IndividualHouse,2003,Other,2006,6,NewHouse
+34,266000,1053,0,10728,84,Bawana,Byway,IndividualHouse,2006,Other,2006,8,FirstResale
+35,235000,564,429,13500,NA,Dhaula Kuan,Byway,IndividualHouse,1960,Other,2008,6,NewHouse
+36,91000,297,462,1596,21,Tughlaqabad Extention,Byway,RowHouses,1973,GovernmentBuild,2009,4,NewHouse
+37,142000,528,0,10721,80,RK Puram,Byway,IndividualHouse,1959,Other,2008,6,NewHouse
+38,223500,528,1309,21384,144,Chhatarpur,Byway,IndividualHouse,1923,Other,2009,5,NewHouse
+39,115000,672,0,10434,60,RK Puram,Byway,IndividualHouse,1955,Other,2009,4,NewHouse
+40,196500,565,0,11645,89,India Gate,Byway,IndividualHouse,2004,Other,2006,7,NewHouse
+41,215000,471,380,9554,80,Lodhi Colony,Byway,IndividualHouse,1993,Other,2006,8,NewHouse
+42,392000,567,945,8089,60,Mundka,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+43,133700,286,369,7560,70,RK Puram,Byway,IndividualHouse,1959,GovernmentBuild,2006,5,NewHouse
+44,81000,0,495,1890,21,Tughlaqabad Extention,Byway,RowHouses,1972,Other,2008,4,NewHouse
+45,138000,816,816,6600,60,Vasant Vihar,Byway,IndividualHouse,1982,Other,2008,5,NewHouse
+46,236500,522,0,11838,NA,India Gate,Byway,IndividualHouse,2001,Other,2009,8,NewHouse
+47,204900,675,0,8990,73,India Gate,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+48,123500,308,210,6420,57,Jama Masjid,Byway,IndividualHouse,1952,Other,2006,5,NewHouse
+49,124000,462,285,1300,24,Ajmere Gate,Byway,RowHousesE,1980,PrivateBuilder,2009,6,NewHouse
+50,325000,840,1572,13173,108,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2009,9,NewHouse
+51,127000,240,336,8635,50,Chhatarpur,Byway,IndividualHouse,1948,SemiPrivate,2008,5,NewHouse
+52,151000,492,506,8471,88,Timarpur,Byway,IndividualHouse,1977,GovernmentBuild,2006,6,NewHouse
+53,205000,843,0,13704,118,India Gate,Byway,IndividualHouse,2001,Other,2006,7,NewHouse
+54,144000,352,737,12968,NA,Timarpur,Byway,IndividualHouse,1962,Other,2008,5,NewHouse
+55,287090,840,0,9262,78,Bawana,Byway,IndividualHouse,2008,Other,2009,8,FirstResale
+56,121000,192,0,8854,NA,Chhatarpur,Byway,IndividualHouse,1916,Other,2009,6,NewHouse
+57,221000,530,922,12803,88,India Gate,Byway,IndividualHouse,2002,Other,2008,7,NewHouse
+58,132000,240,680,8000,50,RK Puram,Byway,IndividualHouse,1948,Other,2009,6,NewHouse
+59,216500,440,625,7851,NA,Karol Bagh,Byway,IndividualHouse,2002,Other,2010,6,NewHouse
+60,248000,467,595,29959,NA,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2009,7,NewHouse
+61,88000,450,489,6120,51,Chhatarpur,Byway,IndividualHouse,1925,SemiPrivate,2006,5,SecondResale
+62,100000,0,0,9825,75,Jama Masjid,Byway,MultiStoreyBuilding,1965,Other,2010,5,NewHouse
+63,189000,410,648,8199,63,India Gate,Byway,IndividualHouse,2005,Other,2008,7,NewHouse
+64,131500,420,659,4435,36,India Gate,Byway,RowHousesE,2003,Other,2007,6,NewHouse
+65,123600,0,588,8070,60,India Gate,Byway,IndividualHouse,1994,Other,2007,4,NewHouse
+66,155000,484,168,13125,88,Timarpur,Byway,IndividualHouse,1957,PrivateBuilder,2006,5,NewHouse
+67,113000,0,0,4456,33,Burari,Byway,TwoStoreyHouse,1920,Other,2009,4,FirstResale
+68,143500,252,196,9286,NA,India Gate,Byway,IndividualHouse,1977,Other,2009,5,NewHouse
+69,79000,352,0,5000,63,Burari,Byway,IndividualHouse,1900,Other,2006,5,NewHouse
+70,176000,402,0,7875,63,Karol Bagh,Byway,IndividualHouse,1995,Other,2007,7,NewHouse
+71,212000,550,385,10667,43,India Gate,Trunk road,IndividualHouse,1996,Other,2009,7,NewHouse
+72,239799,868,464,8760,73,India Gate,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+73,415298,732,0,14450,107,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,9,FirstResale
+74,160000,440,643,8658,84,RK Puram,Byway,IndividualHouse,1965,GovernmentBuild,2006,6,SecondResale
+75,176000,400,0,8029,51,Karol Bagh,Byway,IndividualHouse,2005,Other,2008,6,NewHouse
+76,257500,416,1186,14442,110,Ina Colony,Byway,IndividualHouse,1957,Other,2007,6,NewHouse
+77,135000,484,560,7064,71,Timarpur,Byway,IndividualHouse,1977,Other,2009,5,NewHouse
+78,87000,160,324,9439,52,Burari,Byway,IndividualHouse,1930,Other,2007,5,NewHouse
+79,179900,719,738,10357,114,Lodhi Colony,Frontage road,IndividualHouse,1990,Other,2007,7,NewHouse
+80,208300,676,27,7862,75,Bawana,Byway,IndividualHouse,2009,Other,2009,6,FirstResale
+81,34900,0,495,7879,60,Rajendra Nagar,Byway,IndividualHouse,1920,GovernmentBuild,2009,4,SecondResale
+82,62383,360,553,8281,60,Timarpur,Byway,IndividualHouse,1965,GovernmentBuild,2009,5,NewHouse
+83,118000,205,851,7420,50,Chhatarpur,Driveway,TwoStoreyHouse,1939,Other,2008,5,NewHouse
+84,324000,473,1619,10846,32,Wazirpur,Byway,RowHousesE,1993,Other,2008,8,NewHouse
+85,144000,630,0,8400,60,Lodhi Colony,Frontage road,MultiStoreyBuilding,1977,Other,2007,5,NewHouse
+86,82000,0,0,6040,65,Jama Masjid,Byway,MultiStoreyBuilding,1955,Other,2008,4,FifthResale
+87,144000,495,645,8731,98,Chhatarpur,Byway,IndividualHouse,1920,Other,2007,5,NewHouse
+88,147000,528,144,12000,100,Burari,Byway,IndividualHouse,1948,GovernmentBuild,2008,5,NewHouse
+89,85000,0,0,8777,67,Jama Masjid,Frontage road,IndividualHouse,1910,SemiPrivate,2008,5,NewHouse
+90,176000,884,672,19296,120,RK Puram,Driveway,IndividualHouse,1962,GovernmentBuild,2009,6,NewHouse
+91,87000,779,0,9600,60,Burari,Byway,IndividualHouse,1900,Other,2006,4,NewHouse
+92,320000,768,1234,13286,86,Jama Masjid,Byway,IndividualHouse,2007,Other,2009,9,NewHouse
+93,140000,461,698,9170,70,Jama Masjid,Frontage road,IndividualHouse,1965,PrivateBuilder,2007,5,NewHouse
+94,177500,440,378,2117,NA,Bawana,Byway,RowHouses,2000,Other,2010,6,NewHouse
+95,175900,660,988,3635,51,Adarsh Nagar,Byway,RowHousesE,2007,Other,2009,7,NewHouse
+96,201000,573,0,9196,129,Vasant Vihar,Byway,IndividualHouse,2003,Other,2010,7,NewHouse
+97,58500,200,203,8212,45,Jama Masjid,Byway,IndividualHouse,1914,Other,2010,3,NewHouse
+98,149000,225,0,6240,52,Chhatarpur,Byway,IndividualHouse,1928,Other,2006,5,ThirdResale
+99,108000,520,0,8777,67,Jama Masjid,Frontage road,IndividualHouse,1949,SemiPrivate,2009,4,NewHouse
+100,108959,400,1198,12900,60,Timarpur,Frontage road,MultiStoreyBuilding,1969,Other,2008,4,FourthResale
+101,255900,779,0,11250,NA,India Gate,Byway,IndividualHouse,2002,Other,2008,8,NewHouse
+102,179540,400,0,9018,65,Karol Bagh,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+103,84900,308,0,11100,60,Jama Masjid,Byway,IndividualHouse,1946,Other,2010,4,SecondResale
+104,187500,444,568,12205,NA,Dhaula Kuan,Byway,IndividualHouse,1966,Other,2007,6,NewHouse
+105,168500,520,624,9020,82,RK Puram,Frontage road,IndividualHouse,1964,PrivateBuilder,2008,6,NewHouse
+106,124000,792,0,8944,65,RK Puram,Byway,MultiStoreyBuilding,1967,Other,2009,5,NewHouse
+107,197500,676,982,9360,78,Tilak Nagar,Byway,IndividualHouse,1972,Other,2010,6,NewHouse
+108,178000,546,16,9600,60,Burari,Byway,IndividualHouse,1925,Other,2006,7,NewHouse
+109,123000,288,769,7838,68,RK Puram,Byway,IndividualHouse,1967,Society,2006,5,NewHouse
+110,159000,514,609,9500,NA,RK Puram,Byway,IndividualHouse,1963,Other,2009,6,NewHouse
+111,277000,389,697,159000,NA,Dhaula Kuan,Byway,IndividualHouse,1958,Other,2007,6,NewHouse
+112,274000,588,1218,12677,62,Okhla Indl Estate,Byway,RowHousesE,2003,Other,2008,8,NewHouse
+113,175000,600,783,10200,85,Pitampura,Byway,IndividualHouse,1988,Other,2008,6,SecondResale
+114,336000,676,854,12203,98,Yamuna Vihar,Byway,IndividualHouse,1998,Other,2009,8,NewHouse
+115,150750,624,405,7388,75,RK Puram,Byway,IndividualHouse,1959,Other,2007,5,NewHouse
+116,229456,552,936,8640,72,Bawana,Byway,IndividualHouse,2009,Other,2009,8,FirstResale
+117,271000,857,1218,13265,NA,Vasant Vihar,Byway,IndividualHouse,2002,Other,2008,8,NewHouse
+118,122000,308,0,10120,60,Burari,Frontage road,TwoStoreyHouse,1910,SemiPrivate,2007,7,NewHouse
+119,120500,528,616,9000,60,RK Puram,Byway,IndividualHouse,1971,GovernmentBuild,2007,4,NewHouse
+120,135900,0,210,5687,55,Rohini,Byway,TwoStoreyHouse,1912,Other,2008,5,NewHouse
+121,68400,528,0,7500,60,Rajendra Nagar,Byway,IndividualHouse,1920,Other,2010,4,SecondResale
+122,191000,672,0,11526,79,Ina Colony,Byway,IndividualHouse,1922,Other,2008,6,NewHouse
+123,240000,690,0,14859,50,Karol Bagh,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+124,129500,360,565,7599,69,Vasant Vihar,Byway,IndividualHouse,1982,Other,2007,4,NewHouse
+125,227875,578,0,10207,84,Bawana,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+126,187500,438,786,9590,73,Pitampura,Byway,IndividualHouse,2003,Other,2007,7,NewHouse
+127,186500,451,0,10261,93,Karol Bagh,Byway,IndividualHouse,2000,Other,2008,6,NewHouse
+128,158000,583,0,10448,NA,Tilak Nagar,Byway,IndividualHouse,1972,PrivateBuilder,2009,6,SecondResale
+129,175000,406,604,21872,57,Karol Bagh,Byway,IndividualHouse,1996,Other,2008,7,NewHouse
+130,193000,533,165,8012,50,Lodhi Colony,Byway,RowHousesE,1993,Other,2008,6,NewHouse
+131,254000,550,863,6240,48,Okhla Indl Estate,Byway,RowHousesE,2006,Other,2009,8,NewHouse
+132,216000,663,533,7500,NA,Bawana,Byway,IndividualHouse,2000,Other,2010,7,NewHouse
+133,256300,890,0,14230,110,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2009,8,NewHouse
+134,225000,746,700,13474,116,Lodhi Colony,Frontage road,IndividualHouse,1990,Other,2007,7,NewHouse
+135,239000,864,1128,22420,86,Ina Colony,Frontage road,IndividualHouse,1918,Other,2007,6,NewHouse
+136,233230,685,0,15611,120,India Gate,Byway,IndividualHouse,2006,Other,2006,8,FirstResale
+137,125000,312,0,11340,84,Burari,Byway,IndividualHouse,1923,Other,2006,6,ThirdResale
+138,200500,0,152,18030,138,Dhaula Kuan,Byway,IndividualHouse,1946,SemiPrivate,2007,5,NewHouse
+139,340000,610,0,11143,102,Bawana,Byway,IndividualHouse,2004,Other,2007,8,NewHouse
+140,119200,240,336,11664,60,RK Puram,Driveway,IndividualHouse,1948,Other,2007,6,NewHouse
+141,394432,834,1445,11394,88,Mundka,Byway,IndividualHouse,2010,Other,2010,9,FirstResale
+142,228000,678,50,11228,59,Lodhi Colony,Byway,IndividualHouse,1993,Other,2008,7,NewHouse
+143,167000,526,778,10628,85,RK Puram,Byway,IndividualHouse,1970,GovernmentBuild,2007,7,NewHouse
+144,197000,550,315,11584,80,Tilak Nagar,Byway,IndividualHouse,1979,Other,2007,7,NewHouse
+145,145000,264,507,10482,65,RK Puram,Byway,IndividualHouse,1958,Society,2007,6,NewHouse
+146,72500,287,0,6627,NA,Chhatarpur,Frontage road,IndividualHouse,1949,Other,2008,3,NewHouse
+147,133000,396,656,8445,70,India Gate,Byway,IndividualHouse,1972,SemiPrivate,2009,5,NewHouse
+148,155000,430,0,8536,74,Jama Masjid,Byway,IndividualHouse,2006,Other,2007,5,FirstResale
+149,144000,315,460,11344,78,RK Puram,Frontage road,IndividualHouse,1958,GovernmentBuild,2007,5,NewHouse
+150,202500,474,0,6955,48,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2006,7,FirstResale
+151,139000,0,0,9400,94,Vasant Vihar,Byway,MultiStoreyBuilding,1971,Other,2010,6,NewHouse
+152,177000,342,0,7558,57,Ina Colony,Byway,IndividualHouse,1928,Other,2009,6,NewHouse
+153,109500,625,0,7200,60,RK Puram,Byway,IndividualHouse,1950,Other,2006,5,NewHouse
+154,130000,380,0,2522,24,Jama Masjid,Byway,RowHouses,2004,Other,2006,7,NewHouse
+155,119500,198,0,8600,50,Rajendra Nagar,Byway,IndividualHouse,1937,Other,2006,6,NewHouse
+156,188000,527,0,8924,57,India Gate,Byway,IndividualHouse,1998,Other,2008,7,NewHouse
+157,203000,508,925,8814,68,India Gate,Byway,IndividualHouse,2005,Other,2007,7,FirstResale
+158,179900,484,0,11049,85,India Gate,Byway,IndividualHouse,2007,Other,2008,8,NewHouse
+159,143000,420,662,4426,NA,India Gate,Byway,RowHousesE,2004,Other,2010,6,NewHouse
+160,115000,0,0,8500,85,Rajendra Nagar,Driveway,IndividualHouse,1919,Other,2007,5,NewHouse
+161,168500,440,420,2117,NA,Bawana,Byway,RowHousesE,2000,Other,2007,6,NewHouse
+162,185000,396,0,21780,66,Jama Masjid,Byway,IndividualHouse,1918,Other,2008,6,NewHouse
+163,248328,954,0,9849,83,Bawana,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+164,151000,460,602,9750,65,RK Puram,Byway,IndividualHouse,1969,Other,2008,6,NewHouse
+165,119000,280,732,8190,60,Jama Masjid,Byway,IndividualHouse,1954,Other,2007,4,NewHouse
+166,172500,440,381,3230,34,Bawana,Byway,RowHousesE,1999,Other,2009,6,NewHouse
+167,264561,648,1154,3982,53,Adarsh Nagar,Byway,RowHousesE,2006,Other,2006,8,FirstResale
+168,232000,834,0,8688,73,Bawana,Byway,IndividualHouse,2005,Other,2006,7,NewHouse
+169,151400,576,837,3964,42,Tughlaqabad Extention,Byway,RowHousesE,1973,PrivateBuilder,2006,6,NewHouse
+170,171000,476,0,8400,70,Lodhi Colony,Byway,IndividualHouse,1980,SemiPrivate,2010,6,NewHouse
+171,239000,576,649,7399,66,Bawana,Byway,IndividualHouse,1997,Other,2007,7,NewHouse
+172,438780,641,0,13682,66,Mundka,Byway,IndividualHouse,2006,Other,2006,10,FirstResale
+173,132000,576,0,6120,51,Chhatarpur,Byway,IndividualHouse,1929,PrivateBuilder,2007,7,NewHouse
+174,140000,506,504,7763,70,RK Puram,Byway,IndividualHouse,1962,Other,2008,5,NewHouse
+175,239900,800,0,10463,72,Karol Bagh,Byway,IndividualHouse,2005,Other,2006,8,NewHouse
+176,178000,403,0,9056,74,Karol Bagh,Byway,IndividualHouse,2004,Other,2006,8,NewHouse
+177,274900,856,1088,9591,76,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2009,8,NewHouse
+178,220000,471,1005,6853,NA,Pitampura,Byway,IndividualHouse,2001,Other,2009,8,NewHouse
+179,143000,576,0,25000,100,Vasant Vihar,Byway,MultiStoreyBuilding,1967,Other,2007,5,NewHouse
+180,286000,682,1153,4923,41,Mundka,Byway,RowHousesE,2001,Other,2008,8,NewHouse
+181,193500,575,1138,8125,65,Lodhi Colony,Byway,IndividualHouse,1994,Other,2008,6,NewHouse
+182,159500,704,0,10800,60,Burari,Byway,IndividualHouse,1890,Other,2007,7,NewHouse
+183,155000,164,299,2500,50,Burari,Byway,IndividualHouse,1915,Other,2009,7,NewHouse
+184,175000,540,767,15611,NA,Tilak Nagar,Byway,IndividualHouse,1977,Other,2008,5,SecondResale
+185,166000,458,1040,11900,80,RK Puram,Byway,IndividualHouse,1957,Other,2008,6,NewHouse
+186,210000,440,300,8737,70,Chhatarpur,Byway,IndividualHouse,1923,Other,2007,6,NewHouse
+187,223000,540,1110,16381,NA,Ina Colony,Byway,IndividualHouse,1969,Other,2006,6,NewHouse
+188,328000,533,1201,14000,80,Dhaula Kuan,Byway,IndividualHouse,1996,Other,2010,7,NewHouse
+189,136900,325,444,9525,75,Jama Masjid,Byway,IndividualHouse,1954,Other,2006,6,NewHouse
+190,145000,216,0,6292,52,Rohini,Byway,IndividualHouse,1928,Other,2009,7,NewHouse
+191,107000,672,422,7819,94,Jama Masjid,Byway,IndividualHouse,1976,SemiPrivate,2010,6,SecondResale
+192,159434,281,182,4500,55,Rohini,Byway,IndividualHouse,1932,Other,2009,5,SecondResale
+193,100000,480,0,8520,60,Burari,Byway,IndividualHouse,1923,Other,2007,5,NewHouse
+194,134000,528,874,4224,44,Tughlaqabad Extention,Byway,RowHousesE,1976,SemiPrivate,2007,5,NewHouse
+195,119750,240,0,6305,50,Ina Colony,Byway,IndividualHouse,1938,SemiPrivate,2007,5,NewHouse
+196,132250,648,633,25286,94,Vasant Vihar,Byway,IndividualHouse,1963,Other,2007,4,NewHouse
+197,129900,572,840,4224,44,Tughlaqabad Extention,Byway,RowHousesE,1976,Other,2007,5,NewHouse
+198,360000,708,1274,12378,90,Okhla Indl Estate,Byway,IndividualHouse,2003,Other,2006,9,NewHouse
+199,156932,432,0,8499,73,Karol Bagh,Byway,IndividualHouse,2006,Other,2007,6,FirstResale
+200,124500,463,191,8120,70,RK Puram,Byway,IndividualHouse,1970,Other,2009,4,NewHouse
+201,141000,0,0,8000,80,RK Puram,Driveway,MultiStoreyBuilding,1961,Other,2007,5,NewHouse
+202,150000,750,567,8973,69,RK Puram,Byway,IndividualHouse,1958,Society,2006,5,SecondResale
+203,231500,564,361,12435,80,India Gate,Byway,IndividualHouse,2001,Other,2008,7,NewHouse
+204,325000,880,0,13500,75,Burari,Driveway,IndividualHouse,1893,Other,2008,10,NewHouse
+205,118500,261,903,7943,61,Timarpur,Frontage road,IndividualHouse,1961,Other,2007,4,NewHouse
+206,129500,396,319,9600,60,Burari,Byway,IndividualHouse,1917,Other,2008,6,NewHouse
+207,114500,528,0,6240,52,Chhatarpur,Byway,IndividualHouse,1934,SemiPrivate,2006,6,NewHouse
+208,214000,532,2,10171,70,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2010,7,NewHouse
+209,555000,672,1767,15431,105,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,10,NewHouse
+210,127500,480,0,9855,73,Jama Masjid,Byway,IndividualHouse,1956,SemiPrivate,2009,6,NewHouse
+211,106000,440,0,2016,24,Chanakyapuri,Byway,RowHousesE,1970,Other,2007,5,NewHouse
+212,195000,434,0,12393,41,India Gate,Byway,IndividualHouse,2004,Other,2006,7,NewHouse
+213,135000,504,975,10530,78,Vasant Vihar,Byway,MultiStoreyBuilding,1977,Other,2006,6,NewHouse
+214,136500,368,915,10659,NA,RK Puram,Byway,IndividualHouse,1961,Other,2006,5,NewHouse
+215,226700,603,400,9803,75,Bawana,Byway,IndividualHouse,2005,Other,2008,7,NewHouse
+216,320000,788,0,11670,84,Bawana,Motorway,IndividualHouse,2006,Other,2007,9,NewHouse
+217,136500,576,423,8400,60,Rohini,Byway,IndividualHouse,1925,Other,2008,6,NewHouse
+218,145000,572,1056,34650,100,Karol Bagh,Byway,TwoStoreyHouse,1955,Other,2006,5,NewHouse
+219,67000,338,0,8967,60,Rajendra Nagar,Byway,IndividualHouse,1920,Other,2007,5,SecondResale
+220,132500,540,803,7728,70,RK Puram,Byway,MultiStoreyBuilding,1962,GovernmentBuild,2006,5,NewHouse
+221,178000,573,0,9100,70,India Gate,Byway,IndividualHouse,2001,Other,2009,7,NewHouse
+222,108480,326,0,5400,60,Burari,Byway,IndividualHouse,1921,Other,2006,5,SecondResale
+223,86000,216,0,5400,60,Burari,Byway,IndividualHouse,1920,Other,2007,5,SecondResale
+224,154300,480,443,11600,80,RK Puram,Frontage road,MultiStoreyBuilding,1960,Other,2010,5,NewHouse
+225,112000,539,0,8930,68,Timarpur,Interstate Highway,MultiStoreyBuilding,1978,Other,2010,6,NewHouse
+226,212000,578,20,10769,68,India Gate,Byway,IndividualHouse,2007,Other,2009,8,NewHouse
+227,80000,286,509,1477,21,Tughlaqabad Extention,Byway,RowHousesE,1970,Other,2009,4,NewHouse
+228,135000,548,0,8172,60,Jama Masjid,Byway,IndividualHouse,1954,Other,2008,4,NewHouse
+229,149350,271,0,8544,NA,Timarpur,Byway,IndividualHouse,1966,SemiPrivate,2008,5,NewHouse
+230,207500,673,503,8791,64,Bawana,Byway,IndividualHouse,2003,Other,2008,6,NewHouse
+231,136000,0,0,9000,60,RK Puram,Byway,MultiStoreyBuilding,1974,Other,2009,5,NewHouse
+232,97000,308,0,12702,70,Burari,Byway,IndividualHouse,1956,Other,2008,5,NewHouse
+233,152000,479,0,10400,80,Tilak Nagar,Byway,IndividualHouse,1976,SemiPrivate,2009,7,ThirdResale
+234,165000,402,883,4500,NA,Vasant Vihar,Byway,RowHousesE,1999,Other,2009,6,NewHouse
+235,79900,528,0,5825,52,Chhatarpur,Byway,IndividualHouse,1926,Other,2006,4,NewHouse
+236,274300,583,975,9750,75,India Gate,Byway,IndividualHouse,1998,Other,2006,7,NewHouse
+237,153500,812,338,8100,90,Burari,Byway,IndividualHouse,1948,GovernmentBuild,2007,5,NewHouse
+238,161500,457,251,9790,NA,Tilak Nagar,Frontage road,IndividualHouse,1967,Other,2009,6,NewHouse
+239,207500,577,828,5062,NA,Mundka,Byway,RowHousesE,1984,Other,2007,7,NewHouse
+240,176485,436,0,8993,73,Karol Bagh,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+241,173000,497,611,9947,NA,Vasant Vihar,Byway,IndividualHouse,1990,PrivateBuilder,2009,7,NewHouse
+242,192000,527,0,8749,70,India Gate,Byway,IndividualHouse,2002,Other,2007,7,NewHouse
+243,187750,572,0,7200,60,Bawana,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+244,190000,578,247,16492,137,RK Puram,Arterial road,IndividualHouse,1966,Other,2010,6,NewHouse
+245,230000,626,904,5001,34,Okhla Indl Estate,Byway,RowHouses,2007,Other,2009,7,NewHouse
+246,108000,570,637,11040,60,Rajendra Nagar,Byway,IndividualHouse,1920,Other,2006,4,NewHouse
+247,185900,520,490,8320,64,India Gate,Byway,IndividualHouse,2004,Other,2008,7,NewHouse
+248,244000,522,1065,11160,93,RK Puram,Byway,IndividualHouse,1968,Other,2010,7,NewHouse
+249,374000,874,1567,11846,72,Okhla Indl Estate,Byway,IndividualHouse,2003,Other,2006,9,NewHouse
+251,122000,0,259,5250,50,Burari,Byway,IndividualHouse,1872,Other,2008,8,NewHouse
+252,145500,312,806,10007,72,RK Puram,Byway,IndividualHouse,1959,SemiPrivate,2008,5,NewHouse
+253,135000,284,1059,17140,NA,Jama Masjid,Byway,IndividualHouse,1956,Other,2009,4,NewHouse
+254,110000,280,0,7990,88,India Gate,Byway,IndividualHouse,1975,SemiPrivate,2008,5,NewHouse
+255,229000,786,1002,13837,NA,Tilak Nagar,Byway,IndividualHouse,1988,Other,2006,7,NewHouse
+256,143000,318,695,10355,NA,RK Puram,Byway,IndividualHouse,1967,Other,2007,5,NewHouse
+257,192500,430,16,3182,43,Adarsh Nagar,Byway,RowHousesE,2005,Other,2009,7,NewHouse
+258,144900,490,320,10200,85,RK Puram,Byway,IndividualHouse,1954,GovernmentBuild,2010,5,NewHouse
+259,110000,576,0,13560,120,RK Puram,Byway,IndividualHouse,1968,Other,2009,6,NewHouse
+260,335000,628,965,26178,42,Pitampura,Byway,IndividualHouse,1989,Other,2006,7,NewHouse
+261,135000,216,0,10320,60,Rajendra Nagar,Byway,IndividualHouse,1906,SemiPrivate,2008,6,NewHouse
+262,133000,240,403,9490,79,RK Puram,Driveway,IndividualHouse,1941,SemiPrivate,2006,6,NewHouse
+263,153900,720,0,12665,100,Burari,Driveway,IndividualHouse,1915,Other,2008,5,NewHouse
+264,125500,528,0,7740,60,Burari,Byway,IndividualHouse,1910,Other,2010,4,NewHouse
+265,222000,642,0,13006,NA,Karol Bagh,Byway,IndividualHouse,1997,Other,2006,7,NewHouse
+266,124500,270,991,9600,80,RK Puram,Byway,IndividualHouse,1959,SemiPrivate,2009,5,NewHouse
+267,128000,280,354,9920,80,RK Puram,Byway,IndividualHouse,1954,SemiPrivate,2010,5,NewHouse
+268,210000,493,642,8750,70,India Gate,Byway,IndividualHouse,1994,Other,2008,7,NewHouse
+269,394617,774,1336,12444,96,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2008,8,FirstResale
+270,755000,832,1455,21535,104,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2007,10,NewHouse
+271,151000,480,0,3180,30,Bawana,Byway,RowHousesE,2005,Other,2006,7,NewHouse
+272,140000,672,0,7630,76,Burari,Frontage road,TwoStoreyHouse,1900,SemiPrivate,2010,5,NewHouse
+273,164700,528,0,4251,35,Bawana,Byway,RowHousesE,2006,Other,2007,7,FirstResale
+274,186700,995,1159,35133,50,Pitampura,Byway,IndividualHouse,1963,Other,2007,5,NewHouse
+275,310000,812,765,11003,85,Bawana,Byway,IndividualHouse,2008,Other,2009,10,NewHouse
+276,611657,820,2188,12919,100,Okhla Indl Estate,Byway,IndividualHouse,2009,Other,2010,9,FirstResale
+277,128000,0,0,6300,35,Burari,Byway,IndividualHouse,1914,Other,2008,6,NewHouse
+278,116000,440,0,4400,40,Burari,Byway,IndividualHouse,1920,Other,2006,6,NewHouse
+279,122000,280,450,9819,NA,Timarpur,Byway,IndividualHouse,1967,SemiPrivate,2010,5,NewHouse
+280,133900,396,660,7200,60,India Gate,Byway,IndividualHouse,1972,SemiPrivate,2009,5,NewHouse
+281,228000,511,0,16669,NA,Pitampura,Byway,IndividualHouse,1981,Other,2006,8,NewHouse
+282,269500,680,0,12003,92,Pitampura,Byway,IndividualHouse,2009,Other,2010,8,FirstResale
+283,156000,515,836,10289,79,RK Puram,Byway,IndividualHouse,1965,Other,2007,5,NewHouse
+284,187000,506,426,9291,76,Lodhi Colony,Parkway,IndividualHouse,1993,Other,2008,6,NewHouse
+285,52000,0,0,4130,56,Chhatarpur,Byway,IndividualHouse,1935,Other,2008,3,NewHouse
+286,185750,462,0,9156,NA,Tilak Nagar,Trunk road,IndividualHouse,1968,Other,2009,6,NewHouse
+287,168500,400,0,8530,NA,Karol Bagh,Byway,IndividualHouse,1995,Other,2009,7,NewHouse
+288,237000,613,483,9548,44,India Gate,Byway,IndividualHouse,2003,Other,2010,7,NewHouse
+289,131000,484,301,8885,NA,Vasant Vihar,Byway,IndividualHouse,1983,SemiPrivate,2006,5,NewHouse
+290,108000,300,0,8978,NA,Timarpur,Byway,IndividualHouse,1968,Other,2007,5,ThirdResale
+291,179400,440,549,2280,24,Bawana,Byway,RowHouses,1999,Other,2008,7,NewHouse
+292,256000,529,1116,53227,NA,Dhaula Kuan,Byway,IndividualHouse,1954,Other,2008,4,NewHouse
+293,148000,564,605,10395,NA,Tilak Nagar,Byway,IndividualHouse,1978,SemiPrivate,2007,6,NewHouse
+294,105000,180,209,6120,51,Chhatarpur,Byway,IndividualHouse,1931,Other,2009,5,NewHouse
+295,177000,308,0,15576,63,Ina Colony,Byway,IndividualHouse,1915,Other,2008,6,NewHouse
+296,142500,588,819,7937,37,Vasant Vihar,Byway,IndividualHouse,1984,PrivateBuilder,2006,6,NewHouse
+297,180000,403,1258,11200,NA,Lodhi Colony,Byway,IndividualHouse,1985,Other,2006,6,NewHouse
+298,197500,484,381,10304,NA,Tilak Nagar,Trunk road,IndividualHouse,1976,Other,2009,5,NewHouse
+299,177000,312,719,11512,124,Jama Masjid,Byway,IndividualHouse,1959,PrivateBuilder,2008,6,NewHouse
+300,83500,286,334,1974,NA,Tughlaqabad Extention,Byway,RowHousesE,1973,Other,2010,4,NewHouse
+301,165000,478,0,10140,78,Tilak Nagar,Byway,IndividualHouse,1974,SemiPrivate,2009,6,NewHouse
+302,280000,862,1039,11362,107,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2009,8,NewHouse
+303,171000,358,522,9880,76,Vasant Vihar,Byway,IndividualHouse,1977,PrivateBuilder,2008,6,NewHouse
+304,97000,0,0,1533,21,Tughlaqabad Extention,Byway,RowHouses,1970,Other,2009,4,NewHouse
+305,148000,576,298,8846,57,India Gate,Byway,IndividualHouse,1996,Other,2006,5,NewHouse
+306,125000,264,623,7175,50,Lodhi Colony,Byway,RowHousesE,1984,SemiPrivate,2010,6,NewHouse
+307,177500,521,334,11249,105,India Gate,Byway,IndividualHouse,1995,Other,2007,6,NewHouse
+308,135500,300,0,16466,59,Jama Masjid,Byway,IndividualHouse,1955,Other,2008,5,NewHouse
+309,239000,702,0,11923,122,India Gate,Byway,IndividualHouse,2007,Other,2009,9,NewHouse
+310,297000,826,1288,10637,79,India Gate,Byway,IndividualHouse,2007,Other,2009,8,NewHouse
+311,120500,660,375,6960,60,RK Puram,Byway,IndividualHouse,1970,Other,2009,4,NewHouse
+312,75500,0,150,1491,21,Tughlaqabad Extention,Byway,RowHousesE,1972,Other,2010,4,NewHouse
+313,167240,438,16,3010,43,Adarsh Nagar,Byway,RowHousesE,2005,Other,2006,7,FirstResale
+314,230000,622,666,12420,79,India Gate,Byway,IndividualHouse,2001,Other,2009,7,NewHouse
+315,345000,538,1410,13860,75,RK Puram,Byway,IndividualHouse,1972,SemiPrivate,2009,8,NewHouse
+316,218000,528,1157,10768,90,Wazirpur,Byway,IndividualHouse,1976,Other,2007,5,NewHouse
+317,81000,1248,0,18000,120,Rajendra Nagar,Byway,IndividualHouse,1935,Other,2008,3,NewHouse
+318,182900,467,678,12546,NA,Tilak Nagar,Byway,IndividualHouse,1981,Other,2007,6,NewHouse
+319,157500,686,0,10440,60,Burari,Byway,IndividualHouse,1904,Other,2008,5,NewHouse
+320,206000,632,686,6762,64,India Gate,Byway,IndividualHouse,2006,Other,2010,7,NewHouse
+321,180500,500,0,11851,99,Karol Bagh,Byway,IndividualHouse,1990,Other,2009,7,NewHouse
+322,112000,0,625,8780,NA,Vasant Vihar,Byway,IndividualHouse,1985,SemiPrivate,2009,5,NewHouse
+323,122000,440,716,10356,120,India Gate,Byway,IndividualHouse,1975,SemiPrivate,2007,5,NewHouse
+324,95000,200,236,9084,60,Jama Masjid,Driveway,IndividualHouse,1941,Other,2008,5,NewHouse
+325,129500,624,619,7244,54,Vasant Vihar,Byway,IndividualHouse,1970,Other,2007,5,NewHouse
+326,68500,240,0,6324,60,Chhatarpur,Frontage road,IndividualHouse,1927,Other,2008,4,NewHouse
+327,255000,865,63,13501,116,Bawana,Byway,IndividualHouse,2006,Other,2007,8,NewHouse
+328,248900,870,0,10656,67,Pitampura,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+329,350000,839,1696,10437,91,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2008,8,NewHouse
+330,129000,240,187,8400,70,Timarpur,Byway,IndividualHouse,1966,Other,2007,6,NewHouse
+331,113000,234,344,9340,50,Jama Masjid,Byway,IndividualHouse,1941,Other,2009,4,NewHouse
+332,90000,560,0,13600,85,Burari,Byway,TwoStoreyHouse,1900,Other,2007,5,NewHouse
+333,165400,397,0,6931,60,Jama Masjid,Byway,IndividualHouse,2003,Other,2008,7,NewHouse
+334,132500,624,630,8480,80,Timarpur,Byway,IndividualHouse,1963,Other,2007,5,NewHouse
+335,120500,432,538,5890,NA,Rajendra Nagar,Byway,IndividualHouse,1930,Other,2008,6,NewHouse
+336,110000,440,0,10440,60,Burari,Byway,IndividualHouse,1910,SemiPrivate,2009,5,NewHouse
+337,160000,520,664,10800,60,Burari,Byway,TwoStoreyHouse,1900,Other,2006,5,NewHouse
+338,127000,0,0,6882,60,Rajendra Nagar,Byway,IndividualHouse,1914,Other,2007,6,NewHouse
+339,147000,0,206,8402,70,Vasant Vihar,Frontage road,IndividualHouse,2007,Other,2007,5,FirstResale
+340,118000,286,812,9000,75,RK Puram,Byway,IndividualHouse,1954,GovernmentBuild,2006,5,ThirdResale
+341,156000,440,439,7930,61,RK Puram,Byway,IndividualHouse,1969,Other,2009,6,NewHouse
+342,250000,564,790,16692,80,Tilak Nagar,Dual carriageway,IndividualHouse,1978,SemiPrivate,2006,7,NewHouse
+343,118000,0,133,12108,92,Jama Masjid,Byway,MultiStoreyBuilding,1955,Other,2008,4,NewHouse
+344,153000,364,674,9600,80,RK Puram,Byway,IndividualHouse,1955,Other,2010,6,NewHouse
+345,312500,765,1274,14331,85,Pitampura,Byway,IndividualHouse,2002,Other,2006,8,NewHouse
+346,55993,504,0,8712,66,Rajendra Nagar,Byway,IndividualHouse,1952,Other,2010,5,FourthResale
+347,165600,420,518,7685,NA,Karol Bagh,Byway,IndividualHouse,1993,Other,2006,6,NewHouse
+348,165500,602,1097,9101,NA,Vasant Vihar,Byway,IndividualHouse,1978,Other,2009,5,NewHouse
+349,76500,0,0,5350,55,Chhatarpur,Byway,IndividualHouse,1940,GovernmentBuild,2010,3,NewHouse
+350,136000,288,570,9464,75,RK Puram,Byway,IndividualHouse,1958,Other,2008,6,NewHouse
+351,385000,894,1810,50271,68,Wazirpur,Byway,IndividualHouse,1981,Other,2006,9,NewHouse
+352,200000,603,462,12798,79,Dhaula Kuan,Frontage road,IndividualHouse,1997,Other,2008,6,NewHouse
+353,290000,671,524,11764,92,Yamuna Vihar,Byway,IndividualHouse,1999,Other,2010,8,NewHouse
+354,225000,490,694,10762,NA,Karol Bagh,Byway,IndividualHouse,1999,Other,2009,7,NewHouse
+355,126000,240,312,8160,60,Jama Masjid,Byway,IndividualHouse,1940,Other,2007,5,FifthResale
+356,181000,457,16,3182,43,Adarsh Nagar,Byway,RowHousesE,2005,Other,2009,7,NewHouse
+357,181000,435,0,17043,48,Tilak Nagar,Byway,IndividualHouse,1979,Other,2009,6,NewHouse
+358,215000,434,0,11796,59,Karol Bagh,Byway,IndividualHouse,2004,Other,2007,7,NewHouse
+359,127500,560,425,6240,52,Chhatarpur,Byway,IndividualHouse,1931,Other,2007,6,NewHouse
+360,125000,240,1040,10880,68,Jama Masjid,Byway,TwoStoreyHouse,1950,Other,2008,5,NewHouse
+361,120000,288,414,7332,60,RK Puram,Byway,IndividualHouse,1959,Other,2006,6,SecondResale
+362,335000,836,936,11308,96,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,9,NewHouse
+363,426000,846,1280,12474,96,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2008,10,FirstResale
+364,106250,0,0,10800,60,Burari,Byway,TwoStoreyHouse,1900,Other,2008,4,NewHouse
+365,260000,656,987,9900,90,Yamuna Vihar,Byway,IndividualHouse,1993,Other,2009,7,NewHouse
+366,226000,558,1013,10665,72,India Gate,Byway,IndividualHouse,2003,Other,2007,7,NewHouse
+367,75000,286,0,2001,21,Tughlaqabad Extention,Byway,RowHouses,1970,Other,2007,4,NewHouse
+368,118858,400,0,7018,64,Lodhi Colony,Byway,MultiStoreyBuilding,1979,Other,2009,5,FourthResale
+369,240000,501,985,53107,NA,Dhaula Kuan,Frontage road,IndividualHouse,1992,Other,2007,6,NewHouse
+370,96500,0,0,8800,55,Burari,Byway,IndividualHouse,1910,Other,2010,4,NewHouse
+371,127000,336,548,2665,41,Tughlaqabad Extention,Byway,RowHousesE,1977,Other,2006,5,NewHouse
+372,205000,672,0,7264,55,Chhatarpur,Byway,IndividualHouse,1925,Other,2009,7,NewHouse
+373,222000,484,578,4403,NA,Bawana,Byway,IndividualHouse,2009,Other,2010,7,FirstResale
+374,160000,440,0,10000,87,RK Puram,Byway,IndividualHouse,1962,Other,2010,6,NewHouse
+375,174000,492,0,2645,24,Bawana,Byway,RowHouses,1999,Other,2007,8,NewHouse
+376,176000,440,419,3230,34,Bawana,Byway,RowHousesE,1999,Other,2007,6,NewHouse
+377,181134,396,24,8899,73,Karol Bagh,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+378,147000,576,505,10970,NA,India Gate,Byway,IndividualHouse,1978,SemiPrivate,2008,6,NewHouse
+379,162000,412,866,4500,32,Vasant Vihar,Byway,RowHousesE,1998,Other,2009,6,NewHouse
+380,133500,338,460,15523,36,India Gate,Byway,IndividualHouse,1972,Other,2009,5,NewHouse
+381,119000,180,0,6000,50,Chhatarpur,Byway,IndividualHouse,1926,Other,2009,6,NewHouse
+382,280000,576,655,70761,62,Dhaula Kuan,Byway,IndividualHouse,1975,Other,2006,7,NewHouse
+383,119000,276,534,7200,60,RK Puram,Byway,IndividualHouse,1950,Other,2007,5,NewHouse
+384,179900,502,633,9350,85,RK Puram,Byway,IndividualHouse,1965,SemiPrivate,2008,5,NewHouse
+385,182000,480,0,11639,95,Bawana,Byway,IndividualHouse,2007,Other,2008,7,FirstResale
+386,155000,525,776,8700,80,RK Puram,Byway,IndividualHouse,1963,SemiPrivate,2008,5,NewHouse
+387,451950,842,1338,13478,97,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,10,NewHouse
+388,126175,220,256,5820,49,Burari,Byway,IndividualHouse,1955,Other,2006,3,NewHouse
+389,173000,400,560,9248,NA,Karol Bagh,Byway,IndividualHouse,1992,Other,2009,6,NewHouse
+390,163500,484,1237,12155,NA,RK Puram,Trunk road,IndividualHouse,1970,Other,2007,6,NewHouse
+391,190000,534,0,11952,92,Tilak Nagar,Arterial road,IndividualHouse,1977,Other,2007,7,NewHouse
+392,137000,288,560,13526,NA,Timarpur,Byway,IndividualHouse,1965,SemiPrivate,2006,5,NewHouse
+393,88000,0,614,8125,NA,RK Puram,Byway,IndividualHouse,1971,Other,2006,4,NewHouse
+394,172000,530,562,11075,NA,Vasant Vihar,Byway,IndividualHouse,1969,SemiPrivate,2008,5,NewHouse
+395,265000,889,0,10208,79,Yamuna Vihar,Byway,IndividualHouse,1996,Other,2009,7,NewHouse
+396,129000,308,248,5868,74,RK Puram,Byway,IndividualHouse,1956,Other,2010,5,NewHouse
+397,213500,639,0,9245,79,India Gate,Byway,IndividualHouse,2006,Other,2007,7,NewHouse
+398,142000,288,832,6768,65,Timarpur,Frontage road,IndividualHouse,1961,PrivateBuilder,2008,6,NewHouse
+399,146500,312,386,9480,79,RK Puram,Driveway,IndividualHouse,1942,Other,2007,5,NewHouse
+400,145000,588,528,8393,70,RK Puram,Byway,MultiStoreyBuilding,1959,Other,2006,5,ThirdResale
+401,60000,246,290,8400,60,Rohini,Byway,IndividualHouse,1920,Other,2009,2,NewHouse
+402,188000,431,219,8000,NA,Karol Bagh,Byway,IndividualHouse,1995,Other,2008,6,NewHouse
+403,214500,441,0,11888,NA,Chhatarpur,Trunk road,IndividualHouse,1916,Other,2009,6,NewHouse
+404,197000,672,523,15863,102,Rohini,Byway,IndividualHouse,1920,Other,2009,7,NewHouse
+405,446261,858,1330,14948,67,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2008,9,FirstResale
+406,194500,409,0,10832,NA,Karol Bagh,Byway,IndividualHouse,1994,Other,2008,7,NewHouse
+407,274970,432,0,19690,NA,Jama Masjid,Byway,IndividualHouse,1966,PrivateBuilder,2006,6,FourthResale
+408,130000,380,0,2522,24,Jama Masjid,Byway,RowHouses,2004,Other,2006,6,NewHouse
+409,139000,480,651,8816,80,Timarpur,Frontage road,IndividualHouse,1963,SemiPrivate,2009,5,NewHouse
+410,117000,326,415,5400,90,Burari,Byway,IndividualHouse,1954,SemiPrivate,2006,5,NewHouse
+411,112000,398,617,7000,50,Burari,Driveway,IndividualHouse,1924,Other,2006,6,NewHouse
+412,375000,513,1236,215245,150,Pitampura,Byway,IndividualHouse,1965,Other,2009,7,NewHouse
+413,140000,528,0,9600,80,Tilak Nagar,Byway,IndividualHouse,1969,Other,2006,7,NewHouse
+414,232600,776,0,11216,81,Bawana,Byway,IndividualHouse,2006,Other,2006,8,FirstResale
+415,130000,288,510,9858,62,Vasant Vihar,Byway,IndividualHouse,1968,GovernmentBuild,2009,5,NewHouse
+416,201000,610,16,8925,73,Pitampura,Byway,IndividualHouse,2007,Other,2009,8,NewHouse
+417,124000,0,616,8430,60,India Gate,Byway,IndividualHouse,1978,Other,2009,5,NewHouse
+418,153000,498,1213,8532,74,RK Puram,Byway,IndividualHouse,1954,Other,2009,5,NewHouse
+419,139900,286,0,12342,NA,RK Puram,Byway,IndividualHouse,1960,GovernmentBuild,2007,5,NewHouse
+420,190000,564,674,10186,107,Yamuna Vihar,Byway,IndividualHouse,1992,Other,2010,7,NewHouse
+421,279500,840,0,10652,91,India Gate,Byway,IndividualHouse,2006,Other,2007,7,FirstResale
+422,185000,420,310,9765,NA,Karol Bagh,Byway,IndividualHouse,1993,Other,2009,6,NewHouse
+423,220000,432,297,11275,NA,Ina Colony,Byway,IndividualHouse,1932,Other,2007,6,NewHouse
+424,153575,384,0,8730,60,Chhatarpur,Dual carriageway,IndividualHouse,1915,Other,2007,6,NewHouse
+425,106000,360,0,8100,90,Burari,Byway,IndividualHouse,1898,SemiPrivate,2009,5,NewHouse
+426,180000,400,250,7750,NA,Karol Bagh,Byway,IndividualHouse,2000,Other,2010,7,NewHouse
+427,131500,504,841,11625,75,Timarpur,Byway,TwoStoreyHouse,1965,Other,2010,5,NewHouse
+428,188500,432,425,7795,71,Karol Bagh,Byway,IndividualHouse,2004,Other,2009,7,NewHouse
+429,142000,531,1000,12160,NA,RK Puram,Byway,IndividualHouse,1959,SemiPrivate,2010,5,SecondResale
+430,169500,264,540,7590,69,RK Puram,Trunk road,IndividualHouse,1962,Other,2007,5,NewHouse
+431,35311,308,50,9000,50,Rajendra Nagar,Byway,IndividualHouse,1949,Other,2006,2,SecondResale
+432,127000,352,390,7180,60,India Gate,Byway,IndividualHouse,1972,Other,2008,5,NewHouse
+433,158000,299,371,9364,80,Timarpur,Byway,IndividualHouse,1969,SemiPrivate,2010,6,NewHouse
+434,135750,283,228,8475,NA,RK Puram,Byway,IndividualHouse,1956,Other,2008,4,NewHouse
+435,175900,484,387,7153,65,Lodhi Colony,Byway,IndividualHouse,1992,Other,2006,6,NewHouse
+436,140000,440,559,4043,53,Model Town,Byway,RowHousesE,1977,Other,2008,6,SecondResale
+437,147000,264,607,9600,80,RK Puram,Byway,IndividualHouse,1950,Other,2009,5,NewHouse
+438,377500,758,1320,14892,42,Karol Bagh,Byway,IndividualHouse,2006,Other,2009,9,NewHouse
+439,196000,714,1567,9819,NA,Vasant Vihar,Byway,IndividualHouse,1977,Other,2009,6,NewHouse
+440,313000,736,904,11050,NA,India Gate,Trunk road,IndividualHouse,2000,Other,2009,9,NewHouse
+441,176432,440,24,9317,78,India Gate,Byway,IndividualHouse,2006,Other,2007,6,NewHouse
+442,263000,615,0,9375,75,Bawana,Byway,IndividualHouse,2003,Other,2009,7,NewHouse
+443,285000,702,1059,11248,90,India Gate,Byway,IndividualHouse,2002,Other,2007,9,NewHouse
+444,191000,512,0,8750,70,India Gate,Byway,IndividualHouse,1996,Other,2009,7,NewHouse
+445,245000,758,33,10206,78,Bawana,Byway,IndividualHouse,2007,Other,2008,8,NewHouse
+446,465000,850,1386,13891,107,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2006,10,FirstResale
+447,320000,576,57,19378,134,Karol Bagh,Byway,IndividualHouse,2005,Other,2006,7,FirstResale
+448,192000,472,828,9042,59,Karol Bagh,Byway,IndividualHouse,1998,Other,2008,6,NewHouse
+449,128950,0,569,9320,77,RK Puram,Byway,IndividualHouse,1959,Other,2010,4,NewHouse
+450,86000,286,515,1526,21,Tughlaqabad Extention,Byway,RowHouses,1970,Other,2009,4,NewHouse
+451,178400,588,867,12122,NA,RK Puram,Byway,IndividualHouse,1961,Other,2008,7,NewHouse
+452,85000,336,129,2592,36,Tughlaqabad Extention,Byway,RowHousesE,1976,Other,2010,5,NewHouse
+453,134450,447,360,10011,72,RK Puram,Byway,IndividualHouse,1957,SemiPrivate,2006,5,NewHouse
+454,177000,388,182,13869,NA,Karol Bagh,Byway,IndividualHouse,1997,Other,2007,6,NewHouse
+455,161000,228,0,5100,NA,Burari,Byway,IndividualHouse,1925,SemiPrivate,2008,8,NewHouse
+456,66500,200,0,5720,52,Burari,Driveway,IndividualHouse,1941,Other,2009,5,SecondResale
+457,234000,282,0,10918,53,Ina Colony,Byway,IndividualHouse,1926,SemiPrivate,2009,7,NewHouse
+458,130500,475,533,13517,NA,Timarpur,Interstate Highway,IndividualHouse,1976,Other,2010,6,NewHouse
+459,140000,642,216,9550,60,Ina Colony,Byway,IndividualHouse,1915,Other,2006,7,SecondResale
+460,260000,586,1258,23595,NA,Dhaula Kuan,Byway,IndividualHouse,1979,Other,2010,7,NewHouse
+461,142953,528,0,7018,64,Lodhi Colony,Frontage road,MultiStoreyBuilding,1979,Other,2009,5,FourthResale
+462,143900,349,0,13673,40,Timarpur,Interstate Highway,IndividualHouse,1962,Other,2007,5,NewHouse
+463,108000,0,290,13907,63,Jama Masjid,Byway,IndividualHouse,1940,Other,2008,5,NewHouse
+464,190000,546,705,11751,105,Tilak Nagar,Byway,IndividualHouse,1977,SemiPrivate,2010,6,NewHouse
+465,303477,550,64,9000,75,Bawana,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+466,201000,471,814,8462,70,Lodhi Colony,Byway,IndividualHouse,1994,Other,2007,6,NewHouse
+467,118000,264,317,1680,21,Chanakyapuri,Byway,RowHouses,1972,Other,2006,6,NewHouse
+468,175500,528,916,9600,80,Tilak Nagar,Byway,IndividualHouse,1973,Other,2007,7,NewHouse
+469,167500,461,697,9300,73,RK Puram,Frontage road,IndividualHouse,1960,Other,2010,5,NewHouse
+470,178000,380,0,7837,59,Karol Bagh,Byway,IndividualHouse,1993,Other,2009,6,NewHouse
+471,164000,402,897,4500,32,Vasant Vihar,Byway,RowHouses,1998,Other,2006,6,NewHouse
+472,116000,280,0,8248,45,Jama Masjid,Byway,IndividualHouse,1918,Other,2006,5,NewHouse
+473,122500,440,471,1920,24,Chanakyapuri,Byway,RowHousesE,1971,Other,2007,5,NewHouse
+474,160000,572,353,57200,NA,Pitampura,Byway,IndividualHouse,1948,Other,2010,5,NewHouse
+475,129000,596,739,9571,68,Jama Masjid,Byway,IndividualHouse,1956,Other,2010,5,NewHouse
+476,119500,264,231,1680,21,Chanakyapuri,Byway,RowHouses,1972,Other,2009,5,NewHouse
+477,115000,210,468,3950,NA,Burari,Driveway,IndividualHouse,1926,Other,2009,6,NewHouse
+478,127500,0,351,10106,62,Jama Masjid,Byway,TwoStoreyHouse,1940,Other,2008,5,NewHouse
+479,217000,576,1200,9236,79,India Gate,Byway,IndividualHouse,1997,Other,2006,6,NewHouse
+480,341000,983,1173,10542,96,Yamuna Vihar,Byway,IndividualHouse,1993,Other,2008,7,NewHouse
+481,110000,400,552,9450,68,Jama Masjid,Byway,IndividualHouse,1954,Other,2007,4,SecondResale
+482,116050,280,0,9353,71,RK Puram,Byway,IndividualHouse,1970,Other,2006,4,SecondResale
+483,87000,0,116,4388,55,Burari,Frontage road,IndividualHouse,1930,Other,2007,5,NewHouse
+484,170000,454,306,17920,102,Timarpur,Byway,IndividualHouse,1955,Other,2006,5,SecondResale
+485,173000,484,400,9130,NA,Tilak Nagar,Frontage road,IndividualHouse,1966,Other,2008,6,NewHouse
+486,149900,328,595,8385,65,India Gate,Byway,IndividualHouse,1977,Other,2008,5,NewHouse
+487,197900,550,0,12384,NA,Tilak Nagar,Byway,IndividualHouse,1976,Other,2007,7,NewHouse
+488,205950,562,0,8125,65,Bawana,Byway,IndividualHouse,2007,Other,2008,7,NewHouse
+489,211000,521,831,10029,97,Dhaula Kuan,Byway,IndividualHouse,1988,Other,2007,6,NewHouse
+490,116900,288,0,5700,NA,Burari,Byway,IndividualHouse,1926,Other,2008,7,NewHouse
+491,228950,529,1249,164660,NA,Pitampura,Byway,TwoStoreyHouse,1965,Other,2008,5,NewHouse
+492,121500,528,1302,11341,NA,Timarpur,Byway,IndividualHouse,1957,Other,2010,5,NewHouse
+493,97500,330,0,17503,78,RK Puram,Driveway,IndividualHouse,1948,Other,2010,6,SecondResale
+494,127000,260,659,6897,NA,Timarpur,Byway,IndividualHouse,1962,Other,2010,5,NewHouse
+495,155000,495,500,10452,85,Jama Masjid,Byway,IndividualHouse,1953,Other,2008,6,NewHouse
+496,214000,472,1162,10264,78,India Gate,Byway,IndividualHouse,1999,Other,2006,7,NewHouse
+497,138500,336,553,8450,65,Timarpur,Interstate Highway,IndividualHouse,1965,SemiPrivate,2010,5,NewHouse
+498,219210,660,0,14054,58,Karol Bagh,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+499,173500,540,193,8633,64,India Gate,Byway,IndividualHouse,2005,Other,2009,6,NewHouse
+500,145000,294,922,8400,70,RK Puram,Byway,IndividualHouse,1957,Other,2010,5,NewHouse
+501,180500,484,1014,14112,NA,RK Puram,Byway,IndividualHouse,1964,Other,2010,5,NewHouse
+502,230000,400,0,11435,NA,Ina Colony,Byway,IndividualHouse,1929,Other,2006,8,NewHouse
+503,290000,500,1220,10182,85,Bawana,Motorway,IndividualHouse,2006,Other,2006,8,FirstResale
+504,215000,400,0,3196,NA,Adarsh Nagar,Byway,RowHousesE,2003,Other,2006,8,NewHouse
+505,140000,300,0,13825,85,Timarpur,Byway,IndividualHouse,1958,Other,2008,5,NewHouse
+506,116500,0,696,7207,50,Chhatarpur,Byway,IndividualHouse,1958,Other,2010,5,NewHouse
+507,209500,627,24,4590,34,Okhla Indl Estate,Byway,RowHouses,2006,Other,2007,8,NewHouse
+508,157000,439,1084,10000,80,Tilak Nagar,Byway,IndividualHouse,1973,SemiPrivate,2008,5,NewHouse
+509,85400,264,387,1680,21,Chanakyapuri,Byway,RowHouses,1971,Other,2008,6,SecondResale
+510,204750,684,648,9337,69,India Gate,Byway,IndividualHouse,1997,Other,2007,6,NewHouse
+511,140000,400,156,12155,NA,Rohini,Byway,IndividualHouse,1925,Other,2008,6,NewHouse
+512,139600,452,0,13680,NA,Jama Masjid,Byway,IndividualHouse,1955,Other,2009,3,NewHouse
+513,170000,461,0,3696,NA,Mundka,Byway,RowHousesE,1986,Other,2007,8,NewHouse
+514,134800,576,234,7200,60,RK Puram,Byway,IndividualHouse,1951,Other,2010,5,NewHouse
+515,325300,853,0,14215,101,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2006,8,FirstResale
+516,200000,484,859,10382,NA,Tilak Nagar,Trunk road,IndividualHouse,1973,Other,2009,7,NewHouse
+517,149000,270,0,7200,60,Ina Colony,Byway,IndividualHouse,1931,SemiPrivate,2008,7,NewHouse
+518,250000,836,655,14260,84,Yamuna Vihar,Byway,IndividualHouse,2000,Other,2008,8,NewHouse
+519,109500,240,0,9022,52,Burari,Byway,IndividualHouse,1924,Other,2009,5,NewHouse
+520,166000,720,507,8520,71,RK Puram,Driveway,IndividualHouse,1952,SemiPrivate,2010,5,NewHouse
+521,129000,576,789,9873,60,Chhatarpur,Dual carriageway,TwoStoreyHouse,1970,Other,2006,4,NewHouse
+522,117000,660,408,10998,60,Jama Masjid,Byway,IndividualHouse,1941,Other,2009,5,NewHouse
+523,130000,0,0,8525,55,Rohini,Byway,IndividualHouse,1911,Other,2008,5,SecondResale
+524,224000,924,728,14778,NA,Ina Colony,Trunk road,IndividualHouse,1954,Other,2008,6,NewHouse
+525,184900,555,833,10083,67,Lodhi Colony,Byway,IndividualHouse,2003,Other,2009,7,NewHouse
+526,354000,872,970,12099,99,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2007,8,NewHouse
+527,230000,534,0,9742,75,India Gate,Byway,IndividualHouse,2002,Other,2008,8,NewHouse
+528,175000,480,444,12886,70,Timarpur,Byway,IndividualHouse,1963,Other,2009,5,NewHouse
+529,110500,440,397,6000,50,Burari,Driveway,IndividualHouse,1925,SemiPrivate,2006,6,NewHouse
+530,113000,264,356,1890,21,Chanakyapuri,Byway,RowHouses,1973,Other,2007,6,NewHouse
+531,287000,905,0,9240,NA,India Gate,Byway,IndividualHouse,2001,Other,2008,8,NewHouse
+532,174000,530,0,10400,80,Tilak Nagar,Byway,IndividualHouse,1970,SemiPrivate,2008,7,NewHouse
+533,318000,818,0,12030,93,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+534,130500,264,641,6600,60,Vasant Vihar,Byway,IndividualHouse,1982,SemiPrivate,2008,5,NewHouse
+535,179200,496,1200,7153,NA,Lodhi Colony,Byway,IndividualHouse,1991,GovernmentBuild,2008,6,NewHouse
+536,139000,416,686,10800,60,Burari,Driveway,IndividualHouse,1915,Other,2010,5,NewHouse
+537,112000,288,0,8926,NA,Jama Masjid,Byway,IndividualHouse,1956,SemiPrivate,2009,4,SecondResale
+538,152000,576,732,12464,82,India Gate,Byway,IndividualHouse,1996,PrivateBuilder,2009,5,NewHouse
+539,179200,529,430,8012,50,Lodhi Colony,Byway,RowHousesE,1992,Other,2007,6,NewHouse
+540,100000,0,266,7446,NA,Chhatarpur,Frontage road,IndividualHouse,1941,GovernmentBuild,2006,4,SecondResale
+541,260000,430,1274,16158,124,Mundka,Byway,IndividualHouse,2005,Other,2009,7,NewHouse
+542,145000,672,0,10859,112,India Gate,Byway,IndividualHouse,1994,Other,2009,5,NewHouse
+543,165000,180,0,10592,55,Ina Colony,Byway,IndividualHouse,1923,Other,2007,6,NewHouse
+544,174000,390,0,12589,149,Karol Bagh,Byway,IndividualHouse,2005,Other,2009,6,NewHouse
+545,165500,447,1018,10552,70,RK Puram,Byway,IndividualHouse,1959,Other,2010,5,NewHouse
+546,320000,594,1470,12376,90,Lodhi Colony,Byway,IndividualHouse,1990,Other,2010,7,NewHouse
+547,76000,360,0,9000,60,Lodhi Colony,Byway,IndividualHouse,1928,Other,2009,6,NewHouse
+548,109500,0,784,6130,50,Chhatarpur,Byway,IndividualHouse,1924,Other,2008,5,NewHouse
+549,403000,810,689,15138,174,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2009,8,NewHouse
+550,139000,288,170,11616,NA,Timarpur,Byway,IndividualHouse,1962,Other,2009,5,NewHouse
+551,319900,576,456,7658,61,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2010,9,NewHouse
+552,112000,384,0,11767,70,Jama Masjid,Byway,IndividualHouse,1910,GovernmentBuild,2007,4,NewHouse
+553,185500,494,24,8773,65,India Gate,Byway,IndividualHouse,2004,Other,2010,7,NewHouse
+554,104000,0,0,5520,92,Burari,Byway,IndividualHouse,1912,SemiPrivate,2009,6,SecondResale
+555,314813,774,48,11694,90,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2007,9,FirstResale
+556,115000,572,167,8172,60,Jama Masjid,Byway,IndividualHouse,1955,Other,2006,5,NewHouse
+557,367294,1052,1540,8769,65,Okhla Indl Estate,Byway,RowHousesE,2008,Other,2008,9,FirstResale
+558,148500,440,566,2280,24,Model Town,Byway,RowHouses,1976,Other,2009,6,NewHouse
+559,155000,576,814,13695,66,Lodhi Colony,Interstate Highway,IndividualHouse,2003,Other,2008,6,NewHouse
+560,173000,474,567,2268,36,Okhla Indl Estate,Byway,RowHouses,2003,Other,2009,7,NewHouse
+561,126500,461,0,8892,80,RK Puram,Byway,IndividualHouse,1960,Other,2007,5,NewHouse
+562,80000,220,0,4608,47,Burari,Driveway,IndividualHouse,1945,Other,2010,4,NewHouse
+563,100000,264,330,1680,21,Chanakyapuri,Byway,RowHouses,1973,Other,2008,6,NewHouse
+564,277000,454,1065,14364,NA,Lodhi Colony,Byway,IndividualHouse,1988,Other,2007,7,NewHouse
+565,250000,936,0,10625,85,Bawana,Byway,IndividualHouse,2005,Other,2008,7,NewHouse
+566,187500,400,902,13758,44,Pitampura,Byway,IndividualHouse,1990,Other,2007,7,NewHouse
+567,152000,282,420,13710,75,Rajendra Nagar,Byway,IndividualHouse,1950,SemiPrivate,2007,5,NewHouse
+568,214000,532,810,9135,70,India Gate,Byway,IndividualHouse,2002,Other,2008,7,NewHouse
+569,185850,484,659,7052,43,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2006,7,NewHouse
+570,117500,429,338,9100,70,RK Puram,Byway,IndividualHouse,1965,GovernmentBuild,2009,5,NewHouse
+571,158000,309,270,9350,85,RK Puram,Byway,IndividualHouse,1964,SemiPrivate,2007,6,NewHouse
+572,501837,1166,1904,17423,63,Mundka,Byway,IndividualHouse,2008,Other,2009,9,FirstResale
+573,262500,750,1078,9000,75,Bawana,Byway,IndividualHouse,2008,Other,2010,8,NewHouse
+574,129500,384,906,11200,70,Timarpur,Byway,IndividualHouse,1965,Other,2008,5,NewHouse
+575,181500,460,978,9600,80,Wazirpur,Frontage road,IndividualHouse,1976,Other,2007,6,NewHouse
+576,170000,400,0,9967,76,Karol Bagh,Byway,IndividualHouse,2000,Other,2007,7,NewHouse
+577,162900,528,194,10140,78,Tilak Nagar,Byway,IndividualHouse,1976,GovernmentBuild,2006,7,NewHouse
+578,318061,617,0,7820,68,Okhla Indl Estate,Byway,RowHousesE,2007,Other,2007,9,FirstResale
+579,372402,866,1400,13891,107,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2008,8,FirstResale
+580,148800,480,239,5105,NA,Bawana,Byway,RowHousesE,2004,Other,2007,7,NewHouse
+581,192500,474,0,14006,65,India Gate,Byway,IndividualHouse,2002,Other,2006,7,NewHouse
+582,128200,308,182,10650,75,India Gate,Byway,IndividualHouse,1976,SemiPrivate,2010,5,NewHouse
+583,192140,372,0,21930,60,Karol Bagh,Dual carriageway,IndividualHouse,2005,Other,2006,5,NewHouse
+584,202500,440,213,14145,91,Tilak Nagar,Byway,IndividualHouse,1984,Other,2006,7,NewHouse
+585,139000,308,846,8176,70,RK Puram,Byway,IndividualHouse,1958,Other,2007,5,NewHouse
+586,315750,834,719,11787,95,Yamuna Vihar,Byway,IndividualHouse,1996,Other,2007,7,NewHouse
+587,194000,826,0,8556,74,India Gate,Byway,IndividualHouse,2006,Other,2007,7,NewHouse
+588,251000,499,1196,5330,41,Mundka,Byway,RowHousesE,2000,Other,2007,8,NewHouse
+589,178900,393,0,10237,65,Karol Bagh,Dual carriageway,IndividualHouse,2005,Other,2007,6,FirstResale
+590,190000,600,498,18890,NA,Timarpur,Frontage road,MultiStoreyBuilding,1977,Other,2007,5,NewHouse
+591,159000,440,600,9786,77,RK Puram,Byway,IndividualHouse,1962,PrivateBuilder,2006,6,NewHouse
+592,106000,280,321,1869,21,Chanakyapuri,Byway,RowHouses,1970,Other,2008,6,NewHouse
+593,224000,484,733,6371,44,Okhla Indl Estate,Byway,RowHousesE,2009,Other,2010,7,FirstResale
+594,556581,716,240,16056,85,Mundka,Byway,IndividualHouse,2005,Other,2006,9,FirstResale
+595,179600,626,0,8500,63,India Gate,Byway,IndividualHouse,2004,Other,2007,7,NewHouse
+596,163000,504,288,10197,80,RK Puram,Byway,IndividualHouse,1961,Other,2008,6,NewHouse
+597,281213,642,0,12665,88,Pitampura,Byway,IndividualHouse,2005,Other,2007,8,NewHouse
+598,135000,312,0,21286,115,Timarpur,Byway,IndividualHouse,1948,Other,2008,5,NewHouse
+599,135000,0,0,10800,60,RK Puram,Byway,IndividualHouse,1949,Other,2006,4,SecondResale
+600,143000,796,748,8163,70,RK Puram,Byway,IndividualHouse,1959,Other,2006,5,NewHouse
+601,84500,0,131,1936,21,Tughlaqabad Extention,Byway,RowHouses,1970,SemiPrivate,2007,4,NewHouse
+602,105000,280,204,9060,60,Jama Masjid,Byway,IndividualHouse,1939,SemiPrivate,2009,6,NewHouse
+603,159500,440,535,7950,75,Jama Masjid,Byway,IndividualHouse,1977,SemiPrivate,2009,6,NewHouse
+604,385000,1220,1636,14803,114,Okhla Indl Estate,Trunk road,IndividualHouse,2007,Other,2008,10,FirstResale
+605,143000,528,569,9790,NA,Tilak Nagar,Frontage road,IndividualHouse,1963,Other,2010,6,NewHouse
+606,192000,505,392,10005,83,Dhaula Kuan,Byway,IndividualHouse,1977,Other,2008,7,NewHouse
+607,115000,336,0,2665,NA,Tughlaqabad Extention,Byway,RowHousesE,1976,Other,2008,5,NewHouse
+608,180000,540,938,21453,NA,Dhaula Kuan,Byway,IndividualHouse,1969,Other,2006,6,NewHouse
+609,106500,294,0,8339,NA,RK Puram,Byway,IndividualHouse,1959,SemiPrivate,2007,5,NewHouse
+610,194201,648,0,3922,53,Adarsh Nagar,Byway,RowHousesE,2006,Other,2007,7,FirstResale
+611,285000,656,0,11999,93,Okhla Indl Estate,Byway,IndividualHouse,2003,Other,2007,8,NewHouse
+612,196000,624,900,5381,34,Okhla Indl Estate,Byway,RowHouses,2005,Other,2009,6,NewHouse
+613,137500,180,0,6120,51,Chhatarpur,Byway,IndividualHouse,1920,Other,2007,5,NewHouse
+614,108000,296,0,9084,60,Jama Masjid,Driveway,IndividualHouse,1940,SemiPrivate,2009,4,NewHouse
+615,98600,480,600,8500,85,RK Puram,Byway,IndividualHouse,1961,GovernmentBuild,2006,5,SecondResale
+616,154000,474,573,2448,36,Okhla Indl Estate,Byway,RowHouses,2003,Other,2008,7,NewHouse
+617,149000,420,662,4438,NA,India Gate,Byway,RowHousesE,2004,Other,2008,6,NewHouse
+618,287000,665,1165,15498,NA,Pitampura,Byway,IndividualHouse,1976,Other,2008,8,SecondResale
+619,124500,264,546,8314,76,Vasant Vihar,Byway,IndividualHouse,1982,Other,2007,5,NewHouse
+620,61000,0,350,10020,NA,Jama Masjid,Byway,IndividualHouse,1922,Other,2009,1,NewHouse
+621,60000,350,0,9571,68,Jama Masjid,Byway,IndividualHouse,1958,Other,2009,5,SecondResale
+622,249700,826,24,11096,84,Bawana,Byway,IndividualHouse,2006,Other,2007,8,NewHouse
+623,60000,0,0,6120,51,Chhatarpur,Byway,IndividualHouse,1936,Other,2009,2,NewHouse
+624,174900,490,312,9020,82,RK Puram,Byway,IndividualHouse,1966,PrivateBuilder,2008,6,NewHouse
+625,157900,312,593,26142,NA,Vasant Vihar,Byway,IndividualHouse,1962,Other,2010,5,NewHouse
+626,136500,336,646,7000,NA,India Gate,Byway,IndividualHouse,1978,GovernmentBuild,2009,5,NewHouse
+627,162000,400,0,7750,NA,Karol Bagh,Dual carriageway,IndividualHouse,2003,Other,2007,7,NewHouse
+628,80000,0,288,9000,NA,Timarpur,Byway,IndividualHouse,1959,Other,2008,5,NewHouse
+629,185000,538,249,28698,NA,Dhaula Kuan,Byway,IndividualHouse,1967,Other,2009,5,SecondResale
+630,98000,0,468,5604,67,Jama Masjid,Byway,IndividualHouse,1925,Other,2008,5,NewHouse
+631,315000,770,1447,16737,129,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2006,9,NewHouse
+632,248000,648,0,11000,NA,Yamuna Vihar,Byway,IndividualHouse,2000,Other,2007,8,NewHouse
+633,410000,666,816,14720,56,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2010,8,NewHouse
+634,187500,409,592,13031,NA,Karol Bagh,Byway,IndividualHouse,1995,Other,2006,6,NewHouse
+635,185000,572,905,7200,60,Bawana,Byway,IndividualHouse,2006,Other,2006,6,FirstResale
+636,170000,528,885,10625,85,Tilak Nagar,Byway,IndividualHouse,1974,SemiPrivate,2010,7,ThirdResale
+637,197000,550,1039,3316,37,Bawana,Byway,RowHousesE,2005,Other,2006,8,NewHouse
+638,135000,240,0,3378,60,Burari,Byway,IndividualHouse,1946,Other,2009,7,NewHouse
+639,325000,712,1032,12256,98,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2010,8,NewHouse
+640,112500,461,138,7700,70,India Gate,Byway,IndividualHouse,1972,SemiPrivate,2007,5,NewHouse
+641,268000,590,728,13346,NA,Yamuna Vihar,Byway,IndividualHouse,1992,Other,2006,7,NewHouse
+642,91300,273,0,5784,50,Burari,Driveway,IndividualHouse,1938,Other,2009,5,NewHouse
+643,207000,370,0,13053,64,Chhatarpur,Byway,IndividualHouse,1923,Other,2008,6,NewHouse
+644,222000,540,808,21695,NA,Ina Colony,Byway,IndividualHouse,1988,Other,2009,6,NewHouse
+645,189000,472,767,4671,40,Mundka,Byway,RowHousesE,1988,Other,2008,8,NewHouse
+646,115000,240,0,6240,NA,Chhatarpur,Byway,IndividualHouse,1936,Other,2006,5,NewHouse
+647,154000,305,340,7500,75,RK Puram,Byway,IndividualHouse,1959,PrivateBuilder,2010,5,NewHouse
+648,135000,288,465,6993,65,Timarpur,Frontage road,IndividualHouse,1961,Other,2006,5,NewHouse
+649,145900,0,1084,8777,67,Jama Masjid,Frontage road,MultiStoreyBuilding,1900,PrivateBuilder,2008,5,NewHouse
+650,183500,440,0,8244,62,Karol Bagh,Byway,IndividualHouse,2004,Other,2007,7,NewHouse
+651,123000,600,777,7200,60,India Gate,Byway,IndividualHouse,1972,Other,2009,5,NewHouse
+652,102776,384,0,8712,66,Rajendra Nagar,Byway,IndividualHouse,1900,Other,2010,4,SecondResale
+653,184000,484,626,7472,NA,RK Puram,Byway,IndividualHouse,1972,Other,2007,7,NewHouse
+654,221500,865,20,11210,86,India Gate,Byway,IndividualHouse,2005,Other,2006,7,FirstResale
+655,625000,807,1387,35760,118,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2006,10,NewHouse
+656,167500,532,0,11414,60,Chhatarpur,Dual carriageway,IndividualHouse,1910,PrivateBuilder,2009,7,NewHouse
+657,208900,466,0,4230,47,Bawana,Byway,RowHousesE,2006,Other,2007,7,FirstResale
+658,154000,441,298,11700,78,Tilak Nagar,Dual carriageway,IndividualHouse,1968,Other,2009,6,NewHouse
+659,253293,1390,0,12704,98,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,8,FirstResale
+660,254900,678,222,12552,100,Bawana,Byway,IndividualHouse,2004,GovernmentBuild,2010,7,NewHouse
+661,140000,451,0,11310,75,RK Puram,Byway,IndividualHouse,1954,Other,2006,6,NewHouse
+662,294000,518,125,17542,NA,Wazirpur,Byway,IndividualHouse,1974,SemiPrivate,2007,7,NewHouse
+663,176500,601,528,11029,87,RK Puram,Byway,IndividualHouse,1958,Other,2008,6,NewHouse
+664,208500,548,706,8450,65,India Gate,Byway,IndividualHouse,2003,Other,2008,7,NewHouse
+665,256000,520,493,10440,60,Burari,Byway,IndividualHouse,1920,SemiPrivate,2008,6,NewHouse
+666,40000,250,0,8500,50,Rajendra Nagar,Frontage road,IndividualHouse,1920,SemiPrivate,2008,4,NewHouse
+667,100000,264,0,6060,50,Rajendra Nagar,Byway,IndividualHouse,1939,SemiPrivate,2007,4,NewHouse
+668,110000,270,0,5684,70,Burari,Byway,IndividualHouse,1930,Other,2006,6,NewHouse
+669,230000,470,296,14115,90,Ina Colony,Byway,IndividualHouse,1956,Other,2006,6,SecondResale
+670,120000,297,111,7535,70,RK Puram,Byway,IndividualHouse,1958,Society,2007,5,NewHouse
+671,136000,216,168,8520,60,Burari,Driveway,IndividualHouse,1916,GovernmentBuild,2007,6,ThirdResale
+672,172500,451,57,13650,NA,Timarpur,Byway,IndividualHouse,1958,Other,2006,5,NewHouse
+673,140000,672,936,7200,60,Burari,Byway,MultiStoreyBuilding,1980,Other,2007,5,NewHouse
+674,250000,693,1216,11170,NA,Pitampura,Byway,IndividualHouse,1990,PrivateBuilder,2006,7,NewHouse
+675,236000,574,750,9938,80,Lodhi Colony,Byway,IndividualHouse,1993,PrivateBuilder,2010,7,NewHouse
+676,85000,0,0,8470,105,Rajendra Nagar,Frontage road,IndividualHouse,1915,SemiPrivate,2009,3,SecondResale
+677,158000,576,941,13072,63,Lodhi Colony,Interstate Highway,IndividualHouse,2004,Other,2006,6,FirstResale
+678,91500,280,0,7585,50,Jama Masjid,Driveway,IndividualHouse,1948,Other,2006,5,NewHouse
+679,189000,462,0,11218,70,Lodhi Colony,Byway,IndividualHouse,1992,PrivateBuilder,2010,6,NewHouse
+680,184000,616,1398,12416,47,Pitampura,Byway,IndividualHouse,1986,Other,2008,6,NewHouse
+681,200141,440,0,11175,103,India Gate,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+682,206300,784,1309,7060,78,Vasant Vihar,Byway,MultiStoreyBuilding,1997,Other,2008,7,FourthResale
+683,179665,426,554,17104,58,Karol Bagh,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+684,188000,560,1606,9297,63,Vasant Vihar,Byway,MultiStoreyBuilding,1976,Other,2006,5,ThirdResale
+685,168000,373,0,10364,NA,Karol Bagh,Byway,IndividualHouse,1995,Other,2007,6,NewHouse
+686,129000,596,187,18450,NA,RK Puram,Byway,IndividualHouse,1965,Other,2007,6,SecondResale
+687,128000,240,672,6000,50,Chhatarpur,Byway,IndividualHouse,1936,Other,2009,4,NewHouse
+688,147000,895,0,9986,75,Bawana,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+689,135000,506,0,9246,87,Tilak Nagar,Frontage road,MultiStoreyBuilding,1973,Other,2008,5,NewHouse
+690,196000,530,16,4282,59,Bawana,Byway,RowHousesE,2004,Other,2008,7,NewHouse
+691,201800,492,454,13700,NA,RK Puram,Byway,IndividualHouse,1965,PrivateBuilder,2008,7,NewHouse
+692,125000,336,842,8521,70,Timarpur,Frontage road,IndividualHouse,1967,SemiPrivate,2010,5,NewHouse
+693,381000,1014,192,14100,NA,Ina Colony,Byway,IndividualHouse,1935,GovernmentBuild,2008,8,NewHouse
+694,335000,567,1406,17500,100,Ina Colony,Arterial road,IndividualHouse,1959,Other,2010,7,NewHouse
+695,175000,576,1005,11457,130,Pitampura,Byway,IndividualHouse,1988,Other,2009,6,NewHouse
+696,184750,884,2260,40094,130,Jama Masjid,Trunk road,IndividualHouse,2007,Other,2007,10,FirstResale
+697,111250,576,600,12735,NA,RK Puram,Byway,IndividualHouse,1972,Society,2008,4,NewHouse
+698,141000,312,419,12493,NA,RK Puram,Byway,IndividualHouse,1960,GovernmentBuild,2008,4,NewHouse
+699,142000,304,775,8450,65,RK Puram,Byway,IndividualHouse,1968,Other,2010,5,NewHouse
+700,173733,528,294,3000,30,Bawana,Byway,RowHousesE,2009,Other,2009,6,FirstResale
+701,89500,264,358,1680,21,Chanakyapuri,Byway,RowHousesE,1971,Other,2008,6,NewHouse
+702,227000,528,643,8400,70,Tilak Nagar,Byway,IndividualHouse,2001,Other,2009,8,NewHouse
+703,105000,936,0,10410,60,Burari,Driveway,IndividualHouse,1915,SemiPrivate,2006,3,ThirdResale
+704,328900,506,1238,5119,50,Bawana,Byway,RowHousesE,1999,Other,2008,9,SecondResale
+705,137500,588,920,10012,90,Jama Masjid,Byway,IndividualHouse,1972,SemiPrivate,2008,4,NewHouse
+706,101800,462,0,9842,70,RK Puram,Byway,MultiStoreyBuilding,1962,Other,2007,4,NewHouse
+707,222500,541,252,11404,75,India Gate,Byway,IndividualHouse,1998,Other,2008,7,NewHouse
+708,139000,338,620,9600,80,RK Puram,Frontage road,IndividualHouse,1958,SemiPrivate,2009,6,NewHouse
+709,83000,264,309,1953,21,Chanakyapuri,Byway,RowHouses,1973,Other,2006,6,NewHouse
+710,271900,701,485,14684,90,Lodhi Colony,Byway,IndividualHouse,1990,Other,2009,7,NewHouse
+711,133000,367,584,4058,34,RK Puram,Byway,RowHousesE,1998,Other,2007,7,NewHouse
+712,207500,626,904,5063,34,Okhla Indl Estate,Byway,RowHouses,2007,Other,2009,7,NewHouse
+713,152000,480,338,9672,81,Lodhi Colony,Byway,IndividualHouse,1984,PrivateBuilder,2010,6,NewHouse
+714,159000,420,399,5000,50,Chhatarpur,Frontage road,IndividualHouse,1947,Other,2006,6,NewHouse
+715,189950,216,0,7642,55,Ina Colony,Byway,IndividualHouse,1918,PrivateBuilder,2007,7,NewHouse
+716,148000,525,459,3675,35,Jama Masjid,Byway,RowHousesE,2005,Other,2008,6,NewHouse
+717,173000,431,1003,2887,NA,Dhaula Kuan,Byway,IndividualHouse,1996,Other,2008,6,NewHouse
+718,130000,380,0,3363,32,Jama Masjid,Byway,RowHousesE,2004,Other,2006,7,NewHouse
+719,200000,968,500,11643,91,RK Puram,Driveway,MultiStoreyBuilding,1969,Other,2009,5,NewHouse
+720,181000,470,0,10839,100,Karol Bagh,Byway,IndividualHouse,1997,Other,2008,6,NewHouse
+721,193500,509,448,13000,100,RK Puram,Byway,IndividualHouse,1968,Other,2009,6,NewHouse
+722,148500,440,311,2289,24,Model Town,Byway,RowHouses,1978,Other,2009,6,NewHouse
+723,96500,200,0,10594,55,Ina Colony,Byway,IndividualHouse,1926,SemiPrivate,2007,5,NewHouse
+724,164000,492,427,12134,152,Karol Bagh,Byway,IndividualHouse,1988,Other,2010,8,NewHouse
+725,167900,630,686,9650,80,Tilak Nagar,Byway,IndividualHouse,1977,Other,2009,6,NewHouse
+726,129900,624,521,9100,70,RK Puram,Frontage road,IndividualHouse,1958,Other,2006,5,NewHouse
+727,252678,644,822,8640,72,Bawana,Byway,IndividualHouse,2009,Other,2009,7,FirstResale
+728,193000,588,633,9179,68,India Gate,Byway,IndividualHouse,1999,Other,2008,7,SecondResale
+729,124000,336,25,9204,71,RK Puram,Byway,IndividualHouse,1963,Other,2008,5,NewHouse
+730,134000,322,250,8250,55,Timarpur,Frontage road,IndividualHouse,1968,Other,2008,5,NewHouse
+731,485000,820,0,13518,104,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,9,FirstResale
+732,180000,393,0,7875,63,Karol Bagh,Byway,IndividualHouse,2003,Other,2006,7,NewHouse
+733,316600,612,1441,12327,79,Lodhi Colony,Byway,IndividualHouse,1983,Other,2009,8,NewHouse
+734,206900,576,500,11075,85,RK Puram,Byway,IndividualHouse,1969,Other,2008,6,NewHouse
+735,188700,240,326,11988,74,Ina Colony,Byway,IndividualHouse,1934,Other,2008,6,NewHouse
+736,339750,836,789,10800,85,Bawana,Byway,IndividualHouse,2007,Other,2008,8,FirstResale
+737,141000,300,179,7945,70,RK Puram,Byway,IndividualHouse,1959,Other,2006,5,NewHouse
+738,383970,792,984,9965,77,India Gate,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+739,233170,644,0,9541,79,Okhla Indl Estate,Byway,IndividualHouse,2009,Other,2009,7,FirstResale
+740,128500,660,360,12358,NA,Burari,Frontage road,IndividualHouse,1941,Other,2007,5,NewHouse
+741,185000,540,442,9120,76,Tilak Nagar,Byway,IndividualHouse,1974,Other,2008,6,NewHouse
+742,307000,636,1369,10084,75,Bawana,Byway,IndividualHouse,2004,Other,2007,8,NewHouse
+743,175500,474,0,2628,36,Okhla Indl Estate,Byway,RowHouses,2003,Other,2010,7,NewHouse
+744,143000,315,196,10496,78,RK Puram,Driveway,IndividualHouse,1949,GovernmentBuild,2007,6,NewHouse
+745,150900,574,936,12640,55,Vasant Vihar,Byway,MultiStoreyBuilding,1976,Other,2006,6,NewHouse
+746,185000,413,714,11207,70,Karol Bagh,Byway,IndividualHouse,1997,Other,2006,6,NewHouse
+747,170000,418,1071,10010,77,Vasant Vihar,Byway,IndividualHouse,1974,Other,2006,5,NewHouse
+748,227680,554,0,12274,91,Bawana,Byway,IndividualHouse,2008,Other,2008,7,FirstResale
+749,113000,280,0,6380,58,Chhatarpur,Byway,IndividualHouse,1922,Other,2006,5,NewHouse
+750,157900,301,608,9750,75,RK Puram,Byway,IndividualHouse,1958,Other,2007,6,NewHouse
+751,187500,565,1036,5814,NA,Mundka,Byway,RowHousesE,1984,Other,2009,8,SecondResale
+752,100000,288,432,7150,65,RK Puram,Byway,IndividualHouse,1967,GovernmentBuild,2009,5,NewHouse
+753,137000,275,486,11425,NA,RK Puram,Byway,IndividualHouse,1954,Other,2006,5,NewHouse
+754,79000,0,544,4270,70,Jama Masjid,Byway,IndividualHouse,1931,Other,2007,3,NewHouse
+755,224900,598,0,12137,48,India Gate,Byway,IndividualHouse,1998,Other,2010,7,NewHouse
+756,131500,352,0,12150,81,Burari,Byway,IndividualHouse,1954,Other,2008,5,NewHouse
+757,191000,437,16,3182,43,Adarsh Nagar,Byway,RowHousesE,2005,Other,2008,7,NewHouse
+758,317000,852,0,9591,76,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2007,8,NewHouse
+759,160000,1418,5644,63887,313,Jama Masjid,Frontage road,IndividualHouse,2008,Other,2008,10,FirstResale
+760,147000,576,595,8872,72,RK Puram,Byway,IndividualHouse,1965,Other,2008,5,NewHouse
+761,244000,516,1880,13651,95,RK Puram,Byway,IndividualHouse,1973,Other,2007,7,NewHouse
+762,169900,888,539,12328,NA,Vasant Vihar,Byway,IndividualHouse,1976,Other,2010,6,NewHouse
+763,140000,271,120,9600,80,RK Puram,Byway,IndividualHouse,1950,SemiPrivate,2009,6,NewHouse
+764,160000,484,936,17400,80,Vasant Vihar,Byway,IndividualHouse,1977,Other,2006,5,NewHouse
+765,118964,410,0,7018,64,Lodhi Colony,Byway,MultiStoreyBuilding,1979,Other,2009,5,FourthResale
+766,274725,422,0,23257,168,Karol Bagh,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+767,170000,566,626,10800,60,Burari,Byway,IndividualHouse,1936,Other,2006,5,NewHouse
+768,207000,484,720,8198,59,Okhla Indl Estate,Byway,RowHousesE,2004,Other,2008,7,NewHouse
+769,137450,216,264,6171,51,Rohini,Byway,IndividualHouse,1925,SemiPrivate,2009,6,NewHouse
+770,220000,660,1334,8814,68,India Gate,Byway,IndividualHouse,2006,Other,2009,7,SecondResale
+771,110000,352,185,7015,NA,Chhatarpur,Byway,IndividualHouse,1950,Other,2009,5,NewHouse
+772,165000,540,442,9500,100,RK Puram,Driveway,IndividualHouse,1964,PrivateBuilder,2007,6,NewHouse
+773,342643,840,0,16259,111,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2006,9,FirstResale
+774,137500,252,0,11600,80,Ina Colony,Byway,IndividualHouse,1922,Other,2006,4,NewHouse
+775,132000,252,377,13300,70,RK Puram,Byway,IndividualHouse,1956,Other,2007,5,NewHouse
+776,138000,480,746,8072,60,India Gate,Byway,IndividualHouse,1994,Other,2009,5,NewHouse
+777,82500,539,262,12342,NA,Jama Masjid,Byway,IndividualHouse,1940,Other,2009,4,NewHouse
+778,230000,429,0,8738,66,Karol Bagh,Byway,IndividualHouse,1999,Other,2006,7,NewHouse
+779,164000,240,364,7128,53,Ina Colony,Byway,IndividualHouse,1941,SemiPrivate,2007,7,NewHouse
+780,142500,484,0,13072,63,Lodhi Colony,Interstate Highway,IndividualHouse,2005,Other,2006,6,SecondResale
+781,150500,484,532,8800,61,India Gate,Byway,IndividualHouse,1977,Other,2009,5,NewHouse
+782,148000,312,0,8760,73,RK Puram,Byway,IndividualHouse,1959,Other,2010,6,NewHouse
+783,125000,504,1332,9100,70,Timarpur,Interstate Highway,MultiStoreyBuilding,1963,Other,2006,5,SecondResale
+784,180000,484,1053,8049,50,Pitampura,Byway,IndividualHouse,1990,Other,2006,7,NewHouse
+785,255000,586,932,11367,90,India Gate,Byway,IndividualHouse,2002,Other,2006,8,NewHouse
+786,142500,440,762,13350,100,Timarpur,Byway,IndividualHouse,1974,SemiPrivate,2006,5,NewHouse
+787,197900,480,528,17871,NA,Tilak Nagar,Byway,IndividualHouse,1967,Other,2009,6,NewHouse
+788,225000,433,0,12394,NA,Karol Bagh,Byway,IndividualHouse,2003,Other,2007,7,ThirdResale
+789,143000,452,1324,25095,65,Dhaula Kuan,Byway,IndividualHouse,1968,Other,2009,5,FirstResale
+790,142600,576,231,13101,74,RK Puram,Byway,MultiStoreyBuilding,1965,Other,2008,5,NewHouse
+791,107500,392,0,7200,60,RK Puram,Byway,IndividualHouse,1955,Other,2010,5,NewHouse
+792,168000,576,988,14175,NA,Timarpur,Byway,IndividualHouse,1956,Other,2006,5,NewHouse
+793,262000,757,1456,12461,89,Yamuna Vihar,Byway,IndividualHouse,1994,PrivateBuilder,2006,8,NewHouse
+794,55000,0,0,5600,70,Rajendra Nagar,Byway,TwoStoreyHouse,1930,Other,2010,4,NewHouse
+795,311500,431,341,15660,NA,Ina Colony,Byway,IndividualHouse,1939,Other,2008,7,NewHouse
+796,217000,450,35,21000,NA,Ina Colony,Byway,IndividualHouse,1953,SemiPrivate,2007,6,SecondResale
+797,129000,450,492,8724,109,Timarpur,Byway,IndividualHouse,1968,Other,2007,5,NewHouse
+798,277500,556,1153,7313,60,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2007,9,NewHouse
+799,149900,528,176,17755,134,Jama Masjid,Byway,IndividualHouse,1959,Other,2006,5,NewHouse
+800,295493,860,0,10226,61,India Gate,Byway,IndividualHouse,2008,Other,2009,8,NewHouse
+801,101000,288,0,7200,60,Rajendra Nagar,Byway,IndividualHouse,1920,Other,2007,5,NewHouse
+802,198900,740,0,10402,94,India Gate,Byway,IndividualHouse,2009,Other,2010,7,NewHouse
+803,122500,560,0,11340,60,Burari,Byway,TwoStoreyHouse,1885,Other,2010,4,NewHouse
+804,129900,308,708,7100,73,RK Puram,Byway,IndividualHouse,1957,Other,2006,5,NewHouse
+805,226000,650,738,7050,NA,Bawana,Byway,IndividualHouse,2001,Other,2007,7,NewHouse
+806,147000,564,747,9069,73,Lodhi Colony,Byway,IndividualHouse,1992,Other,2010,6,NewHouse
+807,64500,216,0,10800,60,Burari,Byway,IndividualHouse,1927,Other,2007,4,NewHouse
+808,190000,495,416,14803,NA,Tilak Nagar,Byway,IndividualHouse,1971,GovernmentBuild,2006,6,NewHouse
+809,165000,296,371,9150,101,RK Puram,Byway,IndividualHouse,1962,Other,2008,6,NewHouse
+810,167000,418,1285,9600,80,RK Puram,Byway,IndividualHouse,1953,Other,2009,6,NewHouse
+811,270000,1025,0,9000,75,Bawana,Byway,IndividualHouse,2006,Other,2007,8,NewHouse
+812,198500,672,0,7301,64,Jama Masjid,Byway,IndividualHouse,2003,Other,2009,7,NewHouse
+813,207500,612,625,10240,79,Tilak Nagar,Byway,IndividualHouse,1980,Other,2006,6,NewHouse
+814,143750,440,958,4928,NA,Model Town,Byway,RowHousesE,1976,Other,2009,6,NewHouse
+815,109000,246,731,7922,68,RK Puram,Byway,IndividualHouse,1953,Other,2010,5,SecondResale
+816,179900,776,404,11700,90,Tilak Nagar,Byway,IndividualHouse,1968,Other,2006,6,NewHouse
+817,199900,569,1106,4274,35,Bawana,Byway,RowHousesE,2006,Other,2007,7,FirstResale
+818,212900,782,24,10084,84,India Gate,Byway,IndividualHouse,2005,Other,2006,7,FirstResale
+819,271000,525,1000,10944,81,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2008,7,NewHouse
+820,315000,696,986,9200,80,Yamuna Vihar,Byway,IndividualHouse,1998,Other,2008,8,NewHouse
+821,207500,319,1277,16321,47,RK Puram,Byway,IndividualHouse,1957,Other,2006,5,NewHouse
+822,135500,384,400,9750,75,RK Puram,Byway,IndividualHouse,1967,Other,2006,5,NewHouse
+823,241000,438,812,8125,65,Bawana,Byway,IndividualHouse,2006,Other,2009,7,NewHouse
+824,157500,498,1270,17600,NA,RK Puram,Byway,IndividualHouse,1960,Other,2009,6,NewHouse
+825,150000,0,1440,7711,42,Jama Masjid,Byway,MultiStoreyBuilding,1977,Other,2007,4,SecondResale
+826,348000,870,1074,9452,82,Yamuna Vihar,Byway,IndividualHouse,1997,Other,2006,8,NewHouse
+827,223500,608,486,11250,68,India Gate,Byway,IndividualHouse,2001,Other,2008,7,NewHouse
+828,118500,440,0,6204,60,Rohini,Byway,IndividualHouse,1912,Other,2006,4,NewHouse
+829,115000,288,312,7800,66,RK Puram,Byway,IndividualHouse,1964,Other,2006,5,SecondResale
+830,118400,308,0,8263,59,Rajendra Nagar,Byway,IndividualHouse,1920,SemiPrivate,2007,6,NewHouse
+831,109900,440,197,4800,40,Rajendra Nagar,Byway,IndividualHouse,1916,Other,2007,4,NewHouse
+832,158500,300,0,14000,80,Ina Colony,Byway,IndividualHouse,1950,PrivateBuilder,2009,6,ThirdResale
+833,235000,540,626,13728,120,Jama Masjid,Byway,IndividualHouse,1935,Other,2008,6,NewHouse
+834,241500,439,226,39104,73,Dhaula Kuan,Byway,IndividualHouse,1954,Other,2008,7,NewHouse
+835,147000,440,257,2308,24,Model Town,Byway,RowHousesE,1974,Other,2009,6,NewHouse
+836,158900,440,438,11616,NA,Timarpur,Byway,IndividualHouse,1978,PrivateBuilder,2010,6,SecondResale
+837,184100,527,353,7750,NA,Karol Bagh,Byway,IndividualHouse,2002,Other,2009,8,NewHouse
+838,239686,670,1351,12822,48,Vasant Vihar,Byway,IndividualHouse,2003,Other,2009,7,SecondResale
+839,144000,504,747,9180,NA,Lodhi Colony,Byway,IndividualHouse,1983,SemiPrivate,2007,5,NewHouse
+840,131000,440,375,6000,60,Chhatarpur,Byway,IndividualHouse,1941,Other,2007,6,NewHouse
+841,280000,947,0,14154,109,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,7,FirstResale
+842,285000,541,700,10678,85,Yamuna Vihar,Byway,IndividualHouse,1992,Other,2007,8,NewHouse
+843,290000,752,56,12257,65,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2007,8,NewHouse
+844,150000,490,1116,9991,NA,Timarpur,Frontage road,IndividualHouse,1976,GovernmentBuild,2009,4,NewHouse
+845,130000,450,702,9764,57,Timarpur,Frontage road,IndividualHouse,1967,Other,2008,5,NewHouse
+846,275000,569,1518,12800,NA,Lodhi Colony,Byway,IndividualHouse,1989,Other,2009,7,NewHouse
+847,275000,482,1373,3842,44,Ina Colony,Byway,RowHousesE,2004,Other,2008,8,NewHouse
+848,156500,442,189,8400,70,RK Puram,Byway,IndividualHouse,1957,Other,2009,6,NewHouse
+849,319000,758,1422,11302,69,Mundka,Byway,IndividualHouse,2005,Other,2006,8,FirstResale
+850,208900,508,994,13125,75,India Gate,Byway,IndividualHouse,1997,Other,2008,6,NewHouse
+851,117500,205,0,9900,90,Burari,Byway,IndividualHouse,1880,Other,2007,6,NewHouse
+852,98300,420,0,7200,60,RK Puram,Byway,IndividualHouse,1950,Other,2008,5,NewHouse
+853,205000,486,454,13600,85,RK Puram,Byway,IndividualHouse,1965,Other,2009,7,NewHouse
+854,174000,462,0,8400,80,RK Puram,Byway,IndividualHouse,1962,PrivateBuilder,2008,6,SecondResale
+855,195000,551,156,12046,NA,Tilak Nagar,Byway,IndividualHouse,1976,Other,2007,6,NewHouse
+856,257000,620,976,10994,88,Lodhi Colony,Byway,IndividualHouse,2005,Other,2009,8,SecondResale
+857,169000,460,0,8773,57,Karol Bagh,Byway,IndividualHouse,1997,Other,2007,6,NewHouse
+858,139000,297,616,9000,72,RK Puram,Byway,IndividualHouse,1956,Other,2008,6,NewHouse
+859,95000,420,440,10615,107,Burari,Driveway,TwoStoreyHouse,1900,Other,2009,3,SecondResale
+860,189000,527,20,8529,65,Lodhi Colony,Byway,IndividualHouse,2001,Other,2009,7,NewHouse
+861,141000,400,120,19138,140,Karol Bagh,Byway,IndividualHouse,1951,Other,2010,4,NewHouse
+862,109500,308,0,6600,60,RK Puram,Trunk road,IndividualHouse,1962,Other,2009,5,NewHouse
+863,153500,405,1201,4500,32,Vasant Vihar,Byway,RowHousesE,1998,Other,2006,6,NewHouse
+864,183900,506,450,3735,35,Bawana,Byway,RowHousesE,1999,Other,2006,7,NewHouse
+865,79900,0,0,5586,60,Burari,Frontage road,IndividualHouse,1920,SemiPrivate,2008,6,SecondResale
+866,124000,240,0,9000,50,Burari,Driveway,IndividualHouse,1880,SemiPrivate,2006,5,SecondResale
+867,94000,0,0,6342,54,Timarpur,Frontage road,IndividualHouse,1875,Other,2010,5,NewHouse
+868,244400,349,0,24090,NA,Dhaula Kuan,Byway,IndividualHouse,1940,Other,2010,7,NewHouse
+869,110500,0,329,3880,40,Burari,Byway,IndividualHouse,1945,Other,2007,5,NewHouse
+870,139400,260,480,9250,80,RK Puram,Byway,IndividualHouse,1954,Other,2007,5,NewHouse
+871,157000,576,0,7200,60,Burari,Byway,IndividualHouse,1920,Other,2006,7,NewHouse
+872,178000,476,0,9206,77,Lodhi Colony,Byway,IndividualHouse,1985,Other,2010,6,NewHouse
+873,194500,457,402,9453,NA,Lodhi Colony,Parkway,IndividualHouse,1993,Other,2010,7,NewHouse
+874,120000,308,331,6000,50,Burari,Byway,IndividualHouse,1948,Other,2007,3,NewHouse
+875,130000,275,210,10267,55,Chhatarpur,Dual carriageway,IndividualHouse,1918,Society,2008,6,NewHouse
+876,582933,1020,0,13891,107,Okhla Indl Estate,Byway,IndividualHouse,2008,Other,2009,9,FirstResale
+877,302000,750,482,9572,NA,Yamuna Vihar,Byway,IndividualHouse,1990,Other,2007,8,NewHouse
+878,309000,691,0,13418,108,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2006,8,NewHouse
+879,148000,504,751,7917,NA,Jama Masjid,Byway,IndividualHouse,1976,PrivateBuilder,2007,6,NewHouse
+880,176000,551,980,13811,54,Pitampura,Byway,IndividualHouse,1987,Other,2006,6,NewHouse
+881,125000,440,765,2368,24,Chanakyapuri,Byway,RowHousesE,1970,Other,2009,5,NewHouse
+882,130000,572,384,7134,60,RK Puram,Byway,IndividualHouse,1955,SemiPrivate,2007,5,NewHouse
+883,169990,397,28,10237,65,Karol Bagh,Dual carriageway,IndividualHouse,2005,Other,2006,6,FirstResale
+884,213000,606,712,8400,70,India Gate,Byway,IndividualHouse,2004,Other,2010,7,NewHouse
+885,144000,352,0,9525,75,India Gate,Byway,IndividualHouse,1995,Other,2008,5,NewHouse
+886,118500,0,816,11841,81,Jama Masjid,Byway,MultiStoreyBuilding,1990,Other,2007,6,NewHouse
+887,138000,240,180,7200,60,RK Puram,Byway,IndividualHouse,1950,PrivateBuilder,2009,5,NewHouse
+888,437154,706,1410,20431,56,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2006,9,FirstResale
+889,230000,660,668,9066,73,India Gate,Byway,IndividualHouse,1999,PrivateBuilder,2008,8,NewHouse
+890,82000,528,0,10206,74,Jama Masjid,Byway,IndividualHouse,1952,Other,2009,3,NewHouse
+891,85000,280,247,7200,60,Burari,Byway,IndividualHouse,1910,Other,2009,5,NewHouse
+892,214900,510,624,11316,80,Pitampura,Byway,IndividualHouse,2002,Other,2010,7,NewHouse
+893,216837,484,24,9100,70,India Gate,Byway,IndividualHouse,2004,Other,2006,7,NewHouse
+894,153000,756,860,8712,64,RK Puram,Byway,IndividualHouse,1957,Other,2009,5,NewHouse
+895,168000,1356,1159,32463,NA,Vasant Vihar,Byway,TwoStoreyHouse,1961,Other,2007,4,NewHouse
+896,210000,500,790,13175,85,Tilak Nagar,Byway,IndividualHouse,1978,SemiPrivate,2010,6,NewHouse
+897,181000,484,663,10140,78,Tilak Nagar,Byway,IndividualHouse,1974,PrivateBuilder,2006,6,NewHouse
+898,315000,440,297,10570,70,Ina Colony,Byway,IndividualHouse,1932,Other,2007,8,NewHouse
+899,135960,600,943,7032,NA,RK Puram,Byway,MultiStoreyBuilding,1979,Other,2006,5,NewHouse
+900,164500,528,0,3951,40,Bawana,Byway,RowHousesE,2009,Other,2009,6,FirstResale
+901,167000,472,196,10004,100,RK Puram,Byway,IndividualHouse,1964,Other,2009,6,NewHouse
+902,139000,552,0,5362,53,Ina Colony,Byway,IndividualHouse,1910,Other,2007,5,NewHouse
+903,153500,495,788,10140,78,Tilak Nagar,Byway,IndividualHouse,1975,SemiPrivate,2006,5,NewHouse
+904,260400,527,919,10593,59,Yamuna Vihar,Byway,IndividualHouse,1996,Other,2010,7,NewHouse
+905,78000,189,0,6402,60,Rajendra Nagar,Byway,IndividualHouse,1920,GovernmentBuild,2009,5,NewHouse
+906,103200,0,0,5500,55,Burari,Byway,IndividualHouse,1956,SemiPrivate,2007,4,NewHouse
+907,162500,516,660,11120,NA,Wazirpur,Byway,IndividualHouse,1984,Other,2008,6,NewHouse
+908,104900,392,392,9738,60,Jama Masjid,Byway,IndividualHouse,1924,Other,2006,5,NewHouse
+909,215000,529,1246,16635,NA,Tilak Nagar,Byway,IndividualHouse,1977,Other,2009,6,NewHouse
+910,424870,1052,1150,9965,77,India Gate,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+911,140000,480,0,10300,50,Burari,Dual carriageway,IndividualHouse,1921,PrivateBuilder,2010,7,NewHouse
+912,127000,308,218,5000,50,Rohini,Byway,IndividualHouse,1924,Other,2010,5,NewHouse
+913,193879,662,0,6762,64,India Gate,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+914,170000,487,0,10192,102,Tilak Nagar,Byway,IndividualHouse,1968,PrivateBuilder,2006,7,NewHouse
+915,155000,308,374,7931,70,RK Puram,Byway,IndividualHouse,1960,Other,2008,5,NewHouse
+916,79500,308,0,9100,50,Chhatarpur,Dual carriageway,IndividualHouse,1930,Other,2008,5,NewHouse
+917,147500,276,830,9937,75,Jama Masjid,Byway,IndividualHouse,1965,Other,2008,5,NewHouse
+918,153900,530,300,7892,55,Lodhi Colony,Byway,RowHousesE,1993,Other,2008,6,NewHouse
+919,359100,380,428,12168,78,Ina Colony,Byway,IndividualHouse,1934,Other,2007,8,FourthResale
+920,213250,583,144,10140,78,Tilak Nagar,Dual carriageway,IndividualHouse,1998,Other,2009,7,NewHouse
+921,179000,0,1200,10800,60,Jama Masjid,Byway,MultiStoreyBuilding,1987,Other,2009,5,FourthResale
+922,131000,281,292,11409,60,Jama Masjid,Byway,IndividualHouse,1949,Other,2009,5,NewHouse
+923,259500,180,774,7259,61,Ina Colony,Byway,IndividualHouse,1945,SemiPrivate,2007,6,NewHouse
+924,149900,500,734,12537,NA,RK Puram,Byway,IndividualHouse,1971,Other,2010,5,NewHouse
+925,204000,577,679,10335,78,India Gate,Byway,IndividualHouse,1999,Other,2009,7,NewHouse
+926,134900,624,0,6000,50,Chhatarpur,Byway,IndividualHouse,1937,Other,2009,6,NewHouse
+927,306000,772,1218,11478,98,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2010,8,NewHouse
+928,82000,294,0,8400,60,Lodhi Colony,Frontage road,IndividualHouse,1950,Other,2009,4,NewHouse
+929,215000,560,690,12209,71,Vasant Vihar,Byway,IndividualHouse,2001,Other,2009,6,NewHouse
+930,132500,672,1148,7931,70,RK Puram,Byway,IndividualHouse,1959,PrivateBuilder,2009,5,NewHouse
+931,134432,680,0,17120,80,Dhaula Kuan,Frontage road,IndividualHouse,1959,Other,2008,4,NewHouse
+932,202665,474,0,6792,40,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2006,7,FirstResale
+933,213000,425,513,9317,75,Lodhi Colony,Byway,IndividualHouse,1993,Other,2009,7,NewHouse
+934,124000,306,0,8280,57,RK Puram,Byway,IndividualHouse,1950,PrivateBuilder,2007,6,NewHouse
+935,205000,480,1200,10603,NA,Tilak Nagar,Byway,IndividualHouse,1977,Other,2010,6,NewHouse
+936,164500,564,328,11777,96,Timarpur,Byway,IndividualHouse,1966,Other,2006,5,SecondResale
+937,283463,712,80,15306,93,Pitampura,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+938,173900,564,0,8846,68,India Gate,Byway,IndividualHouse,2005,Other,2006,6,FirstResale
+939,237500,550,865,12925,NA,RK Puram,Byway,IndividualHouse,1970,Other,2008,6,NewHouse
+940,169000,672,0,14762,NA,Karol Bagh,Frontage road,IndividualHouse,1948,Other,2006,5,NewHouse
+941,92000,0,553,1533,21,Tughlaqabad Extention,Byway,RowHouses,1970,Other,2006,5,SecondResale
+942,134500,300,784,10205,69,RK Puram,Byway,IndividualHouse,1962,Other,2006,5,NewHouse
+943,239000,504,495,5306,44,Mundka,Byway,RowHousesE,1987,Other,2006,7,NewHouse
+944,129000,544,932,6970,85,Timarpur,Frontage road,IndividualHouse,1961,Other,2007,4,NewHouse
+945,295000,870,0,18386,87,Burari,Byway,IndividualHouse,1880,Other,2008,7,NewHouse
+946,99500,264,0,7892,55,Lodhi Colony,Byway,RowHousesE,1979,Other,2010,6,NewHouse
+947,181000,463,0,8063,NA,Karol Bagh,Byway,IndividualHouse,2000,Other,2007,6,SecondResale
+948,155835,440,0,11103,85,India Gate,Byway,IndividualHouse,2006,Other,2007,7,FirstResale
+949,144000,225,0,8850,65,Burari,Byway,IndividualHouse,1916,Other,2006,7,NewHouse
+950,275500,878,0,10240,80,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2006,8,NewHouse
+951,333168,779,0,14774,108,Yamuna Vihar,Byway,IndividualHouse,1999,Other,2010,9,NewHouse
+952,190000,570,20,8487,63,India Gate,Byway,IndividualHouse,2004,Other,2009,7,NewHouse
+953,171000,766,0,11070,82,Vasant Vihar,Byway,MultiStoreyBuilding,1988,Other,2006,7,ThirdResale
+954,141000,420,697,4426,NA,India Gate,Byway,RowHousesE,2004,Other,2008,6,NewHouse
+955,284000,880,1124,10655,85,Okhla Indl Estate,Byway,IndividualHouse,2003,Other,2009,8,NewHouse
+956,91000,210,0,9786,60,Rajendra Nagar,Byway,IndividualHouse,1922,Other,2006,3,NewHouse
+957,136500,420,686,4435,37,India Gate,Byway,RowHousesE,2003,Other,2008,6,NewHouse
+958,107000,210,0,9906,57,Burari,Byway,IndividualHouse,1925,Other,2006,4,ThirdResale
+959,210000,676,0,9000,75,Bawana,Byway,IndividualHouse,2008,Other,2009,8,NewHouse
+960,423000,1134,1721,20896,49,Bawana,Dual carriageway,IndividualHouse,2005,Other,2006,8,FirstResale
+961,160000,461,553,8800,80,RK Puram,Byway,IndividualHouse,1964,SemiPrivate,2006,6,NewHouse
+962,377426,676,1249,14157,86,Mundka,Byway,IndividualHouse,2005,Other,2007,9,NewHouse
+963,145250,292,565,11600,80,RK Puram,Byway,IndividualHouse,1960,Other,2006,6,NewHouse
+964,228500,575,421,11287,82,Lodhi Colony,Byway,IndividualHouse,1989,Other,2007,7,NewHouse
+965,132000,360,0,9600,60,Burari,Byway,IndividualHouse,1910,PrivateBuilder,2007,5,SecondResale
+966,125000,384,180,7094,99,Timarpur,Byway,IndividualHouse,1966,SemiPrivate,2007,5,NewHouse
+967,315500,912,1022,12898,89,Pitampura,Byway,IndividualHouse,2007,Other,2009,9,NewHouse
+968,185000,427,0,10141,74,Karol Bagh,Byway,IndividualHouse,1998,Other,2009,7,NewHouse
+969,538000,841,1416,53504,47,Mundka,Byway,IndividualHouse,2003,Other,2010,8,NewHouse
+970,369900,880,1460,11443,88,Pitampura,Byway,IndividualHouse,2005,Other,2006,8,FirstResale
+971,200000,390,0,8068,NA,Karol Bagh,Byway,IndividualHouse,2002,Other,2009,6,NewHouse
+972,93000,256,0,6000,50,Burari,Byway,TwoStoreyHouse,1954,Other,2009,5,NewHouse
+973,466500,804,1282,11400,NA,Yamuna Vihar,Byway,IndividualHouse,2001,Other,2007,10,NewHouse
+974,107400,379,0,5790,60,Burari,Byway,IndividualHouse,1915,Other,2010,3,NewHouse
+975,137900,528,756,10680,89,RK Puram,Byway,IndividualHouse,1951,SemiPrivate,2006,5,NewHouse
+976,90350,352,365,4280,40,Ina Colony,Byway,IndividualHouse,1913,SemiPrivate,2007,5,NewHouse
+977,93500,400,0,8544,60,RK Puram,Byway,MultiStoreyBuilding,1950,Other,2006,3,NewHouse
+978,175000,460,0,7917,62,Karol Bagh,Byway,IndividualHouse,1999,Other,2007,6,NewHouse
+979,183200,393,457,7861,NA,Karol Bagh,Byway,IndividualHouse,2002,Other,2006,6,NewHouse
+980,163990,390,0,8461,65,India Gate,Byway,IndividualHouse,2005,Other,2006,6,FirstResale
+981,142125,240,49,9717,68,RK Puram,Byway,IndividualHouse,1950,Other,2010,5,NewHouse
+982,243000,576,477,12615,84,Jama Masjid,Byway,IndividualHouse,1950,SemiPrivate,2007,6,NewHouse
+983,215000,528,639,31770,141,RK Puram,Byway,IndividualHouse,1960,Other,2010,6,NewHouse
+984,144152,480,0,3180,30,Bawana,Byway,RowHousesE,2005,Other,2006,7,SecondResale
+985,141000,0,680,7500,63,Lodhi Colony,Byway,IndividualHouse,2004,Other,2008,7,NewHouse
+986,245350,776,0,10475,64,India Gate,Byway,IndividualHouse,2008,Other,2010,8,NewHouse
+987,109000,240,0,10134,60,Burari,Byway,IndividualHouse,1940,Other,2007,5,NewHouse
+988,179000,463,0,8123,60,Karol Bagh,Dual carriageway,IndividualHouse,2000,Other,2009,6,NewHouse
+989,117000,216,0,6000,50,Chhatarpur,Byway,IndividualHouse,1925,Other,2009,5,NewHouse
+990,194500,632,724,7314,64,India Gate,Byway,IndividualHouse,2007,Other,2009,7,NewHouse
+991,237000,577,804,9473,75,India Gate,Byway,IndividualHouse,2002,Other,2008,8,NewHouse
+992,230500,504,0,11194,106,Karol Bagh,Byway,IndividualHouse,2000,Other,2006,8,NewHouse
+993,281000,753,0,11065,86,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2006,8,FirstResale
+994,164900,288,650,14559,75,RK Puram,Byway,IndividualHouse,1951,Other,2009,5,NewHouse
+995,94500,288,0,1680,21,Chanakyapuri,Byway,RowHouses,1972,Other,2006,6,NewHouse
+996,305900,888,1464,10386,80,India Gate,Byway,IndividualHouse,2004,Other,2007,8,NewHouse
+997,126000,539,0,10125,75,Vasant Vihar,Byway,MultiStoreyBuilding,1977,Other,2009,5,NewHouse
+998,395192,606,1646,10159,83,Okhla Indl Estate,Byway,IndividualHouse,2009,Other,2010,9,FirstResale
+999,107000,384,1056,8900,NA,Lodhi Colony,Byway,IndividualHouse,1966,SemiPrivate,2006,4,NewHouse
+1000,145000,528,656,11040,80,Tilak Nagar,Byway,IndividualHouse,1971,Other,2008,6,SecondResale
+1001,199900,431,0,11214,NA,Karol Bagh,Byway,IndividualHouse,1998,Other,2006,7,NewHouse
+1002,244600,898,0,9612,74,Bawana,Frontage road,IndividualHouse,2008,Other,2009,8,FirstResale
+1003,163900,392,0,9125,NA,Karol Bagh,Byway,IndividualHouse,1992,Other,2007,7,NewHouse
+1004,160000,423,660,12508,75,Vasant Vihar,Byway,IndividualHouse,1940,Other,2008,6,NewHouse
+1005,284000,871,866,10625,85,Okhla Indl Estate,Byway,IndividualHouse,2003,Other,2008,7,NewHouse
+1006,187000,512,0,9600,80,Wazirpur,Frontage road,IndividualHouse,1976,Other,2007,6,NewHouse
+1007,235000,538,1573,4750,44,Ina Colony,Byway,RowHousesE,2006,Other,2007,8,ThirdResale
+1008,160000,402,0,10784,NA,Karol Bagh,Byway,IndividualHouse,1991,Other,2007,7,NewHouse
+1009,107500,432,0,6600,60,Burari,Byway,IndividualHouse,1892,Other,2009,5,NewHouse
+1010,337000,856,1163,9430,82,Yamuna Vihar,Byway,IndividualHouse,1999,Other,2009,8,NewHouse
+1011,159950,484,516,13400,85,RK Puram,Byway,IndividualHouse,1966,GovernmentBuild,2006,5,NewHouse
+1012,125000,720,180,8235,49,Burari,Frontage road,IndividualHouse,1955,SemiPrivate,2008,5,NewHouse
+1013,171000,611,1390,16647,NA,Timarpur,Interstate Highway,IndividualHouse,1975,Other,2007,5,NewHouse
+1014,290000,721,565,9950,82,Yamuna Vihar,Byway,IndividualHouse,1995,Other,2007,7,SecondResale
+1015,250000,619,619,11029,NA,Tilak Nagar,Arterial road,IndividualHouse,1968,Other,2006,6,NewHouse
+1016,213500,582,616,4920,41,Mundka,Byway,RowHousesE,2001,Other,2010,8,NewHouse
+1017,115000,360,0,8960,56,Burari,Driveway,IndividualHouse,1927,Other,2010,5,NewHouse
+1018,80500,0,0,6240,52,Chhatarpur,Byway,IndividualHouse,1947,Other,2006,4,NewHouse
+1019,275000,736,546,10927,74,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2006,8,NewHouse
+1020,225000,474,0,9158,76,Bawana,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+1021,240000,556,1079,10000,80,India Gate,Byway,IndividualHouse,1995,Other,2007,8,NewHouse
+1022,159895,388,0,3182,43,Adarsh Nagar,Byway,IndividualHouse,2007,Other,2008,7,NewHouse
+1023,269790,455,862,9920,92,Yamuna Vihar,Byway,IndividualHouse,1996,Other,2007,7,NewHouse
+1024,220000,532,1201,12182,95,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2010,7,FirstResale
+1025,204000,422,742,9303,NA,Pitampura,Byway,IndividualHouse,1996,Other,2007,6,NewHouse
+1026,132000,576,417,7420,70,Timarpur,Byway,IndividualHouse,1962,Other,2007,5,NewHouse
+1027,250000,648,0,9375,75,Bawana,Byway,IndividualHouse,2003,Other,2008,8,NewHouse
+1028,102000,0,0,6000,60,Rohini,Byway,IndividualHouse,1926,Other,2006,5,NewHouse
+1029,112500,288,308,6000,50,Burari,Byway,IndividualHouse,1957,Other,2008,5,NewHouse
+1030,146800,539,539,11333,NA,Vasant Vihar,Byway,IndividualHouse,1976,Other,2007,6,NewHouse
+1031,79000,0,0,9600,60,Jama Masjid,Driveway,IndividualHouse,1924,Other,2008,6,NewHouse
+1032,140000,384,892,9200,80,RK Puram,Byway,IndividualHouse,1965,Other,2008,6,NewHouse
+1033,98000,513,0,4571,34,Burari,Byway,IndividualHouse,1916,Other,2008,5,SecondResale
+1034,272000,670,1358,11423,NA,India Gate,Byway,IndividualHouse,2001,SemiPrivate,2010,8,NewHouse
+1035,114500,275,456,10150,70,RK Puram,Frontage road,IndividualHouse,1958,Other,2007,5,NewHouse
+1036,145000,525,547,3675,35,Jama Masjid,Byway,RowHousesE,2005,Other,2006,5,NewHouse
+1037,145000,672,686,9245,57,India Gate,Byway,IndividualHouse,1994,Other,2008,5,NewHouse
+1038,141500,576,0,6120,51,Chhatarpur,Byway,IndividualHouse,1936,SemiPrivate,2009,5,NewHouse
+1039,83000,366,108,10625,85,Jama Masjid,Byway,IndividualHouse,1920,Other,2010,5,SecondResale
+1040,139400,280,0,7449,57,Rajendra Nagar,Byway,IndividualHouse,1930,PrivateBuilder,2007,7,NewHouse
+1041,110000,240,312,3500,50,Burari,Byway,IndividualHouse,1947,Society,2009,5,NewHouse
+1042,144000,420,685,4435,NA,India Gate,Byway,RowHousesE,2003,Other,2009,6,NewHouse
+1043,311872,786,1126,9416,79,Bawana,Byway,IndividualHouse,2007,Other,2007,7,FirstResale
+1044,107900,281,0,6000,50,Burari,Byway,IndividualHouse,1954,Other,2008,4,NewHouse
+1045,127000,404,666,7910,70,RK Puram,Byway,IndividualHouse,1960,GovernmentBuild,2008,5,NewHouse
+1046,173000,472,786,10852,58,Karol Bagh,Dual carriageway,IndividualHouse,2000,Other,2006,6,NewHouse
+1047,301500,691,1314,14303,91,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2008,8,NewHouse
+1048,325624,789,1288,10562,86,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+1049,372500,834,0,11844,80,Mundka,Byway,IndividualHouse,2008,Other,2009,8,FirstResale
+1050,250000,866,0,11428,98,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,8,NewHouse
+1051,169500,240,224,7758,NA,Rajendra Nagar,Byway,IndividualHouse,1931,Other,2007,7,NewHouse
+1052,55000,0,0,3636,40,Rajendra Nagar,Byway,IndividualHouse,1922,SemiPrivate,2008,4,NewHouse
+1053,135000,254,588,7000,70,RK Puram,Byway,IndividualHouse,1960,Society,2007,5,ThirdResale
+1054,222500,434,0,9505,NA,Karol Bagh,Byway,IndividualHouse,2001,Other,2010,7,NewHouse
+1055,130250,308,280,9200,NA,India Gate,Byway,IndividualHouse,1975,SemiPrivate,2008,5,NewHouse
+1056,174000,660,0,3684,53,Adarsh Nagar,Byway,RowHousesE,2007,Other,2009,7,NewHouse
+1057,176000,451,1024,7024,60,Jama Masjid,Byway,IndividualHouse,2005,Other,2008,4,NewHouse
+1058,119000,352,40,10624,NA,RK Puram,Byway,MultiStoreyBuilding,1964,Other,2007,5,NewHouse
+1059,143250,576,282,10530,NA,RK Puram,Byway,IndividualHouse,1971,Other,2007,6,NewHouse
+1060,136905,528,0,11500,NA,Tilak Nagar,Frontage road,MultiStoreyBuilding,1976,Other,2007,5,NewHouse
+1061,135000,286,586,10152,72,RK Puram,Byway,IndividualHouse,1956,Other,2007,5,NewHouse
+1062,326000,772,1261,16033,98,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2006,9,NewHouse
+1063,179000,539,0,8450,65,Lodhi Colony,Byway,IndividualHouse,2000,PrivateBuilder,2007,7,NewHouse
+1064,235000,541,1400,9100,70,India Gate,Byway,IndividualHouse,2000,Other,2006,7,NewHouse
+1065,105900,484,0,8520,60,Burari,Byway,IndividualHouse,1928,Other,2010,6,NewHouse
+1066,213000,451,0,9750,75,India Gate,Byway,IndividualHouse,2000,Other,2009,7,NewHouse
+1067,180500,520,0,13515,60,Chhatarpur,Byway,IndividualHouse,1919,PrivateBuilder,2007,6,NewHouse
+1068,233000,618,656,10142,76,Lodhi Colony,Byway,IndividualHouse,2004,Other,2010,7,NewHouse
+1069,115000,240,0,10480,51,Rohini,Byway,IndividualHouse,1936,Other,2008,6,NewHouse
+1070,82500,0,280,5330,50,Chhatarpur,Byway,IndividualHouse,1940,Other,2009,4,NewHouse
+1071,102000,180,0,6180,60,Chhatarpur,Byway,IndividualHouse,1926,Other,2007,6,NewHouse
+1072,200000,492,700,13450,95,India Gate,Byway,IndividualHouse,2002,Other,2006,7,NewHouse
+1073,129000,720,398,7200,60,RK Puram,Byway,IndividualHouse,1950,Other,2007,5,NewHouse
+1074,153337,528,1086,7018,64,Lodhi Colony,Frontage road,MultiStoreyBuilding,1979,Other,2009,5,FourthResale
+1075,202900,431,0,14191,85,Pitampura,Byway,IndividualHouse,2002,Other,2010,8,NewHouse
+1076,154000,270,188,8246,NA,Timarpur,Byway,IndividualHouse,1968,SemiPrivate,2010,5,NewHouse
+1077,110000,888,0,11475,85,RK Puram,Byway,MultiStoreyBuilding,1958,Other,2009,5,SecondResale
+1078,167000,480,637,9937,75,Jama Masjid,Byway,IndividualHouse,1964,SemiPrivate,2009,5,NewHouse
+1079,270000,808,1300,14536,85,Pitampura,Byway,IndividualHouse,2002,Other,2007,8,NewHouse
+1080,194700,460,20,7577,61,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2007,6,NewHouse
+1081,121600,305,384,4712,51,Chhatarpur,Frontage road,IndividualHouse,1946,SemiPrivate,2006,4,SecondResale
+1082,185000,615,0,11717,NA,Tilak Nagar,Arterial road,IndividualHouse,1970,Other,2009,6,NewHouse
+1083,124900,352,632,7200,60,India Gate,Byway,IndividualHouse,1972,SemiPrivate,2008,5,NewHouse
+1084,115000,0,432,10500,70,RK Puram,Byway,IndividualHouse,1971,Other,2010,4,NewHouse
+1085,176000,453,0,7500,62,Bawana,Byway,IndividualHouse,2005,Other,2006,7,NewHouse
+1086,171000,490,319,9247,70,RK Puram,Byway,IndividualHouse,1962,Other,2008,6,NewHouse
+1087,140000,288,580,10930,60,RK Puram,Driveway,IndividualHouse,1945,Other,2008,5,NewHouse
+1088,278000,542,1104,9600,80,Tilak Nagar,Trunk road,IndividualHouse,1981,SemiPrivate,2009,8,NewHouse
+1089,149700,923,600,7407,90,Burari,Driveway,IndividualHouse,1957,SemiPrivate,2010,6,NewHouse
+1090,110000,516,104,8472,110,Rajendra Nagar,Motorway,MultiStoreyBuilding,1963,Other,2010,5,NewHouse
+1091,129900,468,0,6120,51,Burari,Driveway,IndividualHouse,1931,Other,2008,7,SecondResale
+1092,242000,505,425,27650,313,RK Puram,Arterial road,IndividualHouse,1960,Other,2008,7,NewHouse
+1093,131400,264,594,10000,80,Timarpur,Frontage road,IndividualHouse,1961,GovernmentBuild,2009,5,NewHouse
+1094,157000,352,733,10920,NA,RK Puram,Byway,IndividualHouse,1960,GovernmentBuild,2008,6,NewHouse
+1095,224500,650,0,13159,83,Pitampura,Byway,IndividualHouse,2009,Other,2009,7,FirstResale
+1096,135000,260,902,7390,NA,RK Puram,Byway,IndividualHouse,1955,Other,2008,5,NewHouse
+1097,148000,459,547,11235,75,Timarpur,Byway,IndividualHouse,1963,Other,2006,4,NewHouse
+1098,240000,624,956,10800,90,Tilak Nagar,Byway,IndividualHouse,1974,Other,2008,6,NewHouse
+1099,110000,528,0,12354,67,Jama Masjid,Byway,IndividualHouse,1920,PrivateBuilder,2009,6,NewHouse
+1100,392500,482,1480,5587,64,Ina Colony,Byway,RowHousesE,2008,Other,2008,8,FirstResale
+1101,161000,360,141,9600,60,Burari,Byway,IndividualHouse,1928,Other,2008,7,NewHouse
+1102,172400,460,0,8121,NA,Karol Bagh,Byway,IndividualHouse,2000,Other,2006,6,NewHouse
+1103,172500,480,649,2645,24,Bawana,Byway,RowHouses,1999,Other,2009,8,SecondResale
+1104,147000,468,456,10690,59,Rajendra Nagar,Byway,IndividualHouse,1920,Other,2009,5,NewHouse
+1105,266500,252,275,9042,66,Ina Colony,Byway,IndividualHouse,1941,PrivateBuilder,2010,7,NewHouse
+1106,139000,840,852,7350,60,RK Puram,Byway,IndividualHouse,1951,Other,2008,5,SecondResale
+1107,241500,604,929,10400,80,Tilak Nagar,Byway,IndividualHouse,1988,Other,2006,7,NewHouse
+1108,103600,300,551,6629,54,Jama Masjid,Driveway,IndividualHouse,1925,Other,2009,6,NewHouse
+1109,103000,539,152,6240,52,Rajendra Nagar,Byway,IndividualHouse,1925,Other,2009,4,NewHouse
+1110,178000,477,0,12090,78,Tilak Nagar,Byway,IndividualHouse,1984,Other,2007,6,SecondResale
+1111,127500,440,360,4043,53,Model Town,Byway,RowHousesE,1977,Other,2010,6,NewHouse
+1112,310000,796,1012,14541,NA,Yamuna Vihar,Byway,IndividualHouse,1993,Other,2006,8,SecondResale
+1113,110000,240,570,7677,57,RK Puram,Byway,IndividualHouse,1953,Other,2008,5,SecondResale
+1114,146000,884,661,9230,71,RK Puram,Frontage road,IndividualHouse,1965,SemiPrivate,2006,5,NewHouse
+1115,245500,500,786,14963,38,Wazirpur,Byway,RowHousesE,1996,Other,2008,8,NewHouse
+1116,144000,576,1056,6979,64,Burari,Byway,MultiStoreyBuilding,1980,PrivateBuilder,2010,6,NewHouse
+1117,128500,288,360,9560,120,India Gate,Byway,IndividualHouse,1972,Other,2006,5,NewHouse
+1118,345000,736,998,11924,85,Okhla Indl Estate,Byway,IndividualHouse,2005,Other,2006,9,FirstResale
+1119,135000,504,650,11606,70,RK Puram,Byway,IndividualHouse,1969,Other,2007,5,ThirdResale
+1120,154900,186,0,7681,54,Ina Colony,Byway,IndividualHouse,1921,Other,2009,5,NewHouse
+1121,165000,354,1064,13284,NA,Timarpur,Trunk road,IndividualHouse,1954,PrivateBuilder,2008,5,NewHouse
+1122,272000,619,896,12227,NA,Tilak Nagar,Trunk road,IndividualHouse,1977,Other,2008,6,NewHouse
+1123,196500,496,394,10421,80,Tilak Nagar,Byway,IndividualHouse,1988,SemiPrivate,2010,7,NewHouse
+1124,145000,240,399,9144,NA,Chhatarpur,Byway,IndividualHouse,1940,Other,2008,5,NewHouse
+1125,127500,300,612,9100,70,RK Puram,Byway,IndividualHouse,1959,Other,2009,6,NewHouse
+1126,171900,625,0,4017,35,Bawana,Byway,RowHousesE,2006,Other,2008,7,NewHouse
+1127,185000,400,410,7500,62,Bawana,Byway,IndividualHouse,2004,Other,2009,7,NewHouse
+1128,172785,429,0,15578,105,Karol Bagh,Byway,IndividualHouse,2006,Other,2006,6,FirstResale
+1129,108000,240,0,10200,60,Timarpur,Byway,IndividualHouse,1940,PrivateBuilder,2008,5,NewHouse
+1130,118000,0,0,9405,50,Jama Masjid,Byway,IndividualHouse,1947,Other,2009,5,NewHouse
+1131,270000,481,437,9549,30,Wazirpur,Byway,RowHousesE,1995,Other,2006,8,NewHouse
+1132,221000,486,0,16770,58,Yamuna Vihar,Byway,IndividualHouse,1998,Other,2010,7,NewHouse
+1133,132500,280,0,6000,50,Chhatarpur,Byway,IndividualHouse,1939,Other,2009,6,NewHouse
+1134,84500,0,490,6780,60,Rajendra Nagar,Byway,TwoStoreyHouse,1935,Other,2006,6,NewHouse
+1135,128000,216,0,6858,66,Rohini,Byway,IndividualHouse,1915,Other,2010,6,NewHouse
+1136,143000,480,732,14115,85,Vasant Vihar,Byway,IndividualHouse,1993,SemiPrivate,2009,5,NewHouse
+1137,215000,514,1443,16196,NA,Lodhi Colony,Byway,IndividualHouse,1998,Other,2007,7,NewHouse
+1138,119000,288,280,9600,80,RK Puram,Byway,IndividualHouse,1950,Other,2008,6,SecondResale
+1139,302000,739,1219,115149,NA,Dhaula Kuan,Byway,IndividualHouse,1971,Other,2007,7,NewHouse
+1140,181000,511,266,4060,34,RK Puram,Byway,RowHousesE,1998,Other,2008,6,SecondResale
+1141,128000,436,442,9600,60,Timarpur,Byway,IndividualHouse,1950,Other,2010,4,NewHouse
+1142,125500,297,0,7200,60,Rajendra Nagar,Byway,IndividualHouse,1938,SemiPrivate,2006,5,NewHouse
+1143,194000,632,684,7406,64,India Gate,Byway,IndividualHouse,2006,Other,2006,7,FirstResale
+1144,119500,264,658,6951,37,Vasant Vihar,Byway,IndividualHouse,1984,SemiPrivate,2008,5,NewHouse
+1145,140000,483,400,7056,71,RK Puram,Byway,IndividualHouse,1963,Other,2008,6,NewHouse
+1146,128900,338,504,9600,80,RK Puram,Byway,IndividualHouse,1956,Other,2009,5,NewHouse
+1147,239500,466,584,9828,80,Lodhi Colony,Byway,IndividualHouse,1995,Other,2009,8,NewHouse
+1148,145000,504,787,8250,75,RK Puram,Byway,IndividualHouse,1964,SemiPrivate,2008,6,NewHouse
+1149,175000,539,384,11700,90,Tilak Nagar,Byway,IndividualHouse,1968,Other,2007,6,NewHouse
+1150,261500,531,990,11885,NA,India Gate,Byway,IndividualHouse,2001,Other,2009,8,NewHouse
+1151,162000,497,593,12936,NA,Tilak Nagar,Byway,IndividualHouse,1972,Other,2009,6,NewHouse
+1152,108500,308,250,6000,50,Burari,Byway,IndividualHouse,1920,Other,2007,4,NewHouse
+1153,135000,576,220,9600,60,RK Puram,Byway,IndividualHouse,1949,Other,2007,5,NewHouse
+1154,305000,749,871,12244,85,Pitampura,Byway,IndividualHouse,2003,Other,2008,8,NewHouse
+1155,242000,564,0,11275,96,RK Puram,Trunk road,IndividualHouse,1967,Other,2010,7,NewHouse
+1156,140000,420,685,4435,NA,India Gate,Byway,RowHousesE,2003,Other,2009,6,NewHouse
+1157,84000,290,0,11500,NA,Jama Masjid,Byway,IndividualHouse,1957,Other,2009,4,NewHouse
+1158,132500,576,483,10780,55,India Gate,Byway,IndividualHouse,1976,Other,2006,5,NewHouse
+1159,200000,0,256,10896,60,Rohini,Frontage road,TwoStoreyHouse,1914,Other,2007,6,SecondResale
+1160,88000,264,0,1680,21,Chanakyapuri,Byway,RowHouses,1971,Other,2010,6,ThirdResale
+1161,174500,234,275,12000,75,Ina Colony,Byway,IndividualHouse,1941,Other,2009,7,NewHouse
+1162,140000,525,547,3675,35,Jama Masjid,Byway,RowHousesE,2005,Other,2006,6,FirstResale
+1163,167500,400,0,9735,73,Pitampura,Byway,IndividualHouse,2006,Other,2008,5,NewHouse
+1164,213490,440,16,3013,43,Adarsh Nagar,Byway,RowHousesE,2005,Other,2006,7,NewHouse
+1165,179900,434,550,11475,85,Tilak Nagar,Dual carriageway,IndividualHouse,1975,SemiPrivate,2006,6,NewHouse
+1166,184000,388,724,15384,60,Karol Bagh,Dual carriageway,IndividualHouse,2004,Other,2008,7,NewHouse
+1167,189000,621,0,9842,51,Rohini,Frontage road,IndividualHouse,1921,Other,2008,5,NewHouse
+1168,190000,390,812,36500,NA,Dhaula Kuan,Byway,IndividualHouse,1964,Other,2006,5,NewHouse
+1169,143500,528,0,8197,71,Timarpur,Byway,IndividualHouse,1977,SemiPrivate,2007,6,NewHouse
+1170,90000,516,0,10791,72,Timarpur,Byway,MultiStoreyBuilding,1967,Other,2006,4,NewHouse
+1171,350000,738,1170,8834,74,Okhla Indl Estate,Byway,IndividualHouse,2004,Other,2009,9,NewHouse
+1172,112000,280,0,1680,21,Chanakyapuri,Byway,RowHouses,1971,Other,2009,5,SecondResale
+1173,402861,900,1436,12220,94,Okhla Indl Estate,Byway,IndividualHouse,2009,Other,2009,10,FirstResale
+1174,114504,216,0,3600,60,Burari,Byway,IndividualHouse,1910,Other,2006,6,NewHouse
+1175,149500,440,209,7844,74,Timarpur,Byway,IndividualHouse,1978,Other,2006,6,NewHouse
+1176,146000,440,311,2280,24,Model Town,Byway,RowHouses,1978,Other,2010,6,NewHouse
+1177,299800,831,575,8963,NA,Tilak Nagar,Byway,IndividualHouse,1976,Other,2008,8,NewHouse
+1178,205000,483,403,10480,80,Tilak Nagar,Byway,IndividualHouse,1976,Other,2008,7,NewHouse
+1179,194000,588,680,16157,NA,Wazirpur,Frontage road,IndividualHouse,1978,Other,2007,5,NewHouse
+1180,137000,440,0,9142,69,Burari,Byway,TwoStoreyHouse,1910,Other,2006,6,NewHouse
+1181,138887,180,0,13132,96,Ina Colony,Byway,IndividualHouse,1914,Other,2006,5,NewHouse
+1182,98000,240,0,8405,50,Jama Masjid,Byway,IndividualHouse,1945,Other,2009,4,NewHouse
+1183,122900,576,0,8064,60,RK Puram,Driveway,IndividualHouse,1949,SemiPrivate,2007,5,NewHouse
+1184,105000,338,315,5400,90,Burari,Driveway,IndividualHouse,1920,Other,2009,4,NewHouse
+1185,440000,908,1350,14977,110,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+1186,178740,398,0,3072,NA,Adarsh Nagar,Byway,RowHousesE,2004,Other,2006,7,NewHouse
+1187,123000,270,428,10634,79,RK Puram,Byway,IndividualHouse,1953,GovernmentBuild,2009,5,NewHouse
+1188,134000,484,336,9187,71,Vasant Vihar,Byway,IndividualHouse,1983,Other,2007,6,NewHouse
+1189,133000,240,0,6120,51,Chhatarpur,Byway,IndividualHouse,1935,Other,2009,4,NewHouse
+1190,140000,240,388,8400,60,Rohini,Byway,IndividualHouse,1940,Other,2006,6,NewHouse
+1191,158000,645,564,12095,NA,RK Puram,Byway,IndividualHouse,1964,SemiPrivate,2009,6,NewHouse
+1192,94750,432,520,10921,73,Jama Masjid,Byway,IndividualHouse,1965,Other,2007,4,NewHouse
+1193,97000,576,524,10500,70,RK Puram,Byway,IndividualHouse,1971,Other,2009,4,SecondResale
+1194,235000,539,795,16659,NA,Tilak Nagar,Arterial road,IndividualHouse,1977,Other,2006,7,NewHouse
+1195,157000,375,841,15750,90,Ina Colony,Byway,TwoStoreyHouse,1953,Other,2006,5,NewHouse
+1196,402000,711,1361,46589,52,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2009,8,NewHouse
+1197,91500,0,0,1680,21,Chanakyapuri,Byway,RowHouses,1971,Other,2006,6,SecondResale
+1198,192000,666,560,9017,68,India Gate,Byway,IndividualHouse,1999,Other,2009,7,NewHouse
+1199,361919,666,0,12438,82,Mundka,Byway,IndividualHouse,2006,Other,2006,8,FirstResale
+1200,395000,895,0,14226,110,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,8,FirstResale
+1201,212000,528,368,6820,NA,Mundka,Byway,RowHousesE,1985,Other,2010,8,NewHouse
+1202,163000,320,390,10800,60,Burari,Byway,IndividualHouse,1914,Other,2006,7,NewHouse
+1203,141000,299,895,14850,69,RK Puram,Byway,IndividualHouse,1957,Society,2006,5,NewHouse
+1204,139950,456,572,7875,75,RK Puram,Byway,IndividualHouse,1961,GovernmentBuild,2008,5,NewHouse
+1205,120000,288,0,10762,75,Lodhi Colony,Byway,RowHousesE,1980,Other,2009,6,NewHouse
+1206,52500,0,0,4118,153,Burari,Frontage road,IndividualHouse,1941,Other,2006,4,NewHouse
+1207,430000,546,1231,12692,NA,Yamuna Vihar,Byway,IndividualHouse,1992,Other,2007,8,NewHouse
+1208,259000,630,1300,14572,182,Karol Bagh,Byway,IndividualHouse,2004,Other,2007,7,ThirdResale
+1209,280000,592,956,12011,78,Yamuna Vihar,Byway,IndividualHouse,1998,Other,2006,8,NewHouse
+1210,100000,440,405,6911,60,Chhatarpur,Frontage road,IndividualHouse,1924,Other,2009,5,NewHouse
+1211,110000,684,322,7340,NA,RK Puram,Byway,IndividualHouse,1971,Other,2007,4,NewHouse
+1212,180000,500,0,11317,72,India Gate,Byway,IndividualHouse,2003,Other,2007,7,NewHouse
+1213,190000,566,712,18800,NA,Tilak Nagar,Byway,IndividualHouse,1976,Other,2006,6,NewHouse
+1214,180000,462,733,5395,41,Mundka,Byway,RowHousesE,1993,Other,2008,8,NewHouse
+1215,190000,303,379,10708,NA,Dhaula Kuan,Byway,IndividualHouse,1955,GovernmentBuild,2009,5,NewHouse
+1216,325000,656,0,11198,77,Mundka,Byway,IndividualHouse,2005,Other,2008,9,NewHouse
+1217,165000,490,641,2651,NA,Bawana,Byway,RowHouses,2000,Other,2006,7,NewHouse
+1218,155000,484,604,2572,24,Bawana,Byway,RowHouses,1999,Other,2010,7,NewHouse
+1219,139000,288,349,10500,70,RK Puram,Byway,IndividualHouse,1971,GovernmentBuild,2007,5,NewHouse
+1220,93000,0,0,8335,77,Jama Masjid,Byway,IndividualHouse,1954,Other,2006,5,NewHouse
+1221,293077,800,1513,9520,71,Pitampura,Byway,IndividualHouse,2007,Other,2008,8,FirstResale
+1222,144500,420,662,4438,NA,India Gate,Byway,RowHousesE,2004,Other,2008,6,NewHouse
+1223,148500,902,828,8750,NA,RK Puram,Byway,IndividualHouse,1970,SemiPrivate,2009,5,NewHouse
+1224,260000,484,692,13005,94,Tilak Nagar,Byway,IndividualHouse,1980,PrivateBuilder,2009,7,NewHouse
+1225,90000,420,0,7200,60,RK Puram,Byway,MultiStoreyBuilding,1949,Other,2009,4,NewHouse
+1226,163000,672,0,10800,60,Burari,Byway,TwoStoreyHouse,1905,Other,2008,6,NewHouse
+1227,128500,572,827,9945,NA,Timarpur,Byway,IndividualHouse,1961,Other,2007,5,NewHouse
+1228,143000,324,624,9000,50,Burari,Driveway,IndividualHouse,1920,Other,2009,7,NewHouse
+1229,154500,264,663,8414,70,Timarpur,Byway,IndividualHouse,1963,SemiPrivate,2006,6,NewHouse
+1230,105500,528,0,7227,59,RK Puram,Driveway,IndividualHouse,1954,Other,2008,6,NewHouse
+1231,236500,608,1180,5389,39,Mundka,Byway,RowHousesE,1995,Other,2010,8,NewHouse
+1232,175000,240,569,7200,60,Rohini,Frontage road,IndividualHouse,1937,SemiPrivate,2007,5,NewHouse
+1233,82500,544,822,11900,85,Tilak Nagar,Byway,IndividualHouse,1977,Other,2009,7,ThirdResale
+1234,119500,280,412,9758,61,RK Puram,Byway,IndividualHouse,1971,Other,2007,5,NewHouse
+1235,128500,300,523,9920,69,India Gate,Byway,IndividualHouse,1969,Other,2006,5,NewHouse
+1236,155000,297,585,12400,66,RK Puram,Frontage road,IndividualHouse,1958,Other,2009,6,NewHouse
+1237,191000,577,0,9382,93,India Gate,Byway,IndividualHouse,1999,Other,2008,7,NewHouse
+1238,200000,484,0,11426,63,Burari,Byway,IndividualHouse,2003,Other,2008,7,NewHouse
+1239,127500,0,945,9400,35,Jama Masjid,Byway,MultiStoreyBuilding,1975,Other,2006,6,FifthResale
+1240,118500,336,442,8480,80,RK Puram,Byway,IndividualHouse,1947,Other,2008,5,SecondResale
+1241,80000,280,348,12180,60,Jama Masjid,Byway,TwoStoreyHouse,1941,SemiPrivate,2010,4,NewHouse
+1242,745000,813,2096,15623,160,Yamuna Vihar,Byway,IndividualHouse,1996,SemiPrivate,2007,10,SecondResale
+1243,172500,648,0,3922,53,Adarsh Nagar,Byway,RowHousesE,2006,Other,2007,7,FirstResale
+1244,93500,0,212,10712,63,Vasant Vihar,Byway,IndividualHouse,1991,SemiPrivate,2007,5,SecondResale
+1245,158000,336,673,11553,NA,Timarpur,Byway,IndividualHouse,1968,Other,2006,5,NewHouse
+1246,262500,508,297,20781,NA,Tilak Nagar,Trunk road,IndividualHouse,1968,Other,2006,7,NewHouse
+1247,190000,445,1082,5271,NA,Dhaula Kuan,Byway,IndividualHouse,1986,Other,2006,7,SecondResale
+1248,238000,833,48,13125,103,Lodhi Colony,Byway,IndividualHouse,1991,PrivateBuilder,2007,7,NewHouse
+1249,127000,386,763,7742,66,Timarpur,Byway,IndividualHouse,1966,SemiPrivate,2007,5,NewHouse
+1250,133000,288,375,12144,60,RK Puram,Byway,IndividualHouse,1949,Other,2009,5,NewHouse
+1251,380000,694,0,13693,105,Okhla Indl Estate,Byway,IndividualHouse,2006,Other,2007,9,NewHouse
+1252,113000,520,0,21750,100,Vasant Vihar,Driveway,IndividualHouse,1954,Other,2008,5,NewHouse
+1253,186000,460,36,10420,83,Jama Masjid,Byway,IndividualHouse,2009,Other,2010,6,NewHouse
+1254,128000,440,120,4928,NA,Model Town,Byway,RowHousesE,1976,Other,2007,6,NewHouse
+1255,175500,576,588,12090,78,Tilak Nagar,Byway,IndividualHouse,1981,PrivateBuilder,2008,6,NewHouse
+1256,211000,546,706,9531,NA,India Gate,Byway,IndividualHouse,1998,SemiPrivate,2007,6,NewHouse
+1257,127000,576,0,7438,92,Chhatarpur,Dual carriageway,IndividualHouse,1908,SemiPrivate,2006,5,NewHouse
+1258,232000,824,24,11957,75,Bawana,Dual carriageway,IndividualHouse,2006,Other,2008,8,NewHouse
+1259,318000,928,1004,12085,93,Okhla Indl Estate,Byway,IndividualHouse,2007,Other,2007,8,FirstResale
+1260,99900,0,0,4060,56,Jama Masjid,Frontage road,IndividualHouse,1922,Other,2009,5,NewHouse
+1261,240000,360,0,45600,75,Dhaula Kuan,Byway,IndividualHouse,1908,Other,2008,6,NewHouse
+1262,162900,360,0,6240,52,Chhatarpur,Byway,IndividualHouse,1930,Other,2008,5,NewHouse
+1263,155900,420,662,4435,37,India Gate,Byway,RowHousesE,2004,Other,2006,6,NewHouse
+1264,232000,502,370,10635,48,India Gate,Byway,IndividualHouse,2003,Other,2010,8,NewHouse
+1265,180000,478,644,11361,104,Tilak Nagar,Byway,IndividualHouse,1976,SemiPrivate,2008,6,SecondResale
+1266,264132,592,0,14587,75,Bawana,Byway,IndividualHouse,2008,Other,2008,9,FirstResale
+1267,235128,830,0,11932,92,Bawana,Frontage road,IndividualHouse,2007,Other,2008,8,FirstResale
+1268,159500,539,655,8910,79,RK Puram,Byway,IndividualHouse,1959,Other,2006,6,NewHouse
+1269,152000,216,370,5400,40,Burari,Byway,IndividualHouse,1926,Other,2007,6,NewHouse
+1270,260000,462,0,16059,121,Yamuna Vihar,Byway,IndividualHouse,1991,Other,2006,8,NewHouse
+1271,290000,844,740,10120,92,Yamuna Vihar,Byway,IndividualHouse,1994,Other,2006,8,NewHouse
+1272,116000,414,0,8892,74,RK Puram,Byway,IndividualHouse,1953,GovernmentBuild,2008,5,NewHouse
+1273,92900,400,0,8544,60,RK Puram,Byway,MultiStoreyBuilding,1950,Other,2009,3,NewHouse
+1274,125500,240,735,5436,40,Rajendra Nagar,Byway,IndividualHouse,1922,SemiPrivate,2010,4,NewHouse
+1275,250000,180,223,11500,86,Ina Colony,Byway,IndividualHouse,1936,Other,2006,7,NewHouse
+1276,104900,368,0,12513,NA,RK Puram,Frontage road,IndividualHouse,1920,Other,2009,4,NewHouse
+1277,67000,0,41,8248,45,Jama Masjid,Byway,IndividualHouse,1914,Other,2008,3,NewHouse
+1278,140200,312,0,6435,65,Chhatarpur,Dual carriageway,IndividualHouse,1939,Other,2006,6,NewHouse
+1279,133900,506,1046,7200,60,Burari,Byway,TwoStoreyHouse,1910,Other,2007,6,NewHouse
+1280,130000,288,300,6930,92,Dhaula Kuan,Byway,IndividualHouse,1958,Other,2006,5,SecondResale
+1281,475000,840,0,22950,90,Burari,Driveway,IndividualHouse,1892,PrivateBuilder,2006,10,NewHouse
+1282,165500,377,831,9600,80,RK Puram,Byway,IndividualHouse,1955,SemiPrivate,2008,6,NewHouse
+1283,124900,456,1088,8820,98,Burari,Byway,IndividualHouse,1890,Society,2009,5,NewHouse
+1284,119900,410,507,7800,65,Burari,Driveway,TwoStoreyHouse,1939,SemiPrivate,2006,5,NewHouse
+1285,150000,336,777,11988,90,RK Puram,Frontage road,IndividualHouse,1957,Other,2007,6,NewHouse
+1286,235000,839,735,10316,NA,India Gate,Byway,IndividualHouse,2000,Other,2008,7,NewHouse
+1287,275000,748,0,14781,NA,India Gate,Byway,IndividualHouse,2001,Other,2006,8,NewHouse
+1288,120500,924,403,6900,71,Rajendra Nagar,Byway,IndividualHouse,1940,Other,2008,5,NewHouse
+1289,178000,389,0,9636,NA,Karol Bagh,Byway,IndividualHouse,1992,SemiPrivate,2009,6,NewHouse
+1290,149500,505,1024,12160,128,RK Puram,Frontage road,IndividualHouse,1953,Other,2009,6,NewHouse
+1291,260000,660,1300,11645,78,India Gate,Byway,IndividualHouse,2005,Other,2006,7,NewHouse
+1292,128000,502,0,6155,60,Chhatarpur,Motorway,IndividualHouse,1920,Other,2008,6,NewHouse
+1293,266000,564,28,8849,63,Okhla Indl Estate,Byway,RowHousesE,2005,Other,2008,9,NewHouse
+1294,134500,240,643,8923,66,RK Puram,Byway,IndividualHouse,1953,Other,2007,5,NewHouse
+1295,225000,667,603,15593,81,Dhaula Kuan,Byway,IndividualHouse,1953,Other,2006,7,NewHouse
+1296,84500,0,0,17217,90,Vasant Vihar,Byway,IndividualHouse,2006,Other,2006,5,SecondResale
+1297,160000,0,0,7082,NA,Rohini,Byway,TwoStoreyHouse,1916,Other,2006,5,NewHouse
+1298,112000,576,0,25339,NA,Timarpur,Byway,IndividualHouse,1918,Other,2007,5,NewHouse
+1299,219500,645,739,9375,NA,India Gate,Byway,IndividualHouse,1997,PrivateBuilder,2009,7,NewHouse
+1300,185000,531,699,8450,65,India Gate,Byway,IndividualHouse,2003,Other,2007,7,NewHouse
