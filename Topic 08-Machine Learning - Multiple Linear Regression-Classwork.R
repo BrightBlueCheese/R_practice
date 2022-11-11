@@ -56,6 +56,8 @@ tb_houseData %>%
 
 ###############  Create training and testing datasets  ########################
 # Create a data split object
+set.seed(921)
+
 houseData_split <- 
   initial_split(tb_houseData, 
                 prop = 0.75, 
@@ -111,7 +113,7 @@ lm_houseData_def <- linear_reg() %>%
 lm_houseData <- lm_houseData_def %>% 
   fit(HousePrice ~ StoreArea + StreetHouseFront 
       + BasementArea + LawnArea + Rating + SaleType, 
-      data=...)
+      data=tb_houseData_training)
 
 # Review the model statistics
 tidy(lm_houseData)
@@ -119,8 +121,8 @@ glance(lm_houseData)
 
 # Retrain the model with the training data, dropping StreetHouseFront, SaleType
 lm_houseData <- lm_houseData_def %>% 
-  fit(HousePrice ~ ..., 
-      data=...)
+  fit(HousePrice ~ StoreArea + BasementArea + LawnArea + Rating, 
+      data=tb_houseData_training)
 
 #################### Review model statistics  ###############################
 # Review the model statistics
@@ -129,14 +131,22 @@ tidy(lm_houseData)
 glance(lm_houseData)
 
 lm_houseData %>% 
-  ...("fit") %>%
+  pluck("fit") %>%
   summary()
 
 ##################### Evaluate Model ##############################
 # Linear relationships
-ggplot(..., aes(x = (LawnArea), y = HousePrice)) + 
+ggplot(tb_houseData_training, aes(x = (LawnArea), y = HousePrice)) + 
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 
+
+# TASK : do some transformation for the numeric values and check the plot again
+
+
+library(car) # for vif
+vif(lm_houseData$fit)  # vif, 1-5 : not enough to worry, exceed 5: severe correlation
+
+
 hist(tb_houseData_training$LawnArea)
-cor((tb_houseData_training$LawnArea),...)
+cor((tb_houseData_training$LawnArea), tb_houseData_training$HousePrice)
