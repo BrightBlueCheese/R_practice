@@ -138,10 +138,153 @@ lm_houseData %>%
 # Linear relationships
 ggplot(tb_houseData_training, aes(x = (LawnArea), y = HousePrice)) + 
   geom_point() +
+  geom_smooth(method = "lm", se = FALSE) 
+
+
+############################################################################
+  # TASK : do some transformation for the numeric values and check the plot again
+
+# LawnArea
+# x range 0.1 ~ 0.9, remove outliers..
+ggplot(tb_houseData_training, aes(x = (LawnArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  coord_cartesian(xlim = quantile(tb_houseData_training$LawnArea, c(0.1, 0.9)))
+
+# Density plot for LawnArea - Right Skewed
+ggplot(data = tb_houseData_training, aes(x = LawnArea)) +
+  geom_histogram(aes(y = ..density..)) +
+  geom_density()
+
+# Then log trans
+ggplot(tb_houseData_training, aes(x = LawnArea, y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  scale_x_sqrt()
+
+ggplot(tb_houseData_training, aes(x = LawnArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(x = 'sqrt') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+ggplot(tb_houseData_training, aes(x = sqrt(LawnArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+ggplot(tb_houseData_training, aes(x = LawnArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(x = 'log10') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
   geom_smooth(method = "lm", se = FALSE)
 
 
-# TASK : do some transformation for the numeric values and check the plot again
+##################
+# StoraArea
+ggplot(tb_houseData_training, aes(x = (StoreArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(se = FALSE, aes(colour = 'losses'))
+
+# Density Right Skewed
+ggplot(data = tb_houseData_training, aes(x = StoreArea)) +
+  geom_histogram(aes(y = ..density..)) +
+  geom_density()
+
+# square root trans
+ggplot(tb_houseData_training, aes(x = StoreArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(x = 'sqrt') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+# log10 trans        - GOOD ############## #########
+ggplot(tb_houseData_training, aes(x = log(StoreArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+# Reciprocal trans
+ggplot(tb_houseData_training, aes(x = StoreArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(y = 'reciprocal') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+##############################
+# BasementArea
+ggplot(tb_houseData_training, aes(x = (BasementArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(se = FALSE, aes(colour = 'losses'))
+
+# Density Right Skewed - Super Right Skewed
+ggplot(data = tb_houseData_training, aes(x = BasementArea)) +
+  geom_histogram(aes(y = ..density..)) +
+  geom_density()
+
+# square root trans
+ggplot(tb_houseData_training, aes(x = BasementArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(x = 'sqrt') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+# log10 trans - containing non-finite values (stat_smooth). with coord_trans
+ggplot(tb_houseData_training, aes(x = log(BasementArea), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+# Reciprocal trans
+ggplot(tb_houseData_training, aes(x = BasementArea, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(y = 'reciprocal') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+##############################
+# Rating
+ggplot(tb_houseData_training, aes(x = (Rating), y = HousePrice)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(se = FALSE, aes(colour = 'losses'))
+
+class(tb_houseData_training$Rating)
+
+# Density - Invalid with Factor
+
+# square root trans
+ggplot(tb_houseData_training, aes(x = Rating, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(x = 'sqrt') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+# log10 trans - Invalid with Factor
+
+
+# Reciprocal trans
+ggplot(tb_houseData_training, aes(x = Rating, y = HousePrice)) + 
+  geom_point() +
+  coord_trans(y = 'reciprocal') +
+  geom_smooth(se = FALSE, aes(colour = 'losses')) + 
+  geom_smooth(method = "lm", se = FALSE)
+
+
+
+
+# plot applied apa format
+ggplot(data = df_thomy, aes(x = log(weight), y = length)) + geom_point() + 
+  geom_smooth(method='lm', se=FALSE, size = 2, color='red') +
+  ggtitle('log10') +
+  geom_point(data = df_thomy_pred, aes(x = log(weight), y = length_pre),
+             shape = 17, size = 2, color = 'purple') +
+  theme_apa()
+
 
 
 library(car) # for vif
