@@ -58,14 +58,15 @@ char_vec <- append(char_vec, 'SeniorCitizen')
 
 df3 <- df2 %>% mutate()
 
-df3[to_factorize] <- lapply(df3[to_factorize], factor)
+df3[char_vec] <- lapply(df3[char_vec], factor)
 
 glimpse(df3)
 
 
 #####################
   ## Split the data into training and test datasets
-spliter <- initial_split(df3, prop = 0.75, strata = Churn)
+# strata : variable(column) that want to distribute evenly
+spliter <- initial_split(df3, prop = 0.75, strata = default) 
 
 df3_train <- spliter %>% training()
 df3_test <- spliter %>% testing()
