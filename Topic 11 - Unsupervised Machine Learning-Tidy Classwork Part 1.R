@@ -94,3 +94,89 @@ predict(kmeans_arrest_fit, df_arrest_scaled[1:4, ]) # first 4 rows with all colu
 
 # for k menas with BaseR, use 'kmeans'
 # ppt p. 14
+
+#################### Hierarchical Clustering ########################
+# For reproducible results
+set.seed(1234)  
+
+# Create the TidyClust specification
+hc_arrest_spec <- 
+  hier_clust(mode = "partition", engine = "stats",
+             num_clusters = 4, cut_height = NULL,
+             linkage_method = "complete")
+
+# Run the model using the scaled data
+hc_arrest_fit <- hc_arrest_spec %>%
+  fit(~., data = df_arrest_scaled)
+
+# Extract model details
+hc_arrest_fit  %>% extract_fit_summary()
+
+# Plot the dendrogram
+plot(hc_arrest_fit$fit, labels = rownames(df_arrest))
+abline(h=4, col = "blue")
+
+# Add the cluster assignment to the dataset
+df_arrest_hc <- df_arrest %>% 
+  mutate(cluster = extract_cluster_assignment(hc_arrest_fit)$.cluster)
+
+# make predictions
+predict(hc_arrest_fit, df_arrest_scaled[1:4, ])
+
+# Compare the two methods of clustering
+table(df_arrest_km$cluster,df_arrest_hc$cluster)
+
+# calculate average values for clusters
+df_arrest_hc %>%
+  group_by(cluster) %>%
+  summarise(mean(Murder),mean(Assault),
+            mean(UrbanPop), mean(Rape))
+
+# Using NbClust to determine best number of clusters
+# ppt p.32
+library(NbClust)
+# nc = number of clusters
+NbClust(df_arrest_scaled, distance = "euclidean",
+        min.nc = 2, max.nc = 5, 
+        method = "complete", index = "alllong")
+# 2 cluster is the best, 4 is the second best according to the result
+
+# Using cluster::agnes() to find agglomerative coefficient
+#define linkage methods
+link_methods <- c( "average", "single", "complete", "ward")
+
+#function to compute agglomerative coefficient
+agg_coef <- function(x) {
+  cluster::agnes(df_arrest_scaled, method = x)$ac
+}
+
+#calculate agglomerative coefficient for each clustering linkage method
+# HIGHER THE VALUE IS THE BETTER : WARD!!
+sapply(link_methods, agg_coef)
+
+
+
+############################### Strait R ################
+# create r model
+hc_arrest_model_base <- hclust(dist(df_arrest_scaled), method = 'complete')
+
+# plot the dendrogram
+plot(hc_arrest_model_base)
+abline(h = 4, col = 'blue')
+
+# cut the tree to our linking 
+cluster_nbr <- cutree(hc_arrest_model_base, h = 4)
+
+
+# add the cluster numbe ro the dataset
+df_arrest_hc_base <- df_arrest %>% 
+  mutate(cluster = cluster_nbr)
+  
+# calculate average values for clusters
+df_arrest_hc_base %>% 
+  group_by(cluster) %>% 
+  summarise(mean(Murder), mean(Assault), mean(UrbanPop), mean(Rape)) 
+  
+
+
+##### Extra credit; make sures to write comments to justification, WHY did I use these methods?
