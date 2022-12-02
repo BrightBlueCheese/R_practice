@@ -114,6 +114,7 @@ length(intersect(tb_childMortality_2020$name, tb_population_2020$name)) # total 
       ## While the fertility dataset has too many rows which are not in common to the others.
       ## So, we don't need the rest of the data except those in common
       
+
  
 
 
