@@ -19,12 +19,13 @@ library(tidymodels)
 library(doParallel) # work with multiThreads
 # stopCluster(cl) to stop
 library(rpart.plot)
+library(yardstick)
 
 ######################### Turn parallel processing capabilities on ############
 registerDoParallel()
 no_cores <- detectCores() - 1  # leave one core free to do other stuffs
-cl <- makeCluster(no_cores, type="FORK")  
-registerDoParallel(cl)  
+# cl <- makeCluster(no_cores, type="FORK")  
+# registerDoParallel(cl)  
 
 ######################  Learning about decision trees ######################
 # Load file for analysis
@@ -119,6 +120,12 @@ default_preds <- predict(lm_credit, new_data = tb_credit_test, type = 'class')
 # Obtain estimated probabilities for each outcome value
 default_prob <- predict(lm_credit, new_data = tb_credit_test, type = 'prob')
 
+default_prob
+length(default_preds)
+
+lm_credit
+length(tb_credit_test$default)
+
 # Combine test set results
 credit_results <- tb_credit_test %>% 
   select(default) %>% 
@@ -138,6 +145,8 @@ sens(credit_results, truth = default, estimate = .pred_class)
 
 # Calculate the specificity
 spec(credit_results, truth = default, estimate = .pred_class)
+credit_results %>% spec(truth = default, estimate = .pred_class)
+credit_results
 
 ###################### Visualizing model performance ##################3
 # Calculate metrics across thresholds and plot ROC
@@ -160,12 +169,13 @@ minXerr <- lm_credit$fit$cptable[which.min(lm_credit$fit$cptable[,"xerror"]),"CP
 minXerr
 # X-val : Cross Validation -> take the parameters(i.e. Cp) that has the lowest X-Val
   # In this case, Cp = 0.024
+  # @@@@@@@@@@@@@@ minXerr results keep changes. @@@@@@@@@@@@@@
 # Prepruning
 lm_credit_pruned <- decision_tree(cost_complexity = 0.02) %>% 
   set_engine('rpart') %>% 
   set_mode('classification') %>% 
-  fit(default ~ ., data = tb_credit_training)
-
+  fit(default ~
+        ., data = tb_credit_training)
 rpart.plot(lm_credit_pruned$fit,
            type=4,
            extra=101, 
@@ -173,21 +183,31 @@ rpart.plot(lm_credit_pruned$fit,
            branch.lty=3, 
            shadow.col="gray", 
            nn=TRUE)
+# Check available engines
+show_engines('decision_tree')
 
-# Postpruning
-lm_credit_postpruned <- prune(lm_credit$fit, cp = minXerr )
+
 
 ######################  Create predictions ####################3
 # Predict outcome categories
-default_preds <- predict(lm_credit_pruned,
+default_preds_pruned <- predict(lm_credit_pruned,
                          new_data = tb_credit_test,
-                         ...)
+                         type ='class')
 
 # Obtain estimated probabilities for each outcome value
-default_prob <- predict(...)
-
+default_prob_pruned <- predict(lm_credit_pruned,
+                        new_data = tb_credit_test,
+                        type = 'prob')
+default_preds_pruned
+default_prob_pruned
+length(default_preds_pruned)
+length(default_prob_pruned)
 # Combine test set results
-...
+length(tb_credit_test$default)
+
+pruned_credit_results <- tb_credit_test %>% 
+  select(default) %>% 
+  bind_cols(default_preds_pruned , default_prob_pruned)
 
 # View results tibble
 pruned_credit_results
