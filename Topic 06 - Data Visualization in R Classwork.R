@@ -164,7 +164,7 @@ cleanData %>%
   group_by(genus) %>%
   summarize(Percent = n()/nrow(.) * 100) 
 
-#These can be presented as a stacked bar graph
+#These can be presented as a stacked bar graph   # percent bar
 cleanData %>%
   group_by(genus) %>%
   summarise(Percent = n()/nrow(.) * 100) %>%

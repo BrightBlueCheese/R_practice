@@ -154,6 +154,8 @@ if(!NAs_found) {
 tb_life_exp <- tb_life_exp %>% select(name, time, 'Life expectancy') %>% 
   filter(time == 2020)
 
+tb_life_exp
+
 # How to join them?
 glimpse(tb_life_exp)
 glimpse(tb_gapminder)
@@ -182,6 +184,7 @@ glimpse(tb_income)
 
 names(tb_income)
 
+tb_income
 tb_income_original <- mutate(tb_income)
 
 #Look for missing values
@@ -195,7 +198,6 @@ for (i in names(tb_income)){
 if(!NAs_found) {
   print("No NAs found")
 }
-
 #Gather the columns into rows
 tb_income <- tb_income_original %>% gather(key=year, value=income, -country)
 tb_income

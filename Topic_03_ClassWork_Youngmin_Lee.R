@@ -195,7 +195,7 @@ ggplot(tb_gapminder, aes(x = income)) +
   geom_histogram(bins = 12)
 
 ggplot(tb_gapminder, aes(x = log10(income))) + 
-  geom_histogram(bins = 12)
+  geom_histogram(bins = 12) # binwidth
 
 ### Generate a scatter plot
 ggplot(tb_gapminder, aes(x = log10(income), y=life_exp)) + 

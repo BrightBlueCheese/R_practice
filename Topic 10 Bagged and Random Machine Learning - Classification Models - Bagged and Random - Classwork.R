@@ -74,15 +74,15 @@ credit_model_bagged
 
 ######################  Create predictions ####################3
 # Predict outcome categories
-default_preds <- predict(..., new_data = ...,
+default_preds <- predict(credit_model_bagged, new_data = tb_credit_test,
                          type = 'class')
 
 # Obtain estimated probabilities for each outcome value
-default_prob <- predict(..., new_data = ...,
+default_prob <- predict(credit_model_bagged, new_data = tb_credit_test,
                         type = 'prob')
 
 # Combine test set results
-bagged_credit_results <- ... %>% 
+bagged_credit_results <- tb_credit_test %>% 
   select(default) %>% 
   bind_cols(default_preds , default_prob)
 
@@ -90,21 +90,21 @@ bagged_credit_results <- ... %>%
 bagged_credit_results
 
 # Calculate the confusion matrix
-conf_mat(..., truth = default,
+conf_mat(bagged_credit_results, truth = default,
          estimate = .pred_class)
 
 # Calculate the accuracy
-accuracy(..., truth = default,
+accuracy(bagged_credit_results, truth = default,
          estimate = .pred_class)
 
 # Create and plot the ROC curve
 bagged_credit_results %>%
-  ...(estimate = .pred_no,
+  roc_curve(estimate = .pred_no,
           truth = default) %>% 
   autoplot()
 
 # Calculate the AUC
-...(bagged_credit_results,
+roc_auc(bagged_credit_results,
         estimate = .pred_no,
         truth = default)
 
@@ -120,15 +120,15 @@ vip::vip(credit_model_forest)
 
 ######################  Create predictions ####################3
 # Predict outcome categories
-default_preds <- predict(..., new_data = tb_credit_test,
+default_preds <- predict(credit_model_bagged, new_data = tb_credit_test,
                          type = 'class')
 
 # Obtain estimated probabilities for each outcome value
-default_prob <- predict(..., new_data = tb_credit_test,
+default_prob <- predict(credit_model_bagged, new_data = tb_credit_test,
                         type = 'prob')
 
 # Combine test set results
-forest_credit_results <- ... %>% 
+forest_credit_results <- tb_credit_test %>% 
   select(default) %>% 
   bind_cols(default_preds , default_prob)
 
@@ -136,21 +136,21 @@ forest_credit_results <- ... %>%
 forest_credit_results
 
 # Calculate the confusion matrix
-conf_mat(..., truth = default,
+conf_mat(forest_credit_results, truth = default,
          estimate = .pred_class)
 
 # Calculate the accuracy
-accuracy(..., truth = default,
+accuracy(forest_credit_results, truth = default,
          estimate = .pred_class)
 
 # Create and plot the ROC curve
-... %>%
+forest_credit_results %>%
   roc_curve(estimate = .pred_no,
             truth = default) %>% 
   autoplot()
 
 # Calculate the AUC
-roc_auc(...,
+roc_auc(forest_credit_results,
         estimate = .pred_no,
         truth = default)
 
@@ -173,7 +173,7 @@ tuning_grid
 # Create CV folds of the customers tibble # Kfold cross validation
 CVfolds <- vfold_cv(tb_credit, v=10)
 
-# Tune along the grid
+# Tune along the grid   # 얘 시간 오래 걸림 1-2분?
 credit_model_forest_tune_results <- 
   tune_grid(credit_model_forest_tune_spec,
             default ~ .,
@@ -192,7 +192,7 @@ final_params
 
 # Finalize the specification
 credit_model_forest_best_spec <- 
-  finalize_model(credit_model_forest_best_spec, 
+  finalize_model(credit_model_forest_tune_spec, 
                  final_params)
 
 # Build the final model
@@ -205,15 +205,15 @@ credit_model_forest_final_model
 
 ######################  Create predictions ####################3
 # Predict outcome categories
-default_preds <- predict(..., new_data = tb_credit_test,
+default_preds <- predict(credit_model_forest_final_model, new_data = tb_credit_test,
                          type = 'class')
 
 # Obtain estimated probabilities for each outcome value
-default_prob <- predict(..., new_data = tb_credit_test,
+default_prob <- predict(credit_model_forest_final_model, new_data = tb_credit_test,
                         type = 'prob')
 
 # Combine test set results
-forest_tuned_credit_results <- ... %>% 
+forest_tuned_credit_results <- tb_credit_test %>% 
   select(default) %>% 
   bind_cols(default_preds , default_prob)
 
@@ -221,21 +221,21 @@ forest_tuned_credit_results <- ... %>%
 forest_tuned_credit_results
 
 # Calculate the confusion matrix
-conf_mat(..., truth = default,
+conf_mat(forest_tuned_credit_results, truth = default,
          estimate = .pred_class)
 
 # Calculate the accuracy
-accuracy(..., truth = default,
+accuracy(forest_tuned_credit_results, truth = default,
          estimate = .pred_class)
 
 # Create and plot the ROC curve
 forest_tuned_credit_results %>%
-  ...(estimate = .pred_no,
+  forest_tuned_credit_results(estimate = .pred_no,
             truth = default) %>% 
   autoplot()
 
 # Calculate the AUC
-...(forest_tuned_credit_results,
+roc_auc(forest_tuned_credit_results,
         estimate = .pred_no,
         truth = default)
 
@@ -249,7 +249,7 @@ model_stats <- fit_resamples(credit_model_forest_best_spec,
                                      roc_auc))
 
 # Collect the metrics
-collect_metrics(...)
+collect_metrics(model_stats)
 
 # Turn off parallel cluster
 stopCluster(cl)

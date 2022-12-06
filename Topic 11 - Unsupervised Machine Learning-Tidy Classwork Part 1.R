@@ -16,6 +16,7 @@
 library(tidyverse)      # For tidy tools
 library(tidyclust)  
 library(factoextra)
+library(NbClust) # find the best number of cluster
 ######################  Learning about k-means ######################
 # Load dataset for analysis
 data("USArrests")
@@ -216,10 +217,10 @@ df_arrest_pca$rotation  <- -1 * df_arrest_pca$rotation
 df_arrest_pca$x <- -1*df_arrest_pca$x
 
 # Review the variable loadings
-df_arrest_pca$... 
+df_arrest_pca$rotation 
 
 # Review the 
-df_arrest_pca$...
+df_arrest_pca$x
 
 # Create the biplot with ggbiplot
 library(devtools)
